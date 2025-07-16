@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Style Partials Index - Selective Import System
+   ========================================================================== */
+
+/* 
+ * This file allows selective importing of style components.
+ * Uncomment only the components you need for your project.
+ */
+
+/* REQUIRED - Core system files (always needed) */
+@import './_variables.css';
+@import './_base.css';
+
+/* UTILITIES - Layout and helper classes */
+@import './_utilities.css';
+@import './_animations.css';
+
+/* COMPONENTS - UI elements (comment out if not needed) */
+@import './_buttons.css';
+@import './_badges.css';
+@import './_cards.css';
+@import './_callouts.css';
+@import './_tables.css';
+@import './_feature-grid.css';
+
+/* 
+ * USAGE EXAMPLES:
+ * 
+ * 1. Full system (recommended):
+ *    @import './partials/index.css';
+ * 
+ * 2. Minimal setup (variables + base only):
+ *    @import './partials/_variables.css';
+ *    @import './partials/_base.css';
+ * 
+ * 3. Custom selection:
+ *    @import './partials/_variables.css';
+ *    @import './partials/_base.css';
+ *    @import './partials/_buttons.css';
+ *    @import './partials/_feature-grid.css';
+ */

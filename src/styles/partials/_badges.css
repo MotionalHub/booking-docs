@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Badge Components
+   ========================================================================== */
+
+.badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  color: white;
+  white-space: nowrap;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-fast);
+}
+
+.badge:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-md);
+}
+
+/* Badge variants */
+.badge-owner {
+  background: var(--gradient-danger);
+}
+
+.badge-admin {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.badge-supporter {
+  background: var(--gradient-success);
+}
+
+.badge-cash {
+  background: var(--gradient-warning);
+}
+
+.badge-player {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.badge-customer {
+  background: linear-gradient(135deg, #7c2d12 0%, #92400e 100%);
+}
+
+/* Badge sizes */
+.badge-sm {
+  font-size: 0.65rem;
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.badge-lg {
+  font-size: 0.875rem;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+/* Badge with icons */
+.badge-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.badge-with-icon::before {
+  content: attr(data-icon);
+  font-size: 0.8em;
+}
+
+/* Mobile badge adjustments */
+@media (max-width: 640px) {
+  .badge {
+    font-size: 0.65rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+}

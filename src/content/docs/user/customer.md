@@ -1,0 +1,432 @@
+---
+title: Hướng dẫn Khách hàng
+description: Tài liệu đầy đủ dành cho khách hàng sử dụng Discord Booking Bot - từ booking cơ bản đến mua sắm và tương tác
+---
+
+# 🎮 Hướng dẫn Khách hàng
+
+Chào mừng bạn đến với hệ thống Discord Booking Bot! Trang này sẽ hướng dẫn bạn cách sử dụng tất cả tính năng dành cho khách hàng.
+
+## 💰 Quản lý tài chính cá nhân
+
+### Kiểm tra số dư
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>cash</code></td>
+      <td>Xem số tiền hiện có của bạn</td>
+      <td><code>cash</code></td>
+    </tr>
+    <tr>
+      <td><code>give</code></td>
+      <td>Chuyển tiền cho người khác</td>
+      <td><code>give &lt;@user&gt; &lt;số tiền&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ví dụ sử dụng:
+
+```bash
+# Xem số dư của bạn
+cash
+
+# Chuyển 50k cho bạn
+give @friend 50k
+
+# Chuyển số tiền chính xác
+give @friend 75000
+```
+
+<div className="callout callout-info">
+  <strong>💡 Mẹo:</strong> Bạn có thể dùng định dạng <code>k</code> (nghìn) và <code>m</code> (triệu) để nhập nhanh. Ví dụ: <code>50k = 50,000 VNĐ</code>
+</div>
+
+### Nạp tiền vào tài khoản
+
+Để nạp tiền, bạn cần:
+
+1. **Chuyển khoản** theo thông tin server cung cấp
+2. **Chụp ảnh** bill chuyển khoản  
+3. **Tạo ticket** hoặc liên hệ staff có role <span className="badge badge-cash">Cash</span>
+4. **Đợi xác nhận** và staff sẽ nạp tiền vào tài khoản
+
+## 📊 Xem thống kê và ranking
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>topbook</code></td>
+      <td>Top 10 người book nhiều nhất</td>
+      <td><code>topbook</code></td>
+    </tr>
+    <tr>
+      <td><code>topgift</code></td>
+      <td>Top người tặng quà nhiều nhất</td>
+      <td><code>topgift</code></td>
+    </tr>
+    <tr>
+      <td><code>topcash</code></td>
+      <td>Top người giàu nhất server</td>
+      <td><code>topcash</code></td>
+    </tr>
+  </tbody>
+</table>
+
+## 🛍️ Mua sắm tại Shop
+
+### Xem và mua sản phẩm
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>shop</code></td>
+      <td>Xem danh sách sản phẩm có sẵn</td>
+      <td><code>shop</code></td>
+    </tr>
+    <tr>
+      <td><code>buy</code></td>
+      <td>Mua sản phẩm theo ID</td>
+      <td><code>buy &lt;id&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code>inventory</code></td>
+      <td>Xem kho đồ của bạn</td>
+      <td><code>inventory</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tặng quà và mở Lucky Box
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>gift</code></td>
+      <td>Tặng đồ trong kho cho người khác</td>
+      <td><code>gift &lt;@user&gt; &lt;id&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code>unbox</code></td>
+      <td>Mở Lucky Box để nhận quà ngẫu nhiên</td>
+      <td><code>unbox</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ví dụ mua sắm:
+
+```bash
+# Xem shop
+shop
+
+# Mua sản phẩm ID 1  
+buy 1
+
+# Xem kho đồ
+inventory
+
+# Tặng đồ ID 2 cho bạn
+gift @friend 2
+
+# Mở Lucky Box (nếu có)
+unbox
+```
+
+<div className="callout callout-warning">
+  <strong>⚠️ Lưu ý:</strong> 
+  <ul>
+    <li>Phải có đủ tiền mới mua được đồ</li>
+    <li>Chỉ tặng được đồ đang có trong kho</li>
+    <li>Lucky Box cho phần thưởng ngẫu nhiên theo tỷ lệ</li>
+  </ul>
+</div>
+
+## 💕 Hệ thống Marriage (Kết hôn)
+
+### Các lệnh Marriage
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>marry</code></td>
+      <td>Cầu hôn với nhẫn cưới</td>
+      <td><code>marry &lt;@user&gt; &lt;ring_id&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code>marry divorce</code></td>
+      <td>Chấm dứt hôn nhân</td>
+      <td><code>marry divorce</code></td>
+    </tr>
+    <tr>
+      <td><code>marry luv</code></td>
+      <td>Gửi lời yêu thương</td>
+      <td><code>marry luv</code></td>
+    </tr>
+    <tr>
+      <td><code>marry profile</code></td>
+      <td>Xem thông tin hôn nhân</td>
+      <td><code>marry profile</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Tùy chỉnh Marriage profile
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Cú pháp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>marry vague</code></td>
+      <td>Đặt trạng thái "mập mờ"</td>
+      <td><code>marry vague</code></td>
+    </tr>
+    <tr>
+      <td><code>marry thumbnail</code></td>
+      <td>Đặt ảnh nhỏ cho profile</td>
+      <td><code>marry thumbnail &lt;url&gt;</code></td>
+    </tr>
+    <tr>
+      <td><code>marry image</code></td>
+      <td>Đặt ảnh lớn cho profile</td>
+      <td><code>marry image &lt;url&gt;</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Quy trình kết hôn:
+
+1. **Mua nhẫn cưới** từ shop (type: ring)
+   ```bash
+   shop
+   buy <ring_id>
+   ```
+
+2. **Cầu hôn**
+   ```bash
+   marry @crush <ring_id>
+   ```
+
+3. **Đợi người kia chấp nhận** (họ reply Yes/No)
+
+4. **Tận hưởng cuộc sống hôn nhân!**
+   ```bash
+   marry luv       # Gửi tình yêu
+   marry profile   # Xem profile cặp đôi
+   ```
+
+<div className="callout callout-info">
+  <strong>💡 Romantic Tips:</strong>
+  <ul>
+    <li>Tặng quà cho người yêu bằng lệnh <code>gift</code></li>
+    <li>Tùy chỉnh ảnh couple đẹp cho profile</li>
+    <li>Dùng <code>marry luv</code> thường xuyên để thể hiện tình cảm</li>
+  </ul>
+</div>
+
+## 🎮 Lệnh tiện ích hữu dụng
+
+### Tính toán và tiện ích
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Ví dụ sử dụng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>math</code></td>
+      <td>Tính toán biểu thức</td>
+      <td><code>math 12 + 5 * (3 - 1)</code></td>
+    </tr>
+    <tr>
+      <td><code>random</code></td>
+      <td>Sinh số ngẫu nhiên từ 1-n</td>
+      <td><code>random 100</code></td>
+    </tr>
+    <tr>
+      <td><code>pick</code></td>
+      <td>Chọn ngẫu nhiên từ danh sách</td>
+      <td><code>pick Pizza, Phở, Bún bò</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Thông tin và tương tác
+
+<table className="command-table">
+  <thead>
+    <tr>
+      <th>Lệnh</th>
+      <th>Mô tả</th>
+      <th>Ví dụ sử dụng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>avatar</code></td>
+      <td>Lấy avatar người dùng</td>
+      <td><code>avatar @user</code></td>
+    </tr>
+    <tr>
+      <td><code>snipe</code></td>
+      <td>Xem tin nhắn vừa bị xóa</td>
+      <td><code>snipe</code></td>
+    </tr>
+    <tr>
+      <td><code>speak</code></td>
+      <td>Bot nói trong voice channel</td>
+      <td><code>speak Xin chào!</code></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ví dụ lệnh tiện ích:
+
+```bash
+# Tính toán phức tạp
+math (100 + 50) * 2 / 3
+
+# Random số may mắn
+random 1000
+
+# Chọn ngẫu nhiên món ăn  
+pick Pizza, Phở, Bún bò, Cơm tấm
+
+# Lấy avatar đẹp
+avatar @crush
+
+# Bot đọc thông báo
+speak Chào mừng mọi người đến server!
+```
+
+## 🎫 Sử dụng Ticket System
+
+### Tạo ticket hỗ trợ:
+
+1. **Vào kênh ticket** (thường có tên #ticket hoặc #support)
+2. **Click nút tạo ticket** 
+3. **Mô tả vấn đề** cần hỗ trợ
+4. **Đợi staff** phản hồi
+
+### Các trường hợp nên tạo ticket:
+
+- ✅ Cần nạp tiền vào tài khoản
+- ✅ Gặp lỗi khi sử dụng bot  
+- ✅ Khiếu nại về dịch vụ
+- ✅ Đề xuất tính năng mới
+- ✅ Báo cáo vi phạm của thành viên khác
+
+## 📖 Booking và sử dụng dịch vụ
+
+### Quy trình booking cơ bản:
+
+1. **Chọn player** từ danh sách react profile
+2. **Đợi staff** tạo bill booking  
+3. **Kiểm tra thông tin** bill (giờ, giá, player)
+4. **Xác nhận** nếu đồng ý
+5. **Hệ thống tự động trừ tiền** từ tài khoản
+6. **Bắt đầu** sử dụng dịch vụ
+
+### Lưu ý khi booking:
+
+<div className="callout callout-warning">
+  <strong>📋 Quy tắc booking:</strong>
+  <ul>
+    <li><strong>Đủ tiền:</strong> Phải có đủ số dư trong tài khoản</li>
+    <li><strong>Xác nhận kỹ:</strong> Kiểm tra thông tin bill trước khi đồng ý</li>
+    <li><strong>Không cancel:</strong> Một khi đã xác nhận không thể hủy</li>
+    <li><strong>Tuân thủ quy định:</strong> Đọc rules của server</li>
+  </ul>
+</div>
+
+## 🚨 Xử lý tình huống khẩn cấp
+
+### Khi gặp vấn đề:
+
+1. **Lỗi bot không phản hồi:**
+   - Kiểm tra prefix có đúng không
+   - Thử lại sau vài phút
+   - Báo admin nếu lỗi kéo dài
+
+2. **Mất tiền không rõ lý do:**
+   - Kiểm tra lịch sử giao dịch
+   - Tạo ticket báo cáo ngay
+   - Cung cấp screenshot nếu có
+
+3. **Không thể mua/sử dụng tính năng:**
+   - Kiểm tra số dư tài khoản
+   - Xem có đủ điều kiện không
+   - Liên hệ supporter nếu cần
+
+## 💡 Tips sử dụng hiệu quả
+
+### Tiết kiệm tiền:
+
+- 🎁 **Tham gia events** để nhận quà miễn phí
+- 🎰 **Chơi Lucky Box** khi có tiền thừa  
+- 👥 **Mời bạn bè** tham gia server
+- ⭐ **Đánh giá cao** dịch vụ để nhận ưu đãi
+
+### Tương tác xã hội:
+
+- 💕 **Kết hôn** với người thương trong server
+- 🎁 **Tặng quà** cho bạn bè
+- 🏆 **Cạnh tranh** top rankings  
+- 🎪 **Tham gia** các hoạt động community
+
+### Bảo mật tài khoản:
+
+- 🔒 **Không share** thông tin tài khoản
+- 👀 **Kiểm tra** số dư thường xuyên
+- 📸 **Screenshot** giao dịch quan trọng
+- 🚨 **Báo ngay** nếu phát hiện bất thường
+
+---
+
+**🎉 Chúc bạn có trải nghiệm tuyệt vời!** Nếu cần hỗ trợ, đừng ngần ngại tạo ticket hoặc liên hệ staff. Chúng tôi luôn sẵn sàng giúp đỡ!

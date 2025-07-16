@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Callout Components
+   ========================================================================== */
+
+.callout {
+  padding: 1.25rem;
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius);
+  border-left: 4px solid;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.callout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.1) 50%, transparent 60%);
+  transform: translateX(50px) translateY(-50px) rotate(45deg);
+}
+
+/* Callout variants */
+.callout-info {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-left-color: var(--info-color);
+  color: #1e3a8a;
+}
+
+.callout-warning {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border-left-color: var(--warning-color);
+  color: #92400e;
+}
+
+.callout-success {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-left-color: var(--success-color);
+  color: #166534;
+}
+
+.callout-danger {
+  background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+  border-left-color: var(--danger-color);
+  color: #991b1b;
+}
+
+/* Dark mode callouts */
+[data-theme="dark"] .callout-info {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: #bfdbfe;
+}
+
+[data-theme="dark"] .callout-warning {
+  background: linear-gradient(135deg, #92400e 0%, #a16207 100%);
+  color: #fde68a;
+}
+
+[data-theme="dark"] .callout-success {
+  background: linear-gradient(135deg, #166534 0%, #15803d 100%);
+  color: #bbf7d0;
+}
+
+[data-theme="dark"] .callout-danger {
+  background: linear-gradient(135deg, #991b1b 0%, #b91c1c 100%);
+  color: #fecaca;
+}
+
+/* Callout with icons */
+.callout-with-icon {
+  padding-left: 3.5rem;
+}
+
+.callout-with-icon::after {
+  content: attr(data-icon);
+  position: absolute;
+  left: 1.25rem;
+  top: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+/* Mobile callout adjustments */
+@media (max-width: 640px) {
+  .callout {
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+  }
+  
+  .callout-with-icon {
+    padding-left: 2.5rem;
+  }
+  
+  .callout-with-icon::after {
+    left: var(--spacing-md);
+    top: var(--spacing-md);
+    font-size: 1.25rem;
+  }
+}

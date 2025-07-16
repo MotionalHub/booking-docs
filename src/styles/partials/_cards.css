@@ -1,0 +1,111 @@
+/* ==========================================================================
+   Card Enhancements
+   ========================================================================== */
+
+.sl-card-grid {
+  gap: var(--spacing-lg);
+}
+
+.sl-card {
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.sl-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: var(--transition-smooth);
+}
+
+.sl-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.sl-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Custom card variants */
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-header {
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semibold);
+  color: #1e293b;
+}
+
+.card-description {
+  margin: var(--spacing-xs) 0 0 0;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.card-content {
+  color: #374151;
+  line-height: 1.6;
+}
+
+.card-footer {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Dark mode cards */
+[data-theme="dark"] .card {
+  background: #2d3748;
+  border-color: #4a5568;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .card-header {
+  border-bottom-color: #4a5568;
+}
+
+[data-theme="dark"] .card-title {
+  color: #f7fafc;
+}
+
+[data-theme="dark"] .card-description {
+  color: #a0aec0;
+}
+
+[data-theme="dark"] .card-content {
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .card-footer {
+  border-top-color: #4a5568;
+}

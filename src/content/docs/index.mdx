@@ -1,0 +1,167 @@
+---
+title: Discord Booking Bot - Hệ thống quản lý booking chuyên nghiệp
+description: Tài liệu hướng dẫn sử dụng hệ thống bot booking Discord với đầy đủ tính năng quản lý khách hàng, player, thanh toán và nhiều hơn nữa.
+template: splash
+hero:
+  tagline: Hệ thống bot booking Discord hoàn chỉnh với quản lý tự động, thanh toán thông minh và trải nghiệm người dùng tuyệt vời!
+  image:
+    file: ../../assets/bot.webp
+  actions:
+    - text: Bắt đầu ngay
+      link: /introduction/
+      icon: right-arrow
+      variant: primary
+    - text: Xem commands
+      link: /commands/administrator/
+      icon: external
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## ✨ Tính năng nổi bật
+
+<CardGrid>
+  <Card title="🎯 Quản lý tự động" icon="setting">
+    Tự động tính lương player, xử lý bill booking và quản lý thanh toán một cách thông minh.
+  </Card>
+  <Card title="💰 Hệ thống Cash" icon="information">
+    Quản lý tiền ảo hoàn chỉnh với khả năng nạp, chuyển, và thanh toán linh hoạt.
+  </Card>
+  <Card title="🛍️ Cửa hàng tích hợp" icon="open-book">
+    Shop đầy đủ tính năng với quà tặng, lucky box và hệ thống marriage độc đáo.
+  </Card>
+  <Card title="🎫 Ticket & Support" icon="rocket">
+    Hệ thống ticket chuyên nghiệp với embed tùy chỉnh và autoresponder thông minh.
+  </Card>
+  <Card title="🛡️ Bảo mật cao cấp" icon="approve-check">
+    Anti-raid, kiểm soát quyền hạn chi tiết và log hoạt động toàn diện.
+  </Card>
+  <Card title="📊 Thống kê chi tiết" icon="bars">
+    Báo cáo doanh thu, top ranking và analytics hoạt động server.
+  </Card>
+</CardGrid>
+
+## 🚀 Tại sao chọn <span className="gradient-text">Discord Booking Bot</span>?
+
+<div className="feature-grid">
+  <div className="feature-card">
+    <div className="icon-container">⚡</div>
+    <h3>Hiệu suất cao</h3>
+    <p>Xử lý hàng ngàn giao dịch đồng thời không lag, uptime 99.9%</p>
+    <div className="status-indicator status-online">
+      <span>System Online</span>
+    </div>
+  </div>
+  
+  <div className="feature-card">
+    <div className="icon-container icon-container-secondary">🎨</div>
+    <h3>Tùy chỉnh linh hoạt</h3>
+    <p>Embed, emoji, màu sắc, prefix - mọi thứ đều có thể tùy chỉnh theo ý muốn</p>
+  </div>
+  
+  <div className="feature-card">
+    <div className="icon-container icon-container-warning">🔐</div>
+    <h3>Bảo mật tuyệt đối</h3>
+    <p>Phân quyền chi tiết, chống raid và bảo vệ dữ liệu người dùng</p>
+  </div>
+  
+  <div className="feature-card">
+    <div className="icon-container">📱</div>
+    <h3>Giao diện thân thiện</h3>
+    <p>Commands đơn giản, embed đẹp mắt và trải nghiệm người dùng tối ưu</p>
+  </div>
+</div>
+
+## 📋 Hệ thống phân quyền
+
+<div className="callout callout-info">
+  <strong>💡 Thông tin:</strong> Bot sử dụng hệ thống phân quyền thông minh với các role chuyên biệt cho từng chức năng.
+</div>
+
+<div className="table-wrapper">
+  <table className="permission-table">
+    <thead>
+      <tr>
+        <th>Role</th>
+        <th>Mô tả</th>
+        <th>Quyền hạn chính</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Role"><span className="badge badge-owner">Owner</span></td>
+        <td data-label="Mô tả">Chủ sở hữu server</td>
+        <td data-label="Quyền hạn chính">Toàn quyền cấu hình, setup hệ thống</td>
+      </tr>
+      <tr>
+        <td data-label="Role"><span className="badge badge-admin">Administrator</span></td>
+        <td data-label="Mô tả">Quản trị viên</td>
+        <td data-label="Quyền hạn chính">Quản lý cash, time, lương player</td>
+      </tr>
+      <tr>
+        <td data-label="Role"><span className="badge badge-supporter">Supporter</span></td>
+        <td data-label="Mô tả">Nhân viên hỗ trợ</td>
+        <td data-label="Quyền hạn chính">Tạo bill, quản lý booking, moderation</td>
+      </tr>
+      <tr>
+        <td data-label="Role"><span className="badge badge-cash">Cash</span></td>
+        <td data-label="Mô tả">Quản lý tài chính</td>
+        <td data-label="Quyền hạn chính">Nạp/trừ tiền, quản lý giao dịch</td>
+      </tr>
+      <tr>
+        <td data-label="Role"><span className="badge badge-player">Player</span></td>
+        <td data-label="Mô tả">Người chơi</td>
+        <td data-label="Quyền hạn chính">Xem lương, nhận bill, profile</td>
+      </tr>
+      <tr>
+        <td data-label="Role"><span className="badge badge-customer">Customer</span></td>
+        <td data-label="Mô tả">Khách hàng</td>
+        <td data-label="Quyền hạn chính">Booking, mua sắm, sử dụng dịch vụ</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+## 🎯 Bắt đầu nhanh
+
+<div className="steps">
+  <div className="step">
+    <div className="step-number">1</div>
+    <div className="step-content">
+      <h3>Đọc giới thiệu</h3>
+      <p>Tìm hiểu tổng quan về hệ thống và các tính năng chính. <a href="/introduction/">Xem chi tiết →</a></p>
+    </div>
+  </div>
+  
+  <div className="step">
+    <div className="step-number">2</div>
+    <div className="step-content">
+      <h3>Cài đặt cơ bản</h3>
+      <p>Thiết lập bot cho server của bạn với hướng dẫn từng bước. <a href="/basic-setup/">Bắt đầu →</a></p>
+    </div>
+  </div>
+  
+  <div className="step">
+    <div className="step-number">3</div>
+    <div className="step-content">
+      <h3>Commands Owner</h3>
+      <p>Cấu hình các tính năng chính và phân quyền hệ thống. <a href="/commands/owner/">Khám phá →</a></p>
+    </div>
+  </div>
+  
+  <div className="step">
+    <div className="step-number">4</div>
+    <div className="step-content">
+      <h3>Hướng dẫn sử dụng</h3>
+      <p>Dành cho người dùng cuối và khách hàng sử dụng dịch vụ. <a href="/user/customer/">Tìm hiểu →</a></p>
+    </div>
+  </div>
+</div>
+
+<div className="callout callout-warning">
+  <strong>⚠️ Lưu ý:</strong> Một số tính năng như Part-time chỉ khả dụng ở một số server đặc biệt. Liên hệ admin để biết thêm chi tiết.
+</div>
+
+---
+
+**🌟 Sẵn sàng trải nghiệm?** [Bắt đầu với hướng dẫn cài đặt](/introduction/) hoặc [xem danh sách commands đầy đủ](/commands/administrator/)!

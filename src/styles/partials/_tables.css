@@ -1,0 +1,692 @@
+/* ==========================================================================
+   Table Components - Content-Based Background Sizing
+   ========================================================================== */
+
+/* Base table wrapper with content-based background */
+.table-wrapper {
+  overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+  position: relative;
+  /* Key change: make wrapper fit content width */
+  display: inline-block;
+  min-width: 100%;
+  border-radius: var(--border-radius);
+  background: white;
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .table-wrapper {
+  background: #2d3748;
+}
+
+/* Permission table with optimized sizing */
+.permission-table {
+  width: auto; /* Changed from 100% to auto */
+  min-width: 100%; /* Ensure minimum width */
+  border-collapse: collapse;
+  margin: 0; /* Remove margin, wrapper handles spacing */
+  background: transparent; /* Wrapper provides background */
+  border-radius: 0; /* Wrapper provides border radius */
+  box-shadow: none; /* Wrapper provides shadow */
+  /* Enable content-based sizing */
+  table-layout: auto;
+}
+
+/* When table content is smaller than container */
+@media (min-width: 769px) {
+  .table-wrapper {
+    display: table;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .permission-table {
+    width: 100%;
+    min-width: 600px; /* Minimum readable width */
+  }
+}
+
+.permission-table thead {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.permission-table th {
+  padding: var(--spacing-md);
+  font-weight: var(--font-weight-semibold);
+  text-align: left;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.permission-table td {
+  padding: var(--spacing-md);
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+  vertical-align: top;
+}
+
+.permission-table tbody tr {
+  transition: var(--transition-fast);
+}
+
+.permission-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.permission-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Dark mode for permission table */
+[data-theme="dark"] .permission-table {
+  background: #2d3748;
+  color: #e2e8f0;
+}
+
+[data-theme="dark"] .permission-table td {
+  border-bottom-color: #4a5568;
+}
+
+[data-theme="dark"] .permission-table tbody tr:hover {
+  background-color: #374151;
+}
+
+/* Table wrapper for responsive design */
+.table-wrapper {
+  overflow-x: auto;
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--border-radius);
+  position: relative;
+  /* Content-based sizing approach */
+  display: inline-block;
+  min-width: 100%;
+  background: white;
+  box-shadow: var(--shadow-md);
+}
+
+[data-theme="dark"] .table-wrapper {
+  background: #2d3748;
+}
+
+/* Enhanced permission table with content-based background */
+.permission-table {
+  width: auto; /* Changed from 100% to auto for content-based width */
+  min-width: 100%; /* Ensure minimum full width when needed */
+  border-collapse: collapse;
+  margin: 0; /* Remove margin as wrapper handles it */
+  background: transparent; /* Wrapper handles background */
+  border-radius: 0; /* Wrapper handles border radius */
+  box-shadow: none; /* Wrapper handles shadow */
+  /* Ensure table fits content */
+  table-layout: auto;
+}
+
+/* Alternative approach for better browser support */
+.table-wrapper-content {
+  display: table;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  background: white;
+  overflow: hidden;
+  margin: var(--spacing-lg) 0;
+  min-width: 100%;
+}
+
+[data-theme="dark"] .table-wrapper-content {
+  background: #2d3748;
+}
+
+.table-wrapper-content .permission-table {
+  width: 100%;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* Scroll indicators */
+.scroll-indicator {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  pointer-events: none;
+  transition: opacity var(--transition-smooth);
+  z-index: 1;
+}
+
+.scroll-indicator.left {
+  left: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.1), transparent);
+}
+
+.scroll-indicator.right {
+  right: 0;
+  background: linear-gradient(to left, rgba(0,0,0,0.1), transparent);
+}
+
+/* Responsive table on mobile - Stable sizing */
+@media (max-width: 768px) {
+  .table-wrapper,
+  .table-wrapper-content,
+  .table-auto-fit,
+  .table-content-fit {
+    /* Force stable full-width display on mobile */
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    margin: var(--spacing-lg) 0 !important;
+    /* Prevent layout shifts */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .permission-table {
+    font-size: 0.8rem;
+    /* Stable sizing on mobile */
+    width: 100% !important;
+    min-width: 300px; /* Ensure minimum readable width */
+    table-layout: fixed; /* Prevent dynamic sizing */
+  }
+  
+  .permission-table thead {
+    display: none;
+  }
+  
+  .permission-table,
+  .permission-table tbody,
+  .permission-table tr,
+  .permission-table td {
+    display: block;
+  }
+  
+  .permission-table tr {
+    background: white;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    /* Stable width on mobile */
+    width: 100%;
+    position: relative;
+  }
+  
+  .permission-table td {
+    padding: var(--spacing-sm) 0;
+    border: none;
+    position: relative;
+    padding-left: 35%;
+    width: 100%;
+  }
+  
+  .permission-table td:before {
+    content: attr(data-label) ":";
+    position: absolute;
+    left: 0;
+    top: var(--spacing-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--primary-color);
+    width: 30%;
+  }
+  
+  [data-theme="dark"] .permission-table tr {
+    background: #2d3748;
+  }
+  
+  /* Mobile table wrapper adjustments */
+  .table-wrapper,
+  .table-wrapper-content,
+  .table-auto-fit {
+    display: block;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+  
+  /* Compact mobile tables */
+  .table-compact .permission-table tr {
+    padding: var(--spacing-sm);
+    min-width: calc(100% - 1rem);
+  }
+}
+
+/* Content-based table sizing utilities */
+.table-fit-content {
+  width: fit-content;
+  max-width: 100%;
+  margin: var(--spacing-lg) auto; /* Center the table */
+}
+
+.table-fit-content .permission-table {
+  width: auto;
+  min-width: 400px; /* Minimum readable width */
+}
+
+/* Compact table variant */
+.table-compact .permission-table th,
+.table-compact .permission-table td {
+  padding: var(--spacing-sm) var(--spacing-md);
+  white-space: nowrap;
+}
+
+/* Auto-fit table that adjusts to content */
+.table-auto-fit {
+  display: inline-block;
+  width: fit-content;
+  min-width: 60%;
+  max-width: 100%;
+  margin: var(--spacing-lg) auto; /* Center the table */
+  border-radius: var(--border-radius);
+  background: white;
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+
+[data-theme="dark"] .table-auto-fit {
+  background: #2d3748;
+}
+
+.table-auto-fit .permission-table {
+  width: 100%;
+  min-width: auto;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Compact content-based table */
+.table-content-fit {
+  display: table;
+  margin: var(--spacing-lg) auto;
+  border-radius: var(--border-radius);
+  background: white;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+[data-theme="dark"] .table-content-fit {
+  background: #2d3748;
+}
+
+.table-content-fit .permission-table {
+  width: auto;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Minimal width table (for very short content) */
+.table-minimal-width {
+  display: inline-block;
+  width: auto;
+  min-width: 400px;
+  max-width: 100%;
+  margin: var(--spacing-lg) auto;
+  border-radius: var(--border-radius);
+  background: white;
+  box-shadow: var(--shadow-md);
+  overflow-x: auto;
+}
+
+[data-theme="dark"] .table-minimal-width {
+  background: #2d3748;
+}
+
+.table-minimal-width .permission-table {
+  width: 100%;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* When table content is narrower than container */
+@media (min-width: 769px) {
+  .table-auto-fit {
+    display: table;
+    width: auto;
+    min-width: 600px; /* Minimum width for desktop */
+  }
+  
+  .table-auto-fit .permission-table {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+/* Override default table wrapper when using auto-sizing */
+.table-wrapper.table-content-fit,
+.table-wrapper.table-auto-fit {
+  display: table !important;
+  width: auto !important;
+  margin: var(--spacing-lg) auto !important;
+  min-width: auto !important;
+}
+
+.table-wrapper.table-content-fit .permission-table,
+.table-wrapper.table-auto-fit .permission-table {
+  width: 100% !important;
+  min-width: auto !important;
+}
+
+/* Ensure proper centering for content-based tables */
+.table-centered-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.table-centered-wrapper .table-wrapper {
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* Force content-based sizing */
+.table-force-content-width {
+  display: table !important;
+  width: auto !important;
+  margin: var(--spacing-lg) auto !important;
+  min-width: 300px;
+  max-width: 90%;
+}
+
+.table-force-content-width .permission-table {
+  width: 100%;
+  min-width: auto;
+}
+
+/* Responsive adjustments for small content tables */
+@media (max-width: 768px) {
+  .table-content-fit,
+  .table-auto-fit,
+  .table-minimal-width {
+    display: block !important;
+    width: 100% !important;
+    margin: var(--spacing-lg) 0 !important;
+  }
+  
+  .table-content-fit .permission-table,
+  .table-auto-fit .permission-table,
+  .table-minimal-width .permission-table {
+    width: 100% !important;
+  }
+}
+
+/* Additional table styling utilities */
+
+/* Full width table (default behavior) */
+.table-full-width {
+  width: 100%;
+}
+
+.table-full-width .permission-table {
+  width: 100%;
+}
+
+/* Centered content-based table */
+.table-centered {
+  display: flex;
+  justify-content: center;
+  margin: var(--spacing-lg) 0;
+}
+
+.table-centered .table-wrapper,
+.table-centered .table-wrapper-content,
+.table-centered .table-auto-fit {
+  margin: 0;
+}
+
+/* Minimal table style */
+.table-minimal .permission-table {
+  box-shadow: none;
+  border: 1px solid #e2e8f0;
+}
+
+.table-minimal .permission-table thead {
+  background: #f8fafc;
+  color: #374151;
+}
+
+[data-theme="dark"] .table-minimal .permission-table {
+  border-color: #4a5568;
+}
+
+[data-theme="dark"] .table-minimal .permission-table thead {
+  background: #374151;
+  color: #e2e8f0;
+}
+
+/* Striped table rows */
+.table-striped .permission-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+[data-theme="dark"] .table-striped .permission-table tbody tr:nth-child(even) {
+  background-color: #374151;
+}
+
+/* Bordered table cells */
+.table-bordered .permission-table th,
+.table-bordered .permission-table td {
+  border: 1px solid #e2e8f0;
+}
+
+[data-theme="dark"] .table-bordered .permission-table th,
+[data-theme="dark"] .table-bordered .permission-table td {
+  border-color: #4a5568;
+}
+
+/* Hoverable table rows with enhanced effect */
+.table-hoverable .permission-table tbody tr:hover {
+  background-color: #f0f9ff;
+  transform: translateX(4px);
+  box-shadow: 0 2px 8px rgba(88, 101, 242, 0.1);
+}
+
+[data-theme="dark"] .table-hoverable .permission-table tbody tr:hover {
+  background-color: #1e40af;
+  box-shadow: 0 2px 8px rgba(88, 101, 242, 0.2);
+}
+
+/* Small table variant */
+.table-sm .permission-table th,
+.table-sm .permission-table td {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.8rem;
+}
+
+/* Large table variant */
+.table-lg .permission-table th,
+.table-lg .permission-table td {
+  padding: var(--spacing-lg) var(--spacing-xl);
+  font-size: 1rem;
+}
+
+/* Table with fixed header */
+.table-fixed-header {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.table-fixed-header .permission-table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Table loading state */
+.table-loading {
+  position: relative;
+  pointer-events: none;
+}
+
+.table-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
+  animation: loading 1.5s infinite;
+  z-index: 20;
+}
+
+/* Table empty state */
+.table-empty {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: #6b7280;
+  font-style: italic;
+}
+
+.table-empty::before {
+  content: '📋';
+  display: block;
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+/* ==========================================================================
+   Table Quick Fix - Content-Based Background (No JS Required)
+   ========================================================================== */
+
+/* Quick override for immediate content-based table backgrounds */
+.table-wrapper {
+  /* Override default behavior to prevent excessive background */
+  display: table !important;
+  width: auto !important;
+  margin: var(--spacing-lg) auto !important;
+  min-width: 500px;
+  max-width: 90%;
+}
+
+.table-wrapper .permission-table {
+  width: 100% !important;
+  min-width: auto !important;
+}
+
+/* Ensure mobile responsiveness is maintained */
+@media (max-width: 768px) {
+  .table-wrapper {
+    display: block !important;
+    width: 100% !important;
+    margin: var(--spacing-lg) 0 !important;
+    min-width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+/* For tables without wrapper, apply content-based styling directly */
+.permission-table:not(.table-wrapper .permission-table) {
+  width: auto !important;
+  max-width: 90%;
+  margin: var(--spacing-lg) auto !important;
+  display: table;
+  min-width: 500px;
+}
+
+@media (max-width: 768px) {
+  .permission-table:not(.table-wrapper .permission-table) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: var(--spacing-lg) 0 !important;
+    min-width: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Mobile-First Stable Table Layout - Prevent Layout Shifts
+   ========================================================================== */
+
+/* Mobile-stable table wrapper - prevents dynamic sizing changes */
+.table-mobile-stable {
+  /* Lock dimensions on mobile to prevent shifts */
+  width: 100% !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  display: block !important;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  contain: layout style; /* CSS containment for performance */
+}
+
+/* Prevent JS sizing optimization on mobile-stable tables */
+.table-mobile-stable[data-sizing-optimized] {
+  /* Ignore optimization attributes on mobile */
+  width: 100% !important;
+  display: block !important;
+}
+
+/* Stable permission table for mobile */
+.table-mobile-stable .permission-table {
+  width: 100% !important;
+  min-width: 320px; /* Minimum for mobile readability */
+  table-layout: fixed; /* Prevent dynamic column sizing */
+  /* Lock layout to prevent shifts */
+  contain: layout;
+}
+
+/* Auto-apply mobile stable class via media query */
+@media (max-width: 768px) {
+  /* Force all table wrappers to be mobile-stable */
+  .table-wrapper,
+  .table-wrapper-content,
+  .table-auto-fit,
+  .table-content-fit,
+  .table-force-content-width {
+    /* Override any JS-applied sizing */
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    margin: var(--spacing-lg) 0 !important;
+    /* Prevent layout calculations */
+    contain: layout style;
+  }
+  
+  /* Lock table dimensions on mobile */
+  .permission-table {
+    width: 100% !important;
+    min-width: 320px !important;
+    table-layout: fixed !important;
+    /* Prevent table from triggering layout recalculations */
+    contain: layout;
+  }
+}
+
+/* Desktop-only dynamic sizing */
+@media (min-width: 769px) {
+  /* Allow dynamic sizing only on desktop */
+  .table-wrapper:not(.table-mobile-stable),
+  .table-wrapper-content:not(.table-mobile-stable),
+  .table-auto-fit:not(.table-mobile-stable),
+  .table-content-fit:not(.table-mobile-stable) {
+    contain: none; /* Allow dynamic sizing on desktop */
+  }
+  
+  .permission-table:not(.table-mobile-stable .permission-table) {
+    table-layout: auto; /* Allow dynamic column sizing on desktop */
+    contain: none;
+  }
+}
+
+/* Performance optimization for all table containers */
+.table-wrapper,
+.table-wrapper-content,
+.table-auto-fit,
+.table-content-fit {
+  /* Browser hint for layout optimization */
+  will-change: auto;
+  /* Prevent unnecessary repaints */
+  transform: translateZ(0);
+}

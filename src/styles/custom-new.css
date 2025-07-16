@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Discord Booking Bot Documentation - Main Stylesheet
+   ========================================================================== */
+
+/* Import all partial stylesheets */
+@import './partials/_variables.css';
+@import './partials/_base.css';
+@import './partials/_utilities.css';
+@import './partials/_animations.css';
+@import './partials/_buttons.css';
+@import './partials/_badges.css';
+@import './partials/_cards.css';
+@import './partials/_callouts.css';
+@import './partials/_tables.css';
+@import './partials/_feature-grid.css';
+
+/* 
+ * All styles are now organized into separate files:
+ * 
+ * _variables.css    - CSS custom properties and theme variables
+ * _base.css         - Global resets, base styles, and accessibility
+ * _utilities.css    - Utility classes for layout, spacing, etc.
+ * _animations.css   - Keyframes and animation utility classes
+ * _buttons.css      - Button styles and interactions
+ * _badges.css       - Badge components and variants
+ * _cards.css        - Card components and enhancements
+ * _callouts.css     - Callout/alert components
+ * _tables.css       - Table styles and responsive behavior
+ * _feature-grid.css - Feature grid layout and cards
+ */
