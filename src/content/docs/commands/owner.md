@@ -191,7 +191,7 @@ color:0x00ff00
   </tbody>
 </table>
 
-### Workflow tạo ticket hoàn chỉnh:
+### Quy trình tạo ticket hoàn chỉnh:
 
 ```bash
 # Bước 1: Tạo embed cho ticket

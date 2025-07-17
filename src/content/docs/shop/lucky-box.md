@@ -11,18 +11,6 @@ Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà
   <strong>🎲 Cơ chế:</strong> Lucky Box hoạt động theo hệ thống tỷ lệ (rate) với các tier khác nhau từ Common đến Legendary.
 </div>
 
-## 🎯 Cách hoạt động
-
-### Workflow Lucky Box:
-
-```mermaid
-graph TD
-    A[Khách mua Lucky Box] --> B[Sở hữu Lucky Box trong inventory]
-    B --> C[Dùng lệnh unbox]
-    C --> D[System roll random theo rate]
-    D --> E[Nhận phần thưởng tương ứng]
-    E --> F[Phần thưởng vào inventory]
-```
 
 ## ⚙️ Quản lý Lucky Box (Admin)
 
@@ -164,7 +152,7 @@ Select tier to modify: [Common] [Rare] [Epic] [Legendary]
   </tbody>
 </table>
 
-### Workflow khách hàng:
+### Quy trình khách hàng:
 
 ```bash
 # Bước 1: Mua Lucky Box

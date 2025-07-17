@@ -42,7 +42,7 @@ Giveaway System cho phép tổ chức các cuộc thi, sự kiện tặng quà �
   </tbody>
 </table>
 
-### Workflow tạo Giveaway:
+### Quy trình tạo Giveaway:
 
 ```bash
 # Bước 1: Tạo giveaway

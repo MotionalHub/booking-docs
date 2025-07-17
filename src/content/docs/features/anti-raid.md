@@ -41,7 +41,7 @@ Anti-Raid System bảo vệ server khỏi các cuộc tấn công raid, spam và
   </tbody>
 </table>
 
-### Quick setup workflow:
+### Quick setup Quy trình:
 
 ```bash
 # Bước 1: Thiết lập nhanh

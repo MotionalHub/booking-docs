@@ -47,7 +47,7 @@ Embed Builder cho phép tạo và chỉnh sửa các embed Discord đẹp mắt,
   </tbody>
 </table>
 
-### Workflow tạo Embed:
+### Quy trình tạo Embed:
 
 ```bash
 # Bước 1: Tạo embed mới

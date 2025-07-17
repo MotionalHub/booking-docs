@@ -42,7 +42,7 @@ Ticket System cung cấp hệ thống hỗ trợ khách hàng chuyên nghiệp, 
   </tbody>
 </table>
 
-### Workflow setup Ticket:
+### Quy trình setup Ticket:
 
 ```bash
 # Bước 1: Tạo category cho tickets

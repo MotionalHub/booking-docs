@@ -42,7 +42,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
   </tbody>
 </table>
 
-### Workflow tạo sản phẩm:
+### Quy trình tạo sản phẩm:
 
 ```bash
 # Bước 1: Tạo sản phẩm mới
@@ -184,7 +184,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
   </tbody>
 </table>
 
-### Workflow mua sắm:
+### Quy trình mua sắm:
 
 ```bash
 # Bước 1: Xem shop

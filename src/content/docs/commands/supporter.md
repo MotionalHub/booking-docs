@@ -80,7 +80,7 @@ description: Tài liệu đầy đủ các lệnh dành cho Supporter - quản l
   </tbody>
 </table>
 
-### Workflow Booking chuẩn:
+### Quy trình Booking chuẩn:
 
 ```bash
 # Bước 1: Khách chọn player (qua react profile)
@@ -397,7 +397,7 @@ ga start 12h 1w Lucky Box x10
 - `d` = ngày (days)
 - `w` = winners (số người thắng)
 
-### Workflow Giveaway:
+### Quy trình Giveaway:
 
 ```bash
 # 1. Tạo giveaway

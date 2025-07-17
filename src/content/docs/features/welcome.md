@@ -32,7 +32,7 @@ Welcome System giúp tạo trải nghiệm chào mừng chuyên nghiệp cho th�
   </tbody>
 </table>
 
-### Workflow setup Welcome:
+### Quy trình setup Welcome:
 
 ```bash
 # Bước 1: Tạo kênh welcome

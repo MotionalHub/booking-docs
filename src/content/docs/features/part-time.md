@@ -59,7 +59,7 @@ Part-time System thường được sử dụng cho:
   </tbody>
 </table>
 
-### Workflow quản lý:
+### Quy trình quản lý:
 
 ```bash
 # Thêm user vào part-time
