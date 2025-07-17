@@ -85,8 +85,8 @@ Nếu vượt quá → Kích hoạt anti-raid mode
 
 # Khi kích hoạt:
 - Tạm thời lock server (invite paused)
-- Alert staff về potential raid
-- Log suspicious activities
+- Thông báo về rủi ro raid member
+- Ghi nhận các hoạt động nguy hiểm
 ```
 
 ### Message Spam Protection
@@ -112,13 +112,10 @@ Nếu vượt quá → Kích hoạt anti-raid mode
 ```bash
 # Ví dụ: rate:10 second:5  
 Cho phép tối đa 10 messages trong 5 giây từ 1 user
-Vượt quá → Auto-mute/kick/ban
+Vượt quá → Auto-mute
 
 # Advanced detection:
-- Duplicate content spam
-- Mass mention abuse  
-- Rapid emoji spam
-- Link flooding
+- Chặn spam tin nhắn
 ```
 
 ### Channel & Webhook Protection
@@ -146,10 +143,8 @@ Vượt quá → Auto-mute/kick/ban
 Cho phép tối đa 3 channel/webhook changes trong 60 giây
 
 # Monitors:
-- Channel creation/deletion
-- Webhook creation/deletion  
-- Permission modifications
-- Mass structural changes
+- Tạo/xoá chnnale
+- Tạo/xoá webhook  
 ```
 
 ### Role Management Protection
@@ -174,13 +169,12 @@ Cho phép tối đa 3 channel/webhook changes trong 60 giây
 #### Role security:
 ```bash
 # Ví dụ: rate:2 second:30
-Cho phép tối đa 2 role changes trong 30 giây
+Cho phép tối đa tạo/xoá 2 role trong 30 giây
 
 # Protection against:
-- Mass role creation
-- Permission escalation  
-- Role deletion attacks
-- Hierarchy manipulation
+- Tạo, xoá nhiều role
+- Chặn quyền role  
+- Xoá role
 ```
 
 ## 🔧 Advanced Configuration
@@ -213,19 +207,13 @@ Cho phép tối đa 2 role changes trong 30 giây
 
 ```bash
 # Kick mode:
-- Remove violators từ server
-- Temporary measure
-- Can rejoin if not banned
+- Kick các thành viên tham gia khi không đủ điều kiện min_account_age.
 
-# Ban mode:  
-- Permanent removal
-- Strongest protection
-- Prevents rejoin
+# Ban mode:
+- Ban các thành viên tham gia khi không đủ điều kiện min_account_age.
 
 # Quarantine mode:
-- Restrict permissions
-- Limited channel access
-- Allow manual review
+- Cách lý các thành viên
 ```
 
 ### Account Security
@@ -254,13 +242,13 @@ Cho phép tối đa 2 role changes trong 30 giây
 
 #### Security measures:
 ```bash
-# Account age filter:
-Min age: 7 days (recommended)
-Purpose: Block newly created raid accounts
+# Lọc tuổi tài khoản (account age);
+Đề xuất: tối thiếu 7 ngày
+Mục dích: chặn các thành viên raid
 
-# Bot protection:
-Ignore verified bots: true
-Purpose: Prevent false positives from legitimate bots
+# Bảo vệ bot:
+Bỏ qua bot: true  
+Mục đích: Ngăn chặn cảnh báo sai từ các bot hợp lệ
 ```
 
 ### Whitelist System
@@ -285,16 +273,10 @@ Purpose: Prevent false positives from legitimate bots
 #### Trusted users:
 ```bash
 # Whitelisted roles:
-@Owner - Full immunity
-@Administrator - Full immunity  
-@Supporter - Reduced restrictions
-@VIP - Higher limits
-@Verified - Basic protection bypass
+@Whitelist Role - Role được setting
 
-# Use cases:
-- Staff performing bulk operations
-- VIP members with special privileges
-- Verified users with higher trust
+# Trường hợp bị xử lí:
+- Bỏ qua xử lí các member có role
 ```
 
 ### Notification System

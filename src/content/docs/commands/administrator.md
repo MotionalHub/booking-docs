@@ -47,10 +47,6 @@ at @customer 5
 st @customer 2
 ```
 
-<div className="callout callout-warning">
-  <strong>⚠️ Lưu ý:</strong> Số giờ có thể là số thập phân. Ví dụ: <code>0.5</code> = 30 phút, <code>1.25</code> = 1 giờ 15 phút.
-</div>
-
 ## ⭐ Quản lý Player
 
 ### Quản lý giờ Star

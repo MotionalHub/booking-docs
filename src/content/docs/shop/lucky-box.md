@@ -211,17 +211,9 @@ Legendary tier có thể bao gồm:
 - Limited edition items
 ```
 
-## 📊 Thống kê và Analytics
+## 📊 Thống kê và phân tích
 
-### Tracking Lucky Box performance:
-
-#### Admin dashboard:
-- **Total boxes opened**: Số box đã mở
-- **Revenue generated**: Doanh thu từ Lucky Box
-- **Popular tiers**: Tier nào được mở nhiều
-- **Jackpot frequency**: Tần suất trúng Legendary
-
-#### Rate balancing:
+#### Cân bằng tỉ lệ:
 ```bash
 # Monitor qua log-box channel
 - Kiểm tra tỷ lệ thực tế vs cấu hình

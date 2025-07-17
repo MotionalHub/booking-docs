@@ -99,7 +99,7 @@ description: Tài liệu đầy đủ các lệnh dành cho Supporter - quản l
 
 # Nếu cần hoàn bill:
 /hoanbill
-# Chọn bill ID cần hoàn
+# Thao tác tương tự /book
 ```
 
 ## 📊 Thống kê và Tracking
@@ -196,7 +196,7 @@ ar set Newbie-Player | @bob
 4. Khách chọn player từ danh sách
 5. Supporter tạo bill với player đã chọn
 
-### Ví dụ workflow hoàn chỉnh:
+### Ví dụ hoàn chỉnh:
 
 ```bash
 # 1. Khách tạo ticket cần book
@@ -472,12 +472,12 @@ ga reroll 123456789012345678
   <strong>🎯 Mục tiêu Supporter:</strong> Đảm bảo khách hàng có trải nghiệm booking mượt mà và hài lòng. Luôn đặt customer satisfaction lên hàng đầu!
 </div>
 
-## 📞 Hỗ trợ và Escalation
+## 📞 Hỗ trợ và báo cáo
 
 Khi cần hỗ trợ:
 
 1. **Lỗi kỹ thuật**: Báo admin hoặc owner
-2. **Conflict lớn**: Escalate lên administrator  
+2. **Xung đột lớn**: Báo lên administrator  
 3. **Vấn đề tài chính**: Liên hệ role Cash
 4. **Bug report**: Ghi chép chi tiết và report
 

@@ -230,30 +230,6 @@ inventory
 - **Revenue tracking**: Theo dõi doanh thu từ shop
 - **Popular items**: Items bán chạy
 
-## 🔧 Best Practices
-
-### Chiến lược Shop hiệu quả:
-
-1. **Product Mix cân bằng**
-   - Items thường dùng (giá thấp)
-   - Items premium (giá cao, tính năng đặc biệt)
-   - Lucky Box (tạo excitement)
-
-2. **Pricing Strategy**
-   - Research giá cả phù hợp với server
-   - Tạo bundle deals hấp dẫn
-   - Seasonal events và discounts
-
-3. **Marketing trong server**
-   - Announce items mới
-   - Showcase Lucky Box wins
-   - Member testimonials
-
-4. **Inventory Management**
-   - Regular audit items không dùng
-   - Update mô tả khi cần
-   - Balance Lucky Box rates
-
 ## 🆘 Troubleshooting
 
 ### Vấn đề thường gặp:

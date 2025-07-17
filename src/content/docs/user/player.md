@@ -91,11 +91,12 @@ Ví dụ:
 
 ### Giờ ngày vs giờ đêm:
 
+Ví du:
 - **Giờ ngày** (06:00 - 22:00): Lương thường
 - **Giờ đêm** (22:00 - 06:00): Lương cao hơn (~20% extra)
 
 <div className="callout callout-info">
-  <strong>💡 Mẹo:</strong> Làm việc giờ đêm sẽ có mức lương cao hơn. Check với admin về mức lương đêm cụ thể.
+  <strong>💡 Mẹo:</strong> Làm việc giờ đêm sẽ có mức lương cao hơn tuỳ theo server của bạn.
 </div>
 
 ## ⭐ Hệ thống Star (Giờ làm việc)
@@ -104,25 +105,24 @@ Ví dụ:
 
 **Star** = Số giờ làm việc của player, được tính tự động khi:
 - ✅ Nhận bill booking từ khách
-- ✅ Hoàn thành service
-- ✅ Admin cộng thêm (bonus hoặc adjustment)
+- ✅ Hoàn thành dịch vụ
+- ✅ Admin cộng thêm (thưởng hoặc điều chỉnh)
 
 ### Cách tích lũy Star:
 
 1. **Từ booking tự động:**
    ```
    Khách book 3 giờ → Player nhận 3 star
-   Khách book 5.5 giờ → Player nhận 5.5 star
+   Khách book 5 giờ → Player nhận 5 star
    ```
 
 2. **Từ admin thêm:**
    ```bash
    # Admin thực hiện
-   as @player 2    # Cộng 2 star bonus
-   as @player 0.5  # Cộng 30 phút làm thêm
+   as @player 2    # Cộng 2h star bonus
    ```
 
-3. **Adjustment (cộng/trừ):**
+3. **Điều chỉnh (cộng/trừ):**
    ```bash
    # Cộng star cho performance tốt
    as @player 1
@@ -139,24 +139,24 @@ Ví dụ:
 - ✅ Hoàn thành tốt để khách book lại
 
 ### 2. **Cải thiện chất lượng dịch vụ**
-- ✅ Professional attitude
+- ✅ Thái độ chuyên nghiệp
 - ✅ Đúng giờ và reliable
 - ✅ Skill tốt trong game/service
 - ✅ Communication tốt với khách
 
 ### 3. **Nhận thưởng từ admin**
-- ✅ Performance xuất sắc
+- ✅ Hiệu suất xuất sắc
 - ✅ Feedback tốt từ khách
 - ✅ Hỗ trợ training player mới
 - ✅ Tham gia events server
 
 ### 4. **Tránh bị phạt**
 - ❌ Không vi phạm quy định
-- ❌ Không late/cancel booking
-- ❌ Không conflict với khách
-- ❌ Không toxic behavior
+- ❌ Không vào muộn
+- ❌ Không xung đột với khách
+- ❌ Không toxic
 
-## 📈 Tracking Performance
+## 📈 Theo dõi năng suất
 
 ### Theo dõi thống kê cá nhân:
 
@@ -168,11 +168,9 @@ luong
 topstar  # Xem top ranking star
 ```
 
-### Metrics quan trọng:
+### Chi tiết quan trọng:
 
-- **⭐ Star/tháng**: Mục tiêu ít nhất 100+ giờ
 - **💰 Lương ổn định**: Không có phạt lớn
-- **📈 Growth trend**: Star tăng đều theo thời gian
 - **🎯 Customer satisfaction**: Feedback tích cực
 
 ## 🔄 React Profile System
@@ -192,10 +190,10 @@ Khi supporter tạo react profile cho khách chọn player:
 ```
 🎮 PLAYER PROFILES
 
-⭐ Player1 (@john) - 89.5 star
-⭐ Player2 (@jane) - 156.2 star  
-⭐ VIP-Player (@alice) - 203.8 star
-⭐ Newbie (@bob) - 12.5 star
+⭐ Player1 (@john) - 89 star
+⭐ Player2 (@jane) - 156 star  
+⭐ VIP-Player (@alice) - 203 star
+⭐ Newbie (@bob) - 12 star
 
 React 🎮 để tham gia booking!
 ```
@@ -209,7 +207,7 @@ React 🎮 để tham gia booking!
 
 ## 💡 Tips cho Player thành công
 
-### Professional behavior:
+### Hành vi chuyên nghiệp:
 
 1. **Đúng giờ**: Luôn có mặt đúng giờ hẹn
 2. **Communication**: Friendly, helpful, respectful
@@ -265,30 +263,6 @@ ss @player 2       # Trừ star
 role @player @Player  # Gỡ role (nghiêm trọng)
 ```
 
-## 📞 Hỗ trợ và feedback
-
-### Khi cần hỗ trợ:
-
-1. **Vấn đề kỹ thuật**: Liên hệ supporter
-2. **Dispute với khách**: Báo admin ngay
-3. **Không hiểu lương**: Hỏi trong player channel
-4. **Suggestions**: Feedback cho team leadership
-
-### Cách báo feedback:
-
-```
-📝 PLAYER FEEDBACK TEMPLATE:
-👤 Player: @your_name
-📅 Date: DD/MM/YYYY
-🎯 Issue/Suggestion: [Chi tiết]
-💡 Proposed solution: [Đề xuất]
-⭐ Priority: High/Medium/Low
-```
-
-<div className="callout callout-warning">
-  <strong>📋 Lưu ý quan trọng:</strong> Player role đi kèm với trách nhiệm cung cấp service chất lượng. Luôn maintain professional attitude và deliver excellent customer experience!
-</div>
-
 ## 🎉 Thành công với role Player
 
 ### Mindset đúng:
@@ -309,4 +283,4 @@ role @player @Player  # Gỡ role (nghiêm trọng)
 
 ---
 
-**⭐ Good luck!** Với dedication và professional attitude, bạn sẽ thành công trong role Player và build được career ổn định trong community!
+**⭐ Chúc may mắn!** Với sự cống hiến và thái độ chuyên nghiệp, bạn sẽ thành công trong vai trò Player trong booking!

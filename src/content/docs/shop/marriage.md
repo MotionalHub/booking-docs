@@ -186,24 +186,3 @@ marry thumbnail [attach file]
     <li>Divorce sẽ xóa tất cả dữ liệu couple</li>
   </ul>
 </div>
-
-## 💡 Tips cho Admin
-
-### Quản lý Marriage system:
-
-1. **Monitor ring economy**: Giá hợp lý, không inflate
-2. **Create variety**: Nhiều loại nhẫn khác nhau
-3. **Handle drama**: Có policy về marriage conflicts
-4. **Encourage positivity**: Marriage để build community
-5. **Regular events**: Tạo excitement cho feature
-
-### Config suggestions:
-
-```bash
-# Ring tiers
-Basic Ring: 100k (simple couples)
-Silver Ring: 500k (committed couples)  
-Gold Ring: 1M (serious couples)
-Diamond Ring: 2M (premium couples)
-Legendary Ring: 5M (special occasions)
-```
