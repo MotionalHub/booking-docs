@@ -25,19 +25,19 @@ Giveaway System cho phép tổ chức các cuộc thi, sự kiện tặng quà �
   </thead>
   <tbody>
     <tr>
-      <td><code>/giveaway start</code></td>
+      <td><code>giveaway start</code></td>
       <td>Tạo giveaway mới</td>
-      <td><code>/giveaway start</code></td>
+      <td><code>ga s</code></td>
     </tr>
     <tr>
-      <td><code>/giveaway end</code></td>
+      <td><code>giveaway end</code></td>
       <td>Kết thúc giveaway sớm</td>
-      <td><code>/giveaway end &lt;id&gt;</code></td>
+      <td><code>ga e &lt;id&gt;</code></td>
     </tr>
     <tr>
-      <td><code>/giveaway reroll</code></td>
+      <td><code>giveaway reroll</code></td>
       <td>Quay lại winners mới</td>
-      <td><code>/giveaway reroll &lt;id&gt;</code></td>
+      <td><code>ga rr &lt;id&gt;</code></td>
     </tr>
   </tbody>
 </table>

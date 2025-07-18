@@ -146,8 +146,8 @@ ac @user 10000
    ```
 
 2. **Nạp thêm tiền:**
-   - Liên hệ staff có role Cash
-   - Cung cấp proof chuyển khoản
+   - Liên hệ staff/supporter
+   - Cung cấp hình ảnh chuyển khoản
    - Đợi xác nhận
 
 3. **Kiểm tra giá sản phẩm:**

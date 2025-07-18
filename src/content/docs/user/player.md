@@ -48,8 +48,7 @@ description: Tài liệu các lệnh dành cho Player - xem lương, quản lý 
 #### `luong` - Hiển thị riêng tư  
 - 🔒 Gửi qua DM riêng
 - 🔒 Chỉ bạn xem được
-- 🔒 Bảo mật thông tin cá nhân
-- 🔒 Phù hợp khi muốn check nhanh
+- 🔒 Bảo mật thông tin bills
 
 ### Ví dụ sử dụng:
 
@@ -68,7 +67,7 @@ luong
 ```
 📋 BẢNG LƯƠNG PLAYER
 👤 Player: @your_name
-⭐ Tổng Star: 45.5 giờ
+⭐ Tổng Star: 45 giờ
 💰 Lương cơ bản: 1,365,000 VNĐ
 🎁 Thưởng: +150,000 VNĐ  
 💸 Phạt: -50,000 VNĐ
@@ -83,10 +82,10 @@ Công thức:
 Tổng lương = (Star × Lương/giờ) + Thưởng - Phạt
 
 Ví dụ:
-45.5 giờ × 30,000 VNĐ/giờ = 1,365,000 VNĐ
+45 giờ × 22,000 VNĐ/giờ = 990,000 VNĐ
 + Thưởng tích cực: 150,000 VNĐ
 - Phạt vi phạm: 50,000 VNĐ  
-= Tổng lương: 1,465,000 VNĐ
+= Tổng lương: 1,090,000 VNĐ
 ```
 
 ### Giờ ngày vs giờ đêm:
@@ -131,31 +130,6 @@ Ví du:
    ss @player 0.5
    ```
 
-## 🎯 Làm thế nào để tăng thu nhập?
-
-### 1. **Tăng số giờ làm việc**
-- ✅ Online nhiều hơn để nhận booking
-- ✅ Chấp nhận booking giờ đêm (lương cao hơn)
-- ✅ Hoàn thành tốt để khách book lại
-
-### 2. **Cải thiện chất lượng dịch vụ**
-- ✅ Thái độ chuyên nghiệp
-- ✅ Đúng giờ và reliable
-- ✅ Skill tốt trong game/service
-- ✅ Communication tốt với khách
-
-### 3. **Nhận thưởng từ admin**
-- ✅ Hiệu suất xuất sắc
-- ✅ Feedback tốt từ khách
-- ✅ Hỗ trợ training player mới
-- ✅ Tham gia events server
-
-### 4. **Tránh bị phạt**
-- ❌ Không vi phạm quy định
-- ❌ Không vào muộn
-- ❌ Không xung đột với khách
-- ❌ Không toxic
-
 ## 📈 Theo dõi năng suất
 
 ### Theo dõi thống kê cá nhân:
@@ -167,11 +141,6 @@ luong
 # So sánh với player khác (nếu muốn)
 topstar  # Xem top ranking star
 ```
-
-### Chi tiết quan trọng:
-
-- **💰 Lương ổn định**: Không có phạt lớn
-- **🎯 Customer satisfaction**: Feedback tích cực
 
 ## 🔄 React Profile System
 
@@ -197,23 +166,6 @@ Khi supporter tạo react profile cho khách chọn player:
 
 React 🎮 để tham gia booking!
 ```
-
-### Tips tăng cơ hội được chọn:
-
-- ✅ **Profile name hấp dẫn**: VIP-Player, Pro-Gamer, etc.
-- ✅ **Star cao**: Thể hiện kinh nghiệm
-- ✅ **Online status**: Hiển thị active
-- ✅ **Reputation tốt**: Từ booking trước
-
-## 💡 Tips cho Player thành công
-
-### Hành vi chuyên nghiệp:
-
-1. **Đúng giờ**: Luôn có mặt đúng giờ hẹn
-2. **Communication**: Friendly, helpful, respectful
-3. **Skill**: Continuously improve game/service skills
-4. **Reliability**: Consistent performance, no last-minute cancel
-5. **Flexibility**: Sẵn sàng giờ đêm, weekend
 
 ### Time management:
 
@@ -263,24 +215,6 @@ ss @player 2       # Trừ star
 role @player @Player  # Gỡ role (nghiêm trọng)
 ```
 
-## 🎉 Thành công với role Player
-
-### Mindset đúng:
-
-- 🎯 **Customer-first**: Khách hàng là ưu tiên số 1
-- 💪 **Growth mindset**: Luôn học hỏi và cải thiện
-- 🤝 **Team player**: Hỗ trợ đồng nghiệp
-- 📈 **Result-oriented**: Focus vào performance metrics
-- 🌟 **Professional**: Maintain high standards
-
-### Long-term goals:
-
-- Tăng star đều đặn mỗi tháng
-- Build loyal customer base
-- Trở thành top performer
-- Mentoring player mới
-- Advance lên leadership roles
-
 ---
 
-**⭐ Chúc may mắn!** Với sự cống hiến và thái độ chuyên nghiệp, bạn sẽ thành công trong vai trò Player trong booking!
+**⭐ Chúc may mắn!** Với sự cống hiến và thái độ chuyên nghiệp!

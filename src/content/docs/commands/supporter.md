@@ -452,22 +452,6 @@ ga reroll 123456789012345678
    - Thêm FAQ thường gặp
    - Test hoạt động
 
-### Tips hiệu quả:
-
-- 🚀 **Phản hồi nhanh**: Reply ticket < 15 phút
-- 📝 **Ghi chép rõ ràng**: Note lý do hoàn bill
-- 🤝 **Thân thiện**: Luôn lịch sự với khách hàng
-- 📊 **Theo dõi metrics**: Check daily stats
-- 🎯 **Proactive**: Tạo react profile trước khi khách yêu cầu
-
-### Xử lý tình huống khó:
-
-- **Khách khiếu nại player**: Ghi chép chi tiết, báo admin
-- **Bill sai**: Hoàn ngay và tạo lại đúng
-- **Player không response**: Tìm player backup
-- **Khách không đủ tiền**: Hướng dẫn nạp tiền
-- **Conflict**: Escalate lên admin nếu cần
-
 <div className="callout callout-info">
   <strong>🎯 Mục tiêu Supporter:</strong> Đảm bảo khách hàng có trải nghiệm booking mượt mà và hài lòng. Luôn đặt customer satisfaction lên hàng đầu!
 </div>
@@ -483,4 +467,4 @@ Khi cần hỗ trợ:
 
 ---
 
-**💪 Keep it up!** Role Supporter là xương sống của server booking. Công việc của bạn trực tiếp ảnh hưởng đến trải nghiệm khách hàng!
+**💪 Keep it up!** Role Supporter là vai trò quan trọng của server booking. Công việc của bạn trực tiếp ảnh hưởng đến trải nghiệm khách hàng!

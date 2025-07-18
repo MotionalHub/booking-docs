@@ -142,12 +142,7 @@ Select tier to modify: [Common] [Rare] [Epic] [Legendary]
     <tr>
       <td><code>inventory</code></td>
       <td>Xem số lượng Lucky Box sở hữu</td>
-      <td><code>inventory</code></td>
-    </tr>
-    <tr>
-      <td><code>buy</code></td>
-      <td>Mua Lucky Box từ shop</td>
-      <td><code>buy &lt;lucky_box_id&gt;</code></td>
+      <td><code>inv</code></td>
     </tr>
   </tbody>
 </table>
@@ -168,35 +163,6 @@ unbox
 # ✨ Congratulations! You got: 💎 VIP Item (Epic tier)
 
 # Phần thưởng tự động vào inventory
-```
-
-## 🎨 Tùy chỉnh phần thưởng
-
-### Loại phần thưởng có thể cấu hình:
-
-#### 💰 Cash Rewards
-```bash
-Common: 10,000 - 50,000 VNĐ
-Rare: 75,000 - 150,000 VNĐ  
-Epic: 300,000 - 800,000 VNĐ
-Legendary: 1,000,000 - 3,000,000 VNĐ
-```
-
-#### 🎁 Item Rewards
-```bash
-Common: Basic items, consumables
-Rare: Premium items, temporary boosts
-Epic: Rare collectibles, permanent upgrades
-Legendary: Exclusive items, one-of-a-kind
-```
-
-#### 🌟 Special Rewards
-```bash
-Legendary tier có thể bao gồm:
-- Exclusive roles
-- Custom titles  
-- Special privileges
-- Limited edition items
 ```
 
 ## 📊 Thống kê và phân tích

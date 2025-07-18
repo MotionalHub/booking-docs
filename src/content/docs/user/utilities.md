@@ -204,37 +204,3 @@ pick LOL rank, Valorant duo, CS2 faceit, PUBG squad
 math 150000 * (100 - 10) / 100
 # 150k với 10% discount = 135k
 ```
-
-## 🎉 Fun Commands
-
-### Mini Games với utilities:
-
-#### 1. **Guess the Number**:
-```bash
-# Host: Tôi nghĩ số từ 1-100
-random 100
-# Players: Đoán số cho đến khi trúng!
-```
-
-#### 2. **Random Dinner**:
-```bash
-pick Cơm tấm, Phở bò, Bún bò Huế, Pizza, Burger, Sushi, Lẩu
-# Let fate decide your meal!
-```
-
-## 🔧 Advanced Tips
-
-### Math Calculator Pro Tips:
-
-```bash
-# Sử dụng dấu ngoặc để ưu tiên
-math (100 + 200) * 3
-# Khác với: math 100 + 200 * 3
-
-# Tính percentage
-math 850000 * 15 / 100    # 15% của 850k
-math 1200000 / 4          # Chia đều 4 người
-
-# Tính compound
-math 100000 * 1.05 * 1.05 # 100k với 5% lãi kép 2 kỳ
-```

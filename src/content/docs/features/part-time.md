@@ -71,28 +71,6 @@ Part-time System thường được sử dụng cho:
 # ✅ John đã được xóa khỏi danh sách part-time
 ```
 
-## 📋 Chính sách Part-time
-
-### Các khác biệt có thể áp dụng:
-
-#### 💰 Tài chính
-- **Lương khác biệt**: Mức lương riêng cho part-time
-- **Bonus structure**: Cơ cấu thưởng khác
-- **Payment schedule**: Lịch thanh toán riêng
-- **Commission rates**: Tỷ lệ hoa hồng đặc biệt
-
-#### ⏰ Thời gian
-- **Flexible hours**: Không bắt buộc giờ cố định
-- **Weekend only**: Chỉ làm cuối tuần
-- **Peak hours**: Ưu tiên giờ cao điểm
-- **On-call basis**: Theo yêu cầu
-
-#### 🎯 Quyền truy cập
-- **Special channels**: Kênh riêng cho part-time
-- **Beta features**: Truy cập tính năng thử nghiệm
-- **VIP services**: Dịch vụ đặc biệt
-- **Priority support**: Hỗ trợ ưu tiên
-
 ## 🔧 Cấu hình hệ thống
 
 ### Setup Part-time System:
@@ -108,7 +86,7 @@ Vì Part-time System cần cấu hình riêng cho từng server, admin cần:
 ```bash
 # Admin định nghĩa:
 - Lương part-time
-- Quyền lợi đặc biệt
+- Quyền lợi dành cho part-time
 ```
 
 #### Bước 3: Training team
@@ -116,16 +94,5 @@ Vì Part-time System cần cấu hình riêng cho từng server, admin cần:
 # Hướng dẫn supporter:
 - Cách thêm/xóa part-time
 - Xử lý booking cho part-time
-- Monitor performance
 - Báo cáo định kỳ
 ```
-
-## 📊 Tracking & Monitoring
-
-### Thống kê Part-time:
-
-#### Performance metrics:
-- **Active part-time users**: Số người đang active
-- **Hours worked**: Tổng giờ làm part-time
-- **Revenue contribution**: Đóng góp doanh thu
-- **Satisfaction rate**: Mức độ hài lòng
