@@ -120,6 +120,11 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
   </thead>
   <tbody>
     <tr>
+      <td><code>/give take</code></td>
+      <td>Add item vào inventory của user</td>
+      <td><code>/item give @user &lt;item_id&gt;</code></td>
+    </tr>
+    <tr>
       <td><code>/item take</code></td>
       <td>Lấy item từ inventory của user</td>
       <td><code>/item take @user &lt;item_id&gt;</code></td>
