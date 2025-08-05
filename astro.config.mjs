@@ -34,6 +34,9 @@ export default defineConfig({
 					}
 				}
 			],
+			components: {
+				Head: './src/components/Head.astro',
+			},
 			sidebar: [
 				{
 					label: 'Bắt đầu',
