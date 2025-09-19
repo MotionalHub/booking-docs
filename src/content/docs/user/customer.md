@@ -258,10 +258,10 @@ unbox
    ```
 
 <div className="callout callout-info">
-  <strong>💡 Romantic Tips:</strong>
+  <strong>💡 Tips:</strong>
   <ul>
     <li>Tặng quà cho người yêu bằng lệnh <code>gift</code></li>
-    <li>Tùy chỉnh ảnh couple đẹp cho profile</li>
+    <li>Tùy chỉnh ảnh couple đẹp cho profile profile</li>
     <li>Dùng <code>marry luv</code> thường xuyên để thể hiện tình cảm</li>
   </ul>
 </div>
@@ -362,29 +362,6 @@ speak Chào mừng mọi người đến server!
 - ✅ Đề xuất tính năng mới
 - ✅ Báo cáo vi phạm của thành viên khác
 
-## 📖 Booking và sử dụng dịch vụ
-
-### Quy trình booking cơ bản:
-
-1. **Chọn player** từ danh sách react profile
-2. **Đợi staff** tạo bill booking  
-3. **Kiểm tra thông tin** bill (giờ, giá, player)
-4. **Xác nhận** nếu đồng ý
-5. **Hệ thống tự động trừ tiền** từ tài khoản
-6. **Bắt đầu** sử dụng dịch vụ
-
-### Lưu ý khi booking:
-
-<div className="callout callout-warning">
-  <strong>📋 Quy tắc booking:</strong>
-  <ul>
-    <li><strong>Đủ tiền:</strong> Phải có đủ số dư trong tài khoản</li>
-    <li><strong>Xác nhận kỹ:</strong> Kiểm tra thông tin bill trước khi đồng ý</li>
-    <li><strong>Không cancel:</strong> Một khi đã xác nhận không thể hủy</li>
-    <li><strong>Tuân thủ quy định:</strong> Đọc rules của server</li>
-  </ul>
-</div>
-
 ## 🚨 Xử lý tình huống khẩn cấp
 
 ### Khi gặp vấn đề:
@@ -403,29 +380,6 @@ speak Chào mừng mọi người đến server!
    - Kiểm tra số dư tài khoản
    - Xem có đủ điều kiện không
    - Liên hệ supporter nếu cần
-
-## 💡 Tips sử dụng hiệu quả
-
-### Tiết kiệm tiền:
-
-- 🎁 **Tham gia events** để nhận quà miễn phí
-- 🎰 **Chơi Lucky Box** khi có tiền thừa  
-- 👥 **Mời bạn bè** tham gia server
-- ⭐ **Đánh giá cao** dịch vụ để nhận ưu đãi
-
-### Tương tác xã hội:
-
-- 💕 **Kết hôn** với người thương trong server
-- 🎁 **Tặng quà** cho bạn bè
-- 🏆 **Cạnh tranh** top rankings  
-- 🎪 **Tham gia** các hoạt động community
-
-### Bảo mật tài khoản:
-
-- 🔒 **Không share** thông tin tài khoản
-- 👀 **Kiểm tra** số dư thường xuyên
-- 📸 **Screenshot** giao dịch quan trọng
-- 🚨 **Báo ngay** nếu phát hiện bất thường
 
 ---
 

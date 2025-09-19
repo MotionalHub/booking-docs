@@ -60,21 +60,6 @@ tinhluong
 luong
 ```
 
-## 📊 Thông tin trong bảng lương
-
-### Dữ liệu hiển thị:
-
-```
-📋 BẢNG LƯƠNG PLAYER
-👤 Player: @your_name
-⭐ Tổng Star: 45 giờ
-💰 Lương cơ bản: 1,365,000 VNĐ
-🎁 Thưởng: +150,000 VNĐ  
-💸 Phạt: -50,000 VNĐ
-💎 Tổng lương: 1,465,000 VNĐ
-📅 Cập nhật: 16/07/2025 14:30
-```
-
 ### Cách tính lương:
 
 ```
@@ -102,10 +87,9 @@ Ví du:
 
 ### Star là gì?
 
-**Star** = Số giờ làm việc của player, được tính tự động khi:
-- ✅ Nhận bill booking từ khách
-- ✅ Hoàn thành dịch vụ
+**Star** = Số giờ làm việc của player:
 - ✅ Admin cộng thêm (thưởng hoặc điều chỉnh)
+- ✅ Mặc định số star là số giờ player đã nhận bill
 
 ### Cách tích lũy Star:
 
@@ -123,11 +107,11 @@ Ví du:
 
 3. **Điều chỉnh (cộng/trừ):**
    ```bash
-   # Cộng star cho performance tốt
+   # Cộng star cho player
    as @player 1
 
    # Trừ star cho vi phạm (admin thực hiện)
-   ss @player 0.5
+   ss @player 2
    ```
 
 ## 📈 Theo dõi năng suất
@@ -159,53 +143,22 @@ Khi supporter tạo react profile cho khách chọn player:
 ```
 🎮 PLAYER PROFILES
 
-⭐ Player1 (@john) - 89 star
-⭐ Player2 (@jane) - 156 star  
-⭐ VIP-Player (@alice) - 203 star
-⭐ Newbie (@bob) - 12 star
+⭐ Moonu
+⭐ ABC XYZ
+⭐ Hình ảnh player
 
 React 🎮 để tham gia booking!
 ```
 
-### Time management:
+### Xem bảng lương:
 
 ```bash
-# Check lương thường xuyên
+# Gửi bảng lương vào DMs của bạn
 luong
 
-# Monitor performance trends
-tinhluong  # Weekly trong team meeting
-
-# Plan working hours
-# Giờ đêm = higher rate
-# Weekend = more demand
+# Gửi bảng lương của bạn vào kênh hiện tại
+tinhluong 
 ```
-
-### Career progression:
-
-```
-Newbie Player (0-50 star)
-    ↓
-Regular Player (50-150 star)
-    ↓  
-Experienced Player (150-300 star)
-    ↓
-VIP Player (300+ star)
-    ↓
-Team Leader / Trainer
-```
-
-## 🚫 Những điều cần tránh
-
-### Hành vi có thể bị phạt:
-
-- ❌ **No-show**: Không xuất hiện khi đã nhận booking
-- ❌ **Late consistently**: Thường xuyên muộn giờ
-- ❌ **Poor attitude**: Thái độ không professional
-- ❌ **Rule violation**: Vi phạm quy định server
-- ❌ **Conflict**: Tranh cãi với khách hoặc team
-- ❌ **Inactive**: Không hoạt động dài ngày
-
 ### Hậu quả phạt:
 
 ```bash

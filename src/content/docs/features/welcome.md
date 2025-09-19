@@ -72,7 +72,7 @@ Xin chào {user}! Chúng tôi rất vui khi bạn tham gia cộng đồng.
 • Hệ thống shop đa dạng
 • Events và giveaway thường xuyên
 
-Color: #00ff00 (green)
+Color: 0x00ff00 (green)
 Thumbnail: Server logo
 Footer: Chúc bạn có trải nghiệm tuyệt vời! 💖
 ```

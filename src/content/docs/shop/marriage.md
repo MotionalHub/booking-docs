@@ -139,7 +139,7 @@ marry divorce
 
 ## 💝 Tính năng đặc biệt
 
-### Romantic Commands:
+### Lệnh yêu thương:
 
 ```bash
 # Gửi lời yêu thương ngẫu nhiên
@@ -148,10 +148,10 @@ marry luv
 
 # Đặt trạng thái mập mờ  
 marry vague
-# Chuyển từ "Married" thành "It's complicated"
+# Chuyển từ Độc thân thành Mập mờ 
 ```
 
-## 🎨 Tùy chỉnh visual
+## 🎨 Tùy chỉnh profile
 
 ### Thiết lập ảnh couple:
 
@@ -168,10 +168,8 @@ marry thumbnail [attach file]
 
 ### Tips tạo profile đẹp:
 
-- **Thumbnail**: Ảnh avatar couple (nhỏ, vuông)
-- **Image**: Ảnh landscape romantic (to, ngang)
-- **Chất lượng**: HD, không blur
-- **Theme**: Consistent color scheme
+- **Thumbnail**: Ảnh nhỏ (nhỏ, vuông)
+- **Image**: Ảnh to (to, ngang)
 
 ## 🛡️ Quy tắc Marriage
 
@@ -182,7 +180,6 @@ marry thumbnail [attach file]
   <ul>
     <li>Mỗi người chỉ được kết hôn với 1 người</li>
     <li>Phải có nhẫn để cầu hôn</li>
-    <li>Nhẫn sẽ bị tiêu thụ khi cầu hôn thành công</li>
-    <li>Divorce sẽ xóa tất cả dữ liệu couple</li>
+    <li>Chia tay sẽ xóa tất cả dữ liệu couple</li>
   </ul>
 </div>

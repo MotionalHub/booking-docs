@@ -63,7 +63,7 @@ Create Channel: #🎫-create-ticket (trong category Support)
 
 ## 🎮 Ví dụ về Ticket
 
-### Embed styling cho tickets:
+### Thiết kế Embed cho tickets:
 
 ```bash
 # Welcome message khi tạo ticket

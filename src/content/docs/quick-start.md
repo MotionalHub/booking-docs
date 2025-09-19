@@ -13,7 +13,7 @@ Trước khi bắt đầu, hãy đảm bảo bạn có:
 
 ```
 - [ ] Quyền **Administrator** trên Discord Server
-- [ ] Bot đã được invite vào server với đủ permissions
+- [ ] Bot đã được invite vào server với quyền **Administrator**
 - [ ] Hiểu biết cơ bản về Discord và cách tạo role/channel
 ```
 
@@ -22,20 +22,15 @@ Trước khi bắt đầu, hãy đảm bảo bạn có:
 ### Tạo các role quan trọng:
 
 ```
-@Owner          - Màu đỏ (#dc2626)    - Quyền Administrator
-@Administrator  - Màu cam (#ea580c)   - Quyền Manage Server  
-@Supporter      - Màu tím (#7c3aed)   - Quyền Manage Messages
-@Cash           - Màu vàng (#ca8a04)  - Không cần quyền đặc biệt
-@Player         - Màu xanh lá (#059669) - Không cần quyền đặc biệt
-```
-
-### Gán role cho bot:
-```
-/settings bot-role @Supporter
+@Owner          - Màu đỏ (#dc2626)    - Quyền Owner
+@Administrator  - Màu cam (#ea580c)   - Quyền Admin
+@Supporter      - Màu tím (#7c3aed)   - Quyền Support
+@Cash           - Màu vàng (#ca8a04)  - Quyền quản lý cash
+@Player         - Màu xanh lá (#059669) - Quyền xem bảng lương
 ```
 
 <div className="callout callout-info">
-  <strong>💡 Mẹo:</strong> Đặt role của bot cao hơn các role khác để bot có thể quản lý được members.
+  <strong>💡 Mẹo:</strong> Có thể thiết lập nhiều role cho một quyền của bot.
 </div>
 
 ## 📋 Bước 2: Cấu hình kênh Log
@@ -46,8 +41,8 @@ Trước khi bắt đầu, hãy đảm bảo bạn có:
 #💰-log-cash      - Ghi lại giao dịch tiền
 #📋-log-bills     - Ghi lại tất cả bill
 #⭐-log-commands  - Ghi lại commands sử dụng
-#🛍️-log-shop      - Ghi lại hoạt động shop
-#🔄-log-reset     - Ghi lại reset doanh thu
+#🛍️-log-shop      - Ghi lại hoạt động trong shop
+#🔄-log-reset     - Ghi lại reset bill server
 ```
 
 ### Thiết lập nhanh tất cả log:
@@ -85,17 +80,15 @@ Bot sẽ yêu cầu bạn nhập:
 prefix !
 ```
 
-### Tùy chỉnh màu embed:
-```
-color embed #7c3aed
-```
+<div className="callout callout-info">
+  <strong>💡 Lưu ý:</strong> Prefix mặc định là ping bot, (@BookingBot)
+</div>
 
 ## 🎫 Bước 4: Thiết lập Ticket System
 
 ### Tạo kênh ticket:
 ```
 #🎫-ticket-create  - Nơi khách tạo ticket
-#📂-ticket-logs    - Log các ticket activity
 ```
 
 ### Tạo embed ticket:
@@ -187,17 +180,17 @@ color:0x00ff00
 Chúc mừng! Bạn đã thiết lập xong Discord Booking Bot. Bây giờ hệ thống đã sẵn sàng để:
 
 - ✅ Quản lý booking và bill
-- ✅ Tính lương tự động cho player  
+- ✅ Tính tổng lương cho player  
 - ✅ Hỗ trợ khách hàng qua ticket
 - ✅ Vận hành shop và lucky box
-- ✅ Ghi log tất cả hoạt động
+- ✅ Ghi lại tất cả hoạt động
 
 ## 📚 Bước tiếp theo
 
 1. **[Tìm hiểu commands Administrator](/commands/administrator/)** - Quản lý hàng ngày
 2. **[Cấu hình Welcome nâng cao](/features/welcome/)** - Tùy chỉnh chào mừng
 3. **[Thiết lập Anti-Raid](/features/anti-raid/)** - Bảo vệ server
-4. **[Hướng dẫn cho Player](/user/player/)** - Chia sẻ cho team
+4. **[Hướng dẫn cho Player](/user/player/)** - Các lệnh cho player
 
 ---
 

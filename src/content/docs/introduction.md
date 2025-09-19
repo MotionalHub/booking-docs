@@ -3,21 +3,20 @@ title: Giới thiệu hệ thống Discord Booking Bot
 description: Tổng quan về hệ thống bot booking Discord với đầy đủ tính năng quản lý chuyên nghiệp
 ---
 
-# 🎮 Giới thiệu Discord Booking Bot
+# 🎮 Discord Booking Bot
 
 Hệ thống **Discord Booking Bot** là một giải pháp toàn diện được thiết kế dành riêng cho các server booking trên Discord. Bot cung cấp đầy đủ công cụ để quản lý khách hàng, player, supporter và toàn bộ quy trình vận hành từ booking, tính lương đến thanh toán và cửa hàng.
 
 ## 🌟 Tại sao chọn Discord Booking Bot?
 
 ### 🎯 **Quản lý thông minh**
-- **Tự động hóa hoàn toàn**: Từ việc tạo bill, tính lương cho player đến quản lý thanh toán
 - **Phân quyền chi tiết**: Hệ thống role được thiết kế chuyên biệt cho từng vị trí
 - **Logging toàn diện**: Ghi lại mọi hoạt động quan trọng của server
 
 ### 💰 **Hệ thống tài chính mạnh mẽ**
 - **Cash ảo tích hợp**: Quản lý tiền của khách một cách an toàn và minh bạch
-- **Bill tự động**: Tạo và hoàn bill booking/donate chỉ với vài click
-- **Báo cáo doanh thu**: Thống kê chi tiết theo ngày, tháng và từng loại dịch vụ
+- **Bill tự động**: Tạo và hoàn bill booking/donate cho player
+- **Báo cáo doanh thu**: Thống kê chi tiết và từng loại dịch vụ
 
 ### 🛍️ **Cửa hàng đa tính năng**
 - **Shop tích hợp**: Bán items, quà tặng với hệ thống inventory hoàn chỉnh

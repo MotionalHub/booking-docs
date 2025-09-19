@@ -31,24 +31,23 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 - **Responsibilities**: Cài đặt hệ thống, cấu hình tổng thể
 
 #### <span className="badge badge-admin">Administrator</span> - Quản trị viên  
-- **Permissions Discord**: Manage Server, Manage Roles
 - **Quyền Bot**: Quản lý cash, time, lương player
-- **Responsibilities**: Vận hành hàng ngày, quản lý tài chính
+- **Trách nhiệm**: Vận hành hàng ngày, quản lý tài chính
 
 #### <span className="badge badge-supporter">Supporter</span> - Nhân viên hỗ trợ
 - **Permissions Discord**: Manage Messages, Kick Members
 - **Quyền Bot**: Tạo bill, booking, moderation
-- **Responsibilities**: Hỗ trợ khách hàng, xử lý booking
+- **Trách nhiệm**: Hỗ trợ khách hàng, xử lý booking
 
 #### <span className="badge badge-cash">Cash</span> - Quản lý tài chính
 - **Permissions Discord**: Không cần đặc biệt
 - **Quyền Bot**: Chỉ nạp/trừ tiền cho khách
-- **Responsibilities**: Xử lý giao dịch cash
+- **Trách nhiệm**: Xử lý giao dịch cash
 
 #### <span className="badge badge-player">Player</span> - Người chơi
 - **Permissions Discord**: Không cần đặc biệt  
 - **Quyền Bot**: Xem lương, profile cá nhân
-- **Responsibilities**: Nhận bill, cung cấp dịch vụ
+- **Trách nhiệm**: Nhận bill, cung cấp dịch vụ
 
 ## 🏗️ Thiết lập kênh (Channel Setup)
 
@@ -71,16 +70,13 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 # Main channels
 🎫 SUPPORT
 ├── 🎫-ticket-create  # Tạo ticket
-└── 📂-ticket-logs    # Ticket logs
 
 💼 BOOKING  
 ├── 📋-booking-area   # Khu vực booking
 ├── ⭐-player-react   # Player react profile
-└── 💰-payment-info   # Thông tin thanh toán
 
 🛍️ SHOP
 ├── 🛒-shop-area      # Mua sắm
-└── 🎁-inventory      # Kho đồ
 ```
 
 ### Lệnh thiết lập nhanh:
@@ -118,7 +114,7 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 | **Phí donate** | Phí cho bill donate theo % | `5` (server nhận 5%) |
 
 <div className="callout callout-info">
-  <strong>📝 Lưu ý:</strong> Giá hiển thị sẽ thay đổi ngay lập tức, nhưng các bill đã tạo vẫn giữ giá cũ.
+  <strong>📝 Lưu ý:</strong> Giá hiển thị sẽ thay đổi ngay lập tức, nhưng các bill đã tạo sẽ thay đổi thành giá mới thiết lập. Reset bill trước khi thay đổi nếu bạn không muốn ảnh hưởng đến lương.
 </div>
 
 ### Tính năng hỗ trợ nhập nhanh:
@@ -200,7 +196,7 @@ Bot sẽ tạo reaction tại kênh đã cấu hình, khi player react sẽ hi�
 # Thiết lập mặc định
 /antiraid setup
 
-# Tùy chỉnh chi tiết
+# Tùy chỉnh nâng cao
 /antiraid member rate:5 second:10 enable:true
 /antiraid message rate:10 second:5 enable:true  
 /antiraid advanced punishment_type type:quarantine
@@ -211,7 +207,7 @@ Bot sẽ tạo reaction tại kênh đã cấu hình, khi player react sẽ hi�
 
 ```bash
 # Tạo role quarantine cho anti-raid
-@Quarantine - Không có quyền gì, chỉ xem 1 kênh
+@Quarantine - Cách ly
 
 # Set kênh thông báo anti-raid
 /antiraid advanced notify_channel #🔒-security-log

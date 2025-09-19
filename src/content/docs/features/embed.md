@@ -129,26 +129,9 @@ Description: Nội dung chính (tối đa 4096 ký tự)
 # Max size: 8MB per image
 ```
 
-#### **Fields**
-```bash
-# Fields: Sections bổ sung với name + value
-# Inline: Hiển thị cạnh nhau (max 3 per row)
-# Non-inline: Hiển thị full width
-
-Field 1:
-Name: "💰 Giá"
-Value: "50,000 VNĐ"  
-Inline: true
-
-Field 2:
-Name: "⏰ Thời gian"
-Value: "2 giờ"
-Inline: true
-```
-
 ## 🔧 Chuẩn đoán vấn đề
 
-### Common issues:
+### Vấn đề thường gặp:
 
 **Q: Embed không hiển thị?**
 A: Kiểm tra:

@@ -185,6 +185,11 @@ color:0x00ff00
     </tr>
     <tr>
       <td>3</td>
+      <td><code>/ticket edit-button</code></td>
+      <td>Chỉnh sửa lại các nút (nếu cần)</td>
+    </tr>
+    <tr>
+      <td>4</td>
       <td><code>/ticket clear-button</code></td>
       <td>Xóa tất cả nút (nếu cần)</td>
     </tr>
@@ -205,13 +210,14 @@ color:0x7c3aed
 
 # Bước 3: Thêm nút
 /ticket add-button
-# Bot sẽ hỏi:
-# - label: 📞 Cần Hỗ Trợ
+# Các trường:
+# - label: Cần Hỗ Trợ
 # - emoji: 🎫
 # - embed: ticket-support
 
 # Bước 4: Thêm nút khác (nếu cần)
 /ticket add-button
+# Các trường:
 # - label: 💰 Nạp Tiền  
 # - emoji: 💰
 # - embed: ticket-support

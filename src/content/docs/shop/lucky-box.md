@@ -64,61 +64,12 @@ Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà
 # Thiết lập tỷ lệ cho từng tier
 ```
 
-## 🎲 Hệ thống tỷ lệ (Rate System)
-
-### Tier phần thưởng chuẩn:
-
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Tier</th>
-      <th>Tỷ lệ</th>
-      <th>Phần thưởng gợi ý</th>
-      <th>Mô tả</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>🟢 Common</td>
-      <td>70%</td>
-      <td>10k-50k cash</td>
-      <td>Phần thưởng cơ bản</td>
-    </tr>
-    <tr>
-      <td>🔵 Rare</td>
-      <td>25%</td>
-      <td>Items thường, 100k cash</td>
-      <td>Phần thưởng tốt</td>
-    </tr>
-    <tr>
-      <td>🟣 Epic</td>
-      <td>4%</td>
-      <td>Items quý, 500k cash</td>
-      <td>Phần thưởng hiếm</td>
-    </tr>
-    <tr>
-      <td>🟡 Legendary</td>
-      <td>1%</td>
-      <td>Jackpot 1M+, items độc</td>
-      <td>Phần thưởng cực hiếm</td>
-    </tr>
-  </tbody>
-</table>
-
 ### Cấu hình rate chi tiết:
 
 ```bash
 /box rate
-# Bot hiển thị interface:
 
-🎁 Lucky Box Rate Configuration
-Current rates:
-- Common (70%): 10,000-50,000 cash
-- Rare (25%): Premium items + 100k cash  
-- Epic (4%): Rare items + 500k cash
-- Legendary (1%): Jackpot + exclusive items
-
-Select tier to modify: [Common] [Rare] [Epic] [Legendary]
+Điều chỉnh tỉ lệ rơi ra các sản phẩm trong cửa hàng
 ```
 
 ## 🎮 Lệnh người dùng
@@ -160,7 +111,7 @@ inventory      # Xem có bao nhiêu box
 # Bước 3: Mở box
 unbox
 # 🎁 Opening Lucky Box...
-# ✨ Congratulations! You got: 💎 VIP Item (Epic tier)
+# ✨ Congratulations! You got: 💎 VIP Item
 
 # Phần thưởng tự động vào inventory
 ```
@@ -169,7 +120,7 @@ unbox
 
 #### Cân bằng tỉ lệ:
 ```bash
-# Monitor qua log-box channel
+# Kiểm tra thông qua log-box channel
 - Kiểm tra tỷ lệ thực tế vs cấu hình
 - Điều chỉnh rate nếu cần
 - Đảm bảo server không bị lỗ
