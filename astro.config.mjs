@@ -16,7 +16,7 @@ export default defineConfig({
 				'./src/styles/components.css',
 			],
 			social: [
-				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/your-server' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/eaYmJD98mY' },
 			],
 			head: [
 				{
@@ -30,6 +30,13 @@ export default defineConfig({
 					tag: 'script',
 					attrs: {
 						src: '/table-enhancements.js',
+						defer: true
+					}
+				},
+				{
+					tag: 'script',
+					attrs: {
+						src: '/smart-table-overflow.js',
 						defer: true
 					}
 				}
