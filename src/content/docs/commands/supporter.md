@@ -51,7 +51,7 @@ description: Tài liệu đầy đủ các lệnh dành cho Supporter - quản l
   </tbody>
 </table>
 
-### Quản lý Bills nâng cao
+### Reset Bills
 
 <table className="command-table">
   <thead>
@@ -88,21 +88,20 @@ description: Tài liệu đầy đủ các lệnh dành cho Supporter - quản l
 
 # Bước 2: Tạo bill booking
 /book
-# Bot sẽ hỏi:
+# Chọn các option:
 # - Khách hàng: @customer
 # - Player: @player
 # - Số giờ: 3
-# - Ghi chú: Game rank
 
 # Bước 3: Khách xác nhận bill
-# Bot tự động trừ tiền và cộng giờ star
+# Bot tự động trừ tiền nếu thanh toán bằng cọc / lương
 
 # Nếu cần hoàn bill:
 /hoanbill
 # Thao tác tương tự /book
 ```
 
-## 📊 Thống kê và Tracking
+## 📊 Thống kê và Theo dõi
 
 ### Lệnh thống kê
 
@@ -157,7 +156,7 @@ description: Tài liệu đầy đủ các lệnh dành cho Supporter - quản l
   </tbody>
 </table>
 
-## 🎯 React Profile System - Chi tiết
+## 🎯 React Profile
 
 ### Cách hoạt động:
 
@@ -214,7 +213,7 @@ ar set Newbie-Player | @bob
 /book
 ```
 
-## 🛠️ Autoresponder Management
+## 🛠️ Autoresponder
 
 ### Quản lý Autoresponder
 
@@ -348,7 +347,7 @@ ar iurl promo | https://example.com/promo-banner.png
   </ul>
 </div>
 
-## 🎉 Giveaway Management
+## 🎉 Giveaway
 
 ### Lệnh Giveaway
 
