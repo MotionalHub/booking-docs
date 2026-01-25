@@ -82,49 +82,14 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
   <strong>💡 Thông tin:</strong> Bot sử dụng hệ thống phân quyền thông minh với các role chuyên biệt cho từng chức năng.
 </div>
 
-<div className="table-wrapper">
-  <table className="permission-table">
-    <thead>
-      <tr>
-        <th>Role</th>
-        <th>Mô tả</th>
-        <th>Quyền hạn chính</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Role"><span className="badge badge-owner">Owner</span></td>
-        <td data-label="Mô tả">Chủ sở hữu server</td>
-        <td data-label="Quyền hạn chính">Toàn quyền cấu hình, setup hệ thống</td>
-      </tr>
-      <tr>
-        <td data-label="Role"><span className="badge badge-admin">Administrator</span></td>
-        <td data-label="Mô tả">Quản trị viên</td>
-        <td data-label="Quyền hạn chính">Quản lý cash, time, lương player</td>
-      </tr>
-      <tr>
-        <td data-label="Role"><span className="badge badge-supporter">Supporter</span></td>
-        <td data-label="Mô tả">Nhân viên hỗ trợ</td>
-        <td data-label="Quyền hạn chính">Tạo bill, quản lý booking, moderation</td>
-      </tr>
-      <tr>
-        <td data-label="Role"><span className="badge badge-cash">Cash</span></td>
-        <td data-label="Mô tả">Quản lý tài chính</td>
-        <td data-label="Quyền hạn chính">Nạp/trừ tiền, quản lý giao dịch</td>
-      </tr>
-      <tr>
-        <td data-label="Role"><span className="badge badge-player">Player</span></td>
-        <td data-label="Mô tả">Người chơi</td>
-        <td data-label="Quyền hạn chính">Xem lương, nhận bill, profile</td>
-      </tr>
-      <tr>
-        <td data-label="Role"><span className="badge badge-customer">Customer</span></td>
-        <td data-label="Mô tả">Khách hàng</td>
-        <td data-label="Quyền hạn chính">Booking, mua sắm, sử dụng dịch vụ</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+| Role | Mô tả | Quyền hạn chính |
+|------|-------|-----------------|
+| <span className="badge badge-owner">Owner</span> | Chủ sở hữu server | Toàn quyền cấu hình, setup hệ thống |
+| <span className="badge badge-admin">Administrator</span> | Quản trị viên | Quản lý cash, time, lương player |
+| <span className="badge badge-supporter">Supporter</span> | Nhân viên hỗ trợ | Tạo bill, quản lý booking, moderation |
+| <span className="badge badge-cash">Cash</span> | Quản lý tài chính | Nạp/trừ tiền, quản lý giao dịch |
+| <span className="badge badge-player">Player</span> | Người chơi | Xem lương, nhận bill, profile |
+| <span className="badge badge-customer">Customer</span> | Khách hàng | Booking, mua sắm, sử dụng dịch vụ |
 
 ## 🎯 Bắt đầu nhanh
 
