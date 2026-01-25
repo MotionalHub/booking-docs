@@ -98,6 +98,20 @@ export default defineConfig({
 						{ label: 'Troubleshooting', slug: 'troubleshooting' },
 					],
 				},
+				{
+					label: 'Điều khoản dịch vụ',
+					items: [
+						{ label: 'Điều khoản và sử dụng', slug: 'tos' },
+						{ label: 'Trách nhiệm bên mua', slug: 'tos/buyer-responsibility' },
+						{ label: 'Cung cấp dịch vụ', slug: 'tos/provider-rights' },
+						{ label: 'Chính sách bên bán', slug: 'tos/seller-policy' },
+						{ label: 'Chính sách gia hạn', slug: 'tos/renewal-policy' },
+						{ label: 'Hỗ trợ và Setup', slug: 'tos/support-policy' },
+						{ label: 'Vận hành kỹ thuật', slug: 'tos/technical-operations' },
+						{ label: 'Quy định sử dụng', slug: 'tos/usage-policy' },
+						{ label: 'Xử lí vi phạm', slug: 'tos/violation-handling' },
+					],
+				}
 			],
 		}),
 	],
