@@ -121,8 +121,6 @@ Description: Nội dung chính (tối đa 4096 ký tự)
 # Max size: 8MB per image
 ```
 
-## Chuẩn đoán vấn đề
-
 ### Vấn đề thường gặp:
 
 **Q: Embed không hiển thị?**

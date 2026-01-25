@@ -2,7 +2,7 @@
 title: Owner Commands
 description: Tài liệu đầy đủ các lệnh dành cho Owner - thiết lập hệ thống, cấu hình server và quản lý toàn diện
 ---
-<span className="badge badge-owner">Owner</span> là role có quyền cao nhất trong hệ thống, chịu trách nhiệm thiết lập và cấu hình toàn bộ bot cho server.
+> <span className="badge badge-owner">Owner</span> là role có quyền cao nhất trong hệ thống, chịu trách nhiệm thiết lập và cấu hình toàn bộ bot cho server.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> của bot để sử dụng các lệnh trong mục này.

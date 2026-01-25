@@ -8,10 +8,7 @@ description: Hệ thống ticket hỗ trợ khách hàng chuyên nghiệp với 
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> để thiết lập Ticket System.
 </div>
 
-## Thiết lập Ticket System
-
-### Cấu hình cơ bản
-
+## Thiết lập Ticket
 <table className="command-table">
   <thead>
     <tr>
@@ -39,7 +36,7 @@ description: Hệ thống ticket hỗ trợ khách hàng chuyên nghiệp với 
   </tbody>
 </table>
 
-### Quy trình setup Ticket:
+### Quy trình thiết lập Ticket:
 
 ```bash
 # Bước 1: Tạo category cho tickets
@@ -58,10 +55,7 @@ Create Channel: #create-ticket (trong category Support)
 /ticket settings
 ```
 
-## Ví dụ ticket
-
-### Thiết kế Embed cho tickets:
-
+## Ví dụ thiết lập Ticket
 ```bash
 # Welcome message khi tạo ticket
 Title: Ticket được tạo thành công!
@@ -75,8 +69,6 @@ Staff sẽ hỗ trợ bạn sớm nhất có thể.
 Vui lòng mô tả chi tiết vấn đề để chúng tôi hỗ trợ hiệu quả!
 
 ```
-
-## Chuẩn đoán vấn dề
 
 ### Vấn đề thường gặp
 

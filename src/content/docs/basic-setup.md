@@ -47,9 +47,6 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 - **Mô tả**: Nhận bill, cung cấp dịch vụ
 
 ## Thiết lập kênh Log & Welcome
-
-### Kênh log bắt buộc:
-
 ```bash
 # Tạo category cho log
 Booking Logs
@@ -95,9 +92,6 @@ SHOP
 ```
 
 ## Cấu hình giá và lương
-
-### Thiết lập server config:
-
 ```bash
 /settings server
 ```

@@ -75,8 +75,6 @@ Hệ thống hỗ trợ nhiều cách nhập số tiền để thuận tiện:
 
 ## Tracking và Logging
 
-### Hệ thống log tự động
-
 Mọi giao dịch cash đều được ghi log tự động tại kênh đã cấu hình:
 
 ```bash
@@ -98,8 +96,6 @@ Staff đã thêm 300.000 VNĐ cho Khách
 
 ## Thống kê và báo cáo
 
-### Lệnh xem số dư:
-
 ```bash
 # Khách tự xem số dư (không cần role Cash)
 cash
@@ -112,9 +108,6 @@ topno
 ```
 
 ## Tips và thủ thuật
-
-### Sử dụng hiệu quả:
-
 1. **Nhập nhanh với alias:**
    ```bash
    # Thay vì gõ đầy đủ
