@@ -1,17 +1,14 @@
 ---
-title: Shop Management
+title: Quản lí Shop
 description: Hướng dẫn quản lý hệ thống Shop - tạo sản phẩm, quản lý inventory và Lucky Box
 ---
-
-# 🛍️ Shop Management
-
-Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng với các sản phẩm đa dạng, Lucky Box và hệ thống inventory hoàn chỉnh.
+> Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng với các sản phẩm đa dạng, Lucky Box và hệ thống inventory hoàn chỉnh.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> hoặc <code>administrator</code> để quản lý shop.
 </div>
 
-## 🏪 Quản lý sản phẩm
+## Quản lý sản phẩm
 
 ### Thêm sản phẩm mới
 
@@ -58,10 +55,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
 # ID = 1: 💎 VIP Package - 500,000 VNĐ
 ```
 
-## 🎁 Lucky Box System
-
-### Quản lý Lucky Box
-
+## Lucky Box
 <table className="command-table">
   <thead>
     <tr>
@@ -92,12 +86,6 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
 ### Cấu hình Lucky Box:
 
 ```bash
-# Tạo Lucky Box item
-/item add lb
-# Tên: Lucky Box
-# Emoji: 🎁
-# Giá: 50000
-
 # Cấu hình tỷ lệ thưởng
 /box rate
 # Common (70%): 10k-50k cash
@@ -106,7 +94,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
 # Legendary (1%): Jackpot 1M cash
 ```
 
-## 📦 Quản lý Inventory
+## Quản lý Inventory
 
 ### Lệnh inventory cơ bản
 
@@ -142,7 +130,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
   </tbody>
 </table>
 
-## 💍 Marriage Ring System
+## Marriage Ring
 
 ### Thiết lập nhẫn cưới:
 
@@ -158,7 +146,7 @@ Hệ thống Shop tích hợp cho phép server tạo và quản lý cửa hàng 
 # Nhẫn này sẽ có thể sử dụng trong lệnh marry
 ```
 
-## 🎮 Lệnh khách hàng
+## Lệnh khách hàng
 
 ### Lệnh dành cho khách:
 
@@ -205,7 +193,7 @@ inventory
 # Hiển thị items sở hữu
 ```
 
-## ⚠️ Lưu ý quan trọng
+## Lưu ý quan trọng
 
 <div className="callout callout-warning">
   <strong>🔔 ID System:</strong>
@@ -226,16 +214,6 @@ inventory
   </ul>
 </div>
 
-## 📊 Thống kê Shop
-
-### Theo dõi hoạt động:
-
-- **Kiểm tra log mua bán**: Channel log-shop
-- **Top buyer**: Xem ai mua nhiều nhất
-- **Revenue tracking**: Theo dõi doanh thu từ shop
-- **Popular items**: Items bán chạy
-
-## 🆘 Troubleshooting
 
 ### Vấn đề thường gặp:
 

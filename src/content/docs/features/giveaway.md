@@ -2,16 +2,13 @@
 title: Giveaway System  
 description: Hệ thống tổ chức giveaway và events với quản lý entries, winners và phần thưởng
 ---
-
-# 🎉 Giveaway System
-
-Giveaway System cho phép tổ chức các cuộc thi, sự kiện tặng quà để tăng engagement và thu hút thành viên mới tham gia server.
+> Giveaway cho phép tổ chức các cuộc thi, sự kiện tặng quà để tăng engagement và thu hút thành viên mới tham gia server.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>supporter</code> để tạo và quản lý giveaway.
 </div>
 
-## 🎁 Tạo Giveaway
+## Tạo Giveaway
 
 ### Lệnh cơ bản
 

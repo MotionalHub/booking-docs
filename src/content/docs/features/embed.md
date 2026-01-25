@@ -2,16 +2,13 @@
 title: Embed Builder
 description: Hệ thống tạo và chỉnh sửa embed Discord đẹp mắt với giao diện trực quan
 ---
-
-# 📝 Embed Builder
-
-Embed Builder cho phép tạo và chỉnh sửa các embed Discord đẹp mắt, chuyên nghiệp để sử dụng cho announcements, welcome messages, và các thông báo quan trọng.
+> Embed Builder cho phép tạo và chỉnh sửa các embed Discord đẹp mắt, chuyên nghiệp để sử dụng cho announcements, welcome messages, và các thông báo quan trọng.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> để sử dụng Embed Builder.
 </div>
 
-## 🎨 Tạo Embed mới
+## Tạo Embed mới
 
 ### Lệnh cơ bản
 
@@ -66,22 +63,17 @@ Embed Builder cho phép tạo và chỉnh sửa các embed Discord đẹp mắt,
 /embed test name:welcome-message
 ```
 
-## 🎨 Các thành phần của Embed
+## Các thành phần của Embed
 
 ### Cấu trúc Embed:
 
-```
+```bash
 ┌────────────────────────────────────┐
 │  [Author] [Author Icon]            │
-│  📝 Title               [Thumbnail]
+│  Title                 [Thumbnail] |
 │  ──────────────────────────────────│
 │  Description text here...          │
 │                                    │
-│  **Field 1**        **Field 2**    │
-│  Value 1            Value 2        │
-│                                    │
-│  **Field 3**                       │
-│  Value 3                           │
 │                                    │
 │  [Large Image]                     │
 │                                    │
@@ -129,7 +121,7 @@ Description: Nội dung chính (tối đa 4096 ký tự)
 # Max size: 8MB per image
 ```
 
-## 🔧 Chuẩn đoán vấn đề
+## Chuẩn đoán vấn đề
 
 ### Vấn đề thường gặp:
 

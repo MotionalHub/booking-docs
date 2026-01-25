@@ -1,17 +1,14 @@
 ---
-title: Marriage System
+title: Marriage
 description: Hệ thống kết hôn trong Discord với nhẫn cưới, profile và các tính năng romantic
 ---
-
-# 💕 Marriage System
-
-Hệ thống Marriage cho phép thành viên server kết hôn với nhau thông qua nhẫn cưới, tạo profile couple và tương tác romantic.
+> Hệ thống Marriage cho phép thành viên server kết hôn với nhau thông qua nhẫn cưới, tạo profile couple và tương tác romantic.
 
 <div className="callout callout-info">
   <strong>💍 Yêu cầu:</strong> Cần sở hữu nhẫn cưới (item có type=ring) để có thể cầu hôn.
 </div>
 
-## 💒 Lệnh Marriage
+## Lệnh Marriage
 
 ### Quản lý hôn nhân
 
@@ -71,7 +68,7 @@ Hệ thống Marriage cho phép thành viên server kết hôn với nhau thông
   </tbody>
 </table>
 
-## 🎨 Tùy chỉnh Profile
+## Tùy chỉnh Profile
 
 ### Chỉnh sửa giao diện
 
@@ -97,47 +94,7 @@ Hệ thống Marriage cho phép thành viên server kết hôn với nhau thông
   </tbody>
 </table>
 
-## 🏃‍♀️ Quy trình kết hôn
-
-### Bước 1: Chuẩn bị nhẫn cưới
-
-```bash
-# Admin tạo nhẫn trong shop
-/item add
-# Tên: Diamond Ring
-# Type: ring  ← Bắt buộc
-# Giá: 1000000
-# Emoji: 💍
-
-# Khách mua nhẫn
-buy 1  # ID của nhẫn
-```
-
-### Bước 2: Cầu hôn
-
-```bash
-# Người cầu hôn thực hiện
-marry @crush 1  # @người_muốn_cưới + ID_nhẫn
-
-# Bot sẽ gửi thông báo cho người được cầu hôn
-# Họ có thể accept hoặc decline
-```
-
-### Bước 3: Quản lý hôn nhân
-
-```bash
-# Xem profile couple
-marry profile
-
-# Gửi lời yêu thương
-marry luv
-# Bot sẽ mention partner với tin nhắn romantic
-
-# Nếu muốn kết thúc
-marry divorce
-```
-
-## 💝 Tính năng đặc biệt
+## Tương tác
 
 ### Lệnh yêu thương:
 
@@ -151,7 +108,7 @@ marry vague
 # Chuyển từ Độc thân thành Mập mờ 
 ```
 
-## 🎨 Tùy chỉnh profile
+## Tùy chỉnh profile
 
 ### Thiết lập ảnh couple:
 
@@ -163,23 +120,10 @@ marry thumbnail https://i.imgur.com/couple1.jpg
 marry image https://i.imgur.com/couple2.jpg
 
 # Upload file trực tiếp
-marry thumbnail [attach file]
+marry thumbnail [attach-file]
 ```
 
 ### Tips tạo profile đẹp:
 
 - **Thumbnail**: Ảnh nhỏ (nhỏ, vuông)
 - **Image**: Ảnh to (to, ngang)
-
-## 🛡️ Quy tắc Marriage
-
-### Giới hạn hệ thống:
-
-<div className="callout callout-warning">
-  <strong>⚠️ Lưu ý:</strong>
-  <ul>
-    <li>Mỗi người chỉ được kết hôn với 1 người</li>
-    <li>Phải có nhẫn để cầu hôn</li>
-    <li>Chia tay sẽ xóa tất cả dữ liệu couple</li>
-  </ul>
-</div>

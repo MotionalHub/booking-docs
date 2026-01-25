@@ -2,8 +2,6 @@
 title: Điều khoản sử dụng
 description: Chính sách người bán & người mua Bot - Quy định và trách nhiệm khi sử dụng dịch vụ
 ---
-## Tổng quan
-
 Chào mừng bạn đến với tài liệu điều khoản sử dụng dịch vụ Bot. Tài liệu này quy định rõ ràng các quyền, trách nhiệm và nghĩa vụ của cả bên mua và bên bán.
 
 :::caution[Quan trọng]

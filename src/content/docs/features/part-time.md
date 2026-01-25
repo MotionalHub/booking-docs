@@ -2,10 +2,7 @@
 title: Part-time System
 description: Hệ thống part-time dành cho khách hàng đặc biệt với chính sách riêng về lương và quyền truy cập
 ---
-
-# ⏰ Part-time System
-
-Part-time System là tính năng đặc biệt cho phép quản lý một nhóm khách hàng với chính sách riêng về lương, giờ làm, và quyền truy cập khác với hệ thống thường.
+> Part-time là tính năng đặc biệt cho phép quản lý một nhóm khách hàng với chính sách riêng về lương, giờ làm, và quyền truy cập khác với hệ thống thường.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>supporter</code> để quản lý danh sách part-time.
@@ -15,7 +12,7 @@ Part-time System là tính năng đặc biệt cho phép quản lý một nhóm 
   <strong>📋 Lưu ý:</strong> Tính năng này chỉ khả dụng ở một số server và cần được cấu hình riêng.
 </div>
 
-## 🎯 Mục đích Part-time System
+## Mục đích Part-time System
 
 ### Dành cho ai?
 
@@ -28,12 +25,12 @@ Part-time System thường được sử dụng cho:
 
 ### Lợi ích của Part-time:
 
-- 🕐 **Flexible hours**: Giờ làm linh hoạt
-- 💰 **Different rates**: Mức lương/giá khác biệt  
-- 🎯 **Special access**: Quyền truy cập đặc biệt
-- 📊 **Separate tracking**: Theo dõi riêng biệt
+- **Flexible hours**: Giờ làm linh hoạt
+- **Different rates**: Mức lương/giá khác biệt  
+- **Special access**: Quyền truy cập đặc biệt
+- **Separate tracking**: Theo dõi riêng biệt
 
-## 🛠️ Quản lý Part-time
+## Quản lý Part-time
 
 ### Lệnh cơ bản
 
@@ -59,19 +56,7 @@ Part-time System thường được sử dụng cho:
   </tbody>
 </table>
 
-### Quy trình quản lý:
-
-```bash
-# Thêm user vào part-time
-/parttime add @john
-# ✅ John đã được thêm vào danh sách part-time
-
-# Xóa user khỏi part-time  
-/parttime remove @john
-# ✅ John đã được xóa khỏi danh sách part-time
-```
-
-## 🔧 Cấu hình hệ thống
+## Cấu hình hệ thống
 
 ### Setup Part-time System:
 

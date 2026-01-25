@@ -3,7 +3,7 @@ title: Chính sách gia hạn Bot
 description: Quy định về gia hạn, hết hạn và quá hạn sử dụng dịch vụ bot
 ---
 
-## Timeline gia hạn
+### Timeline gia hạn
 
 | Giai đoạn | Thời gian | Trạng thái | Hành động |
 |-----------|-----------|------------|-----------|
@@ -14,22 +14,19 @@ description: Quy định về gia hạn, hết hạn và quá hạn sử dụng 
 
 ---
 
-## Khi bot đến hạn
-
-### Chuyển sang trạng thái Waiting
-
+### Khi bot đến hạn
 :::caution[Bot tạm ngừng]
 Ngay khi **đến ngày hết hạn** mà chưa gia hạn:
-:::
 
 - Bot chuyển sang trạng thái `Waiting`
 - Bot **tạm ngừng hoạt động**
 - Không phản hồi lệnh
 - Dữ liệu vẫn được lưu trữ an toàn
+:::
 
-### Thông báo nhắc nhở
+#### Thông báo nhắc nhở
 
-```
+```bash
 Bot của bạn đã hết hạn vào ngày [Ngày/Tháng/Năm]!
 ```
 
@@ -39,10 +36,7 @@ Khi sử dụng lệnh, bạn sẽ nhận được thông báo trước **1 ngà
 
 ---
 
-## Sau 15 ngày quá hạn
-
-### Cảnh báo nghiêm trọng
-
+### Sau 15 ngày quá hạn
 :::danger[Nguy cơ mất dữ liệu]
 Nếu sau **15 ngày** kể từ ngày hết hạn mà vẫn chưa gia hạn:
 :::
@@ -51,30 +45,27 @@ Nếu sau **15 ngày** kể từ ngày hết hạn mà vẫn chưa gia hạn:
 - Dữ liệu có thể bị xóa sau 90 ngày
 - Có thể phải trả phí khôi phục
 
-## Cách gia hạn Bot
-
-### Phương thức gia hạn
-
+### Cách gia hạn Bot
 :::tip[Gia hạn dễ dàng]
 Sử dụng lệnh **`renew`** để gia hạn bot
 :::
 
-#### Thanh toán
+##### Thanh toán
 
 - Quét mã QR để thanh toán
 - Đợi khoảng 30 giây bot sẽ cập nhật thanh toán
 - Hoàn tất thanh toán
 
-### Sau khi gia hạn thành công
+##### Sau khi gia hạn thành công
 
 :::tip[Bot hoạt động trở lại]
 Sau khi gia hạn bằng lệnh `renew`:
-:::
 
 - Bot chuyển về trạng thái `Active`
 - Bot **hoạt động lại bình thường**
 - Toàn bộ dữ liệu được giữ nguyên
 - Ngày hết hạn được cập nhật
+:::
 
 ---
 
@@ -86,9 +77,9 @@ Sau khi gia hạn bằng lệnh `renew`:
 :::
 
 ---
-## Câu hỏi thường gặp
+### Câu hỏi thường gặp
 
-### Bot hết hạn có mất dữ liệu không?
+#### Bot hết hạn có mất dữ liệu không?
 
 :::note[Trong vòng 30 ngày]
 - **0-15 ngày**: Dữ liệu an toàn, gia hạn bình thường
@@ -96,13 +87,13 @@ Sau khi gia hạn bằng lệnh `renew`:
 - **Sau 90 ngày**: Có thể bị xóa dữ liệu vĩnh viễn
 :::
 
-### Có thể gia hạn trước không?
+#### Có thể gia hạn trước không?
 
 :::tip[Gia hạn sớm]
 Có thể gia hạn **bất kỳ lúc nào**, thời gian sẽ cộng dồn vào thời hạn hiện tại.
 :::
 
-### Gia hạn rồi có hoàn tiền không?
+#### Gia hạn rồi có hoàn tiền không?
 
 :::caution[Không hoàn tiền]
 Không hoàn lại tiền đã gia hạn, trừ trường hợp lỗi từ hệ thống.

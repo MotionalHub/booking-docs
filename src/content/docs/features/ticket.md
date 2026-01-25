@@ -2,16 +2,13 @@
 title: Ticket System
 description: Hệ thống ticket hỗ trợ khách hàng chuyên nghiệp với tạo ticket, quản lý và theo dõi
 ---
-
-# 🎫 Ticket System
-
-Ticket System cung cấp hệ thống hỗ trợ khách hàng chuyên nghiệp, cho phép tạo kênh riêng cho từng yêu cầu hỗ trợ và quản lý hiệu quả.
+> Ticket là hệ thống cung cấp hệ thống hỗ trợ khách hàng chuyên nghiệp, cho phép tạo kênh riêng cho từng yêu cầu hỗ trợ và quản lý hiệu quả.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> để thiết lập Ticket System.
 </div>
 
-## ⚙️ Thiết lập Ticket System
+## Thiết lập Ticket System
 
 ### Cấu hình cơ bản
 
@@ -46,10 +43,10 @@ Ticket System cung cấp hệ thống hỗ trợ khách hàng chuyên nghiệp, 
 
 ```bash
 # Bước 1: Tạo category cho tickets
-Create Category: "🎫 SUPPORT TICKETS"
+Create Category: "Ticket"
 
 # Bước 2: Tạo kênh ticket creation  
-Create Channel: #🎫-create-ticket (trong category Support)
+Create Channel: #create-ticket (trong category Support)
 
 # Bước 3: Setup ticket system
 /ticket create
@@ -61,13 +58,13 @@ Create Channel: #🎫-create-ticket (trong category Support)
 /ticket settings
 ```
 
-## 🎮 Ví dụ về Ticket
+## Ví dụ ticket
 
 ### Thiết kế Embed cho tickets:
 
 ```bash
 # Welcome message khi tạo ticket
-Title: 🎫 Ticket được tạo thành công!
+Title: Ticket được tạo thành công!
 Color: 0x00ff00
 Description: 
 Xin chào {user}! 
@@ -79,7 +76,7 @@ Vui lòng mô tả chi tiết vấn đề để chúng tôi hỗ trợ hiệu qu
 
 ```
 
-## ⚠️ Chuẩn đoán vấn dề
+## Chuẩn đoán vấn dề
 
 ### Vấn đề thường gặp
 

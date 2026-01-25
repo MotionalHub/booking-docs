@@ -2,53 +2,16 @@
 title: Moderation Commands
 description: Tài liệu các lệnh kiểm duyệt và quản lý thành viên cho Administrator và Supporter
 ---
-
-# 🛡️ Moderation Commands
-
-Hệ thống moderation giúp duy trì trật tự và an toàn trong server Discord thông qua các công cụ kiểm soát thành viên.
-
-## 👑 Administrator Moderation
+> Hệ thống moderation giúp duy trì trật tự và an toàn trong server Discord thông qua các công cụ kiểm soát thành viên.
 
 <span className="badge badge-admin">Administrator</span> có quyền sử dụng tất cả lệnh moderation mạnh mẽ.
 
-### Lệnh cấm và hạn chế
-
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Quyền</th>
-      <th>Mô tả</th>
-      <th>Cú pháp</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>ban</code></td>
-      <td>Administrator</td>
-      <td>Cấm vĩnh viễn người dùng khỏi server</td>
-      <td><code>ban @user [lý do]</code></td>
-    </tr>
-    <tr>
-      <td><code>unban</code></td>
-      <td>Administrator</td>
-      <td>Hủy cấm (unban) người dùng</td>
-      <td><code>unban @user</code></td>
-    </tr>
-    <tr>
-      <td><code>mute</code></td>
-      <td>Administrator</td>
-      <td>Tắt tiếng (mute) người dùng</td>
-      <td><code>mute @user [thời gian] [lý do]</code></td>
-    </tr>
-    <tr>
-      <td><code>unmute</code></td>
-      <td>Administrator</td>
-      <td>Bật tiếng (unmute) người dùng</td>
-      <td><code>unmute @user</code></td>
-    </tr>
-  </tbody>
-</table>
+| Lệnh | Quyền | Mô tả | Cú pháp |
+|------|-------|-------|---------|
+| `ban` | Administrator | Cấm vĩnh viễn người dùng khỏi server | `ban @user [lý do]` |
+| `unban` | Administrator | Hủy cấm (unban) người dùng | `unban @user` |
+| `mute` | Administrator | Tắt tiếng (mute) người dùng | `mute @user [thời gian] [lý do]` |
+| `unmute` | Administrator | Bật tiếng (unmute) người dùng | `unmute @user` |
 
 ### Ví dụ sử dụng Administrator:
 
@@ -72,7 +35,7 @@ mute @problematic_user
 unmute @user
 ```
 
-## 🎧 Supporter Moderation
+## Supporter
 
 <span className="badge badge-supporter">Supporter</span> có quyền moderation cơ bản cho công việc hỗ trợ hàng ngày.
 
@@ -123,7 +86,7 @@ purge 50
 purge 100
 ```
 
-## ⏰ Thời gian cho lệnh Mute
+## Thời gian cho lệnh Mute
 
 ### Định dạng thời gian hỗ trợ:
 
@@ -152,7 +115,7 @@ mute @user 2w Extended punishment
 mute @user Permanent restriction
 ```
 
-## 🔧 Tính năng nâng cao
+## Tính năng nâng cao
 
 ### Purge với filter:
 

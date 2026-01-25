@@ -3,80 +3,78 @@ title: Cấu hình cơ bản
 description: Hướng dẫn chi tiết về cấu hình ban đầu và các thiết lập quan trọng cho Discord Booking Bot
 ---
 
-# ⚙️ Cấu hình cơ bản
-
 Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord Booking Bot từ đầu, bao gồm tất cả các thiết lập cần thiết để hệ thống hoạt động hiệu quả.
 
-## 🔐 Hệ thống phân quyền
+## Hệ thống phân quyền
 
 ### Cấu trúc Role
 
 Để bot hoạt động tối ưu, bạn cần thiết lập hệ thống role theo thứ tự ưu tiên:
 
-```
-1. Bot Role (cao nhất)
-2. @Owner  
-3. @Administrator
-4. @Supporter  
-5. @Cash
-6. @Player
-7. @everyone (khách)
-```
+| Thứ tự | Role | Mô tả |
+|--------|------|-------|
+| 1 | @Owner | Chủ sở hữu |
+| 2 | @Administrator | Quản trị viên |
+| 3 | @Supporter | Nhân viên hỗ trợ |
+| 4 | @Cash | Quản lý tài chính |
+| 5 | @Player | Người chơi |
+| 6 | @everyone | Khách |
 
 ### Chi tiết từng role:
 
-#### <span className="badge badge-owner">Owner</span> - Chủ sở hữu
-- **Permissions Discord**: Administrator
+#### <span className="badge badge-owner">Owner</span> Chủ sở hữu
+- **Quyền Role**: Administrator
 - **Quyền Bot**: Toàn quyền setup và cấu hình
-- **Responsibilities**: Cài đặt hệ thống, cấu hình tổng thể
+- **Mô tả**: Cài đặt hệ thống, cấu hình tổng thể
 
-#### <span className="badge badge-admin">Administrator</span> - Quản trị viên  
+#### <span className="badge badge-admin">Administrator</span> Quản trị viên  
 - **Quyền Bot**: Quản lý cash, time, lương player
-- **Trách nhiệm**: Vận hành hàng ngày, quản lý tài chính
+- **Mô tả**: Vận hành hàng ngày, quản lý tài chính
 
-#### <span className="badge badge-supporter">Supporter</span> - Nhân viên hỗ trợ
-- **Permissions Discord**: Manage Messages, Kick Members
+#### <span className="badge badge-supporter">Supporter</span> Nhân viên hỗ trợ
+- **Quyền Role**: Manage Messages, Kick Members
 - **Quyền Bot**: Tạo bill, booking, moderation
-- **Trách nhiệm**: Hỗ trợ khách hàng, xử lý booking
+- **Mô tả**: Hỗ trợ khách hàng, xử lý booking
 
-#### <span className="badge badge-cash">Cash</span> - Quản lý tài chính
-- **Permissions Discord**: Không cần đặc biệt
+#### <span className="badge badge-cash">Cash</span> Quản lý tài chính
+- **Quyền Role**: Không cần đặc biệt
 - **Quyền Bot**: Chỉ nạp/trừ tiền cho khách
-- **Trách nhiệm**: Xử lý giao dịch cash
+- **Mô tả**: Xử lý giao dịch cash
 
-#### <span className="badge badge-player">Player</span> - Người chơi
-- **Permissions Discord**: Không cần đặc biệt  
+#### <span className="badge badge-player">Player</span> Người chơi
+- **Quyền Role**: Không cần đặc biệt  
 - **Quyền Bot**: Xem lương, profile cá nhân
-- **Trách nhiệm**: Nhận bill, cung cấp dịch vụ
+- **Mô tả**: Nhận bill, cung cấp dịch vụ
 
-## 🏗️ Thiết lập kênh (Channel Setup)
+## Thiết lập kênh Log & Welcome
 
 ### Kênh log bắt buộc:
 
 ```bash
 # Tạo category cho log
-📊 BOT LOGS
-├── 💰-log-cash      # Giao dịch tiền
-├── 📋-log-bills     # Tất cả bill
-├── ⭐-log-commands  # Commands được sử dụng  
-├── 🛍️-log-shop      # Hoạt động shop
-├── 🔄-log-reset     # Reset doanh thu
-└── 👋-log-welcome   # Welcome messages
+Booking Logs
+├── log-cash      # Giao dịch tiền
+├── log-bills     # Tất cả bill
+├── log-commands  # Commands được sử dụng  
+├── log-shop      # Hoạt động shop
+├── log-reset     # Reset doanh thu
+└── log-welcome   # Welcome messages
 ```
 
 ### Kênh hoạt động chính:
 
 ```bash  
 # Main channels
-🎫 SUPPORT
-├── 🎫-ticket-create  # Tạo ticket
+SUPPORT
+├── ticket
 
-💼 BOOKING  
-├── 📋-booking-area   # Khu vực booking
-├── ⭐-player-react   # Player react profile
+BOOKING  
+├── player-nam
+├── player-nữ
+├── react-bill
 
-🛍️ SHOP
-├── 🛒-shop-area      # Mua sắm
+SHOP
+├── shop
 ```
 
 ### Lệnh thiết lập nhanh:
@@ -85,16 +83,18 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 # Thiết lập tất cả log cùng lúc
 /settings log-all
 
+# Thiết lập  welcome
+/settings log-welcome
+
 # Hoặc từng cái một
-/settings log-commands #⭐-log-commands
-/settings log-cash #💰-log-cash
-/settings log-bills #📋-log-bills  
-/settings log-shop #🛍️-log-shop
-/settings log-reset #🔄-log-reset
-/settings log-welcome #👋-log-welcome
+/settings log-commands
+/settings log-cash
+/settings log-bills
+/settings log-shop
+/settings log-reset
 ```
 
-## 💰 Cấu hình giá và lương
+## Cấu hình giá và lương
 
 ### Thiết lập server config:
 
@@ -126,7 +126,7 @@ Trang này cung cấp hướng dẫn chi tiết về việc cấu hình Discord 
 500k = 500,000 VNĐ
 ```
 
-## 🎨 Tùy chỉnh giao diện
+## Tùy chỉnh giao diện
 
 ### Thay đổi prefix:
 
@@ -161,22 +161,19 @@ emoji error ❌
 emoji cash 💰
 ```
 
-## 🎫 Thiết lập React Profile System
+## Thiết lập React Profile
 
 ### Bước 1: Cấu hình kênh react
 
 ```bash
-/settings react_channel #⭐-player-react
+/settings react_channel #react-bill
 ```
 
 ### Bước 2: Gán profile cho player
 
 ```bash
 # Cú pháp: ar set <tên-profile> | <@user>
-ar set Player1 | @john
-ar set Player2 | @jane  
-ar set VIP-Player | @alice
-ar set Newbie | @bob
+ar set Player1 | @moonu
 ```
 
 ### Bước 3: Sử dụng react profile
@@ -188,7 +185,7 @@ Trong ticket của khách:
 
 Bot sẽ tạo reaction tại kênh đã cấu hình, khi player react sẽ hiện danh sách.
 
-## 🛡️ Thiết lập bảo mật cơ bản
+## Thiết lập bảo mật cơ bản
 
 ### Anti-Raid setup nhanh:
 
@@ -210,10 +207,10 @@ Bot sẽ tạo reaction tại kênh đã cấu hình, khi player react sẽ hi�
 @Quarantine - Cách ly
 
 # Set kênh thông báo anti-raid
-/antiraid advanced notify_channel #🔒-security-log
+/antiraid advanced notify_channel #log-antiraid
 ```
 
-## 📋 Checklist hoàn thành
+## Checklist hoàn thành
 
 Sau khi cấu hình xong, hãy kiểm tra:
 
@@ -227,7 +224,7 @@ Sau khi cấu hình xong, hãy kiểm tra:
 - [ ] ✅ Welcome system hoạt động
 - [ ] ✅ Ticket system sẵn sàng
 
-## 🧪 Test hệ thống
+## Test hệ thống
 
 ### Test commands cơ bản:
 
@@ -236,16 +233,14 @@ Sau khi cấu hình xong, hãy kiểm tra:
 ac @testuser 50000
 sc @testuser 10000
 
-# Test player management  
+# Test lương player  
 as @testplayer 3
 al @testplayer 15000
 
 # Test booking
-/book
+/book khách:@moonu player:@Player1 số-giờ:1 thanh-toán:Bank
 
 # Test shop
-/item add name:"Test Item" price:1000 description:"Test" emoji:🧪
-shop
 buy 1
 ```
 
@@ -253,14 +248,10 @@ buy 1
   <strong>⚠️ Quan trọng:</strong> Luôn test với tài khoản phụ trước khi áp dụng cho server thực tế!
 </div>
 
-## 📞 Hỗ trợ kỹ thuật
+## Hỗ trợ kỹ thuật
 
 Nếu gặp vấn đề trong quá trình cấu hình:
 
 1. **[Xem Troubleshooting](/troubleshooting/)** - Các lỗi thường gặp
 2. **[FAQ](/faq/)** - Câu hỏi thường gặp  
 3. **Liên hệ support** - Để được hỗ trợ trực tiếp
-
----
-
-**🎉 Chúc mừng!** Bạn đã hoàn thành cấu hình cơ bản. Hệ thống giờ đã sẵn sàng để vận hành!

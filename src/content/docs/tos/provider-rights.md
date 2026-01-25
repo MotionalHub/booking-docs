@@ -2,9 +2,7 @@
 title: Quyền của nhà cung cấp
 description: Quyền hạn và giới hạn trách nhiệm của bên cung cấp dịch vụ bot
 ---
-## Bên cung cấp có quyền
-
-### 1. Từ chối hỗ trợ
+#### 1. Từ chối hỗ trợ
 
 :::note[Quyền từ chối]
 Có quyền từ chối hỗ trợ kỹ thuật nếu phát hiện vi phạm chính sách
@@ -20,11 +18,8 @@ Có quyền từ chối hỗ trợ kỹ thuật nếu phát hiện vi phạm ch�
 | **Lợi dụng lỗ hỏng** | Ngừng mọi hỗ trợ |
 | **Hết hạn > 15 ngày** | Không hỗ trợ cho đến khi gia hạn |
 
----
-
-### 2. Tạm ngừng hoặc thu hồi bot
-
-:::warning[Quyền thu hồi]
+#### 2. Tạm ngừng hoặc thu hồi bot
+:::caution[Quyền thu hồi]
 Có quyền tạm ngừng hoặc thu hồi bot nếu cố tình lợi dụng lỗ hỏng
 :::
 
@@ -45,7 +40,7 @@ Có quyền tạm ngừng hoặc thu hồi bot nếu cố tình lợi dụng l�
 
 ---
 
-### 3. Không hoàn tiền
+#### 3. Không hoàn tiền
 
 :::danger[Chính sách không hoàn tiền]
 Không hoàn lại tiền đã thanh toán trong các trường hợp vi phạm nghiêm trọng
@@ -65,7 +60,7 @@ Nếu bot bị thu hồi do vi phạm, **toàn bộ chi phí đã thanh toán s�
 
 ---
 
-### 4. Cập nhật và thay đổi dịch vụ
+#### 4. Cập nhật và thay đổi dịch vụ
 
 :::note[Quyền điều chỉnh]
 Có quyền cập nhật, thay đổi tính năng và giá dịch vụ
@@ -87,7 +82,7 @@ Mọi thay đổi quan trọng sẽ được thông báo trước **ít nhất 7
 
 ## Bên cung cấp KHÔNG chịu trách nhiệm
 
-### 1. Hành vi vi phạm pháp luật
+#### 1. Hành vi vi phạm pháp luật
 
 :::danger[Miễn trừ trách nhiệm]
 KHÔNG chịu trách nhiệm pháp lý với các hành vi vi phạm của khách hàng
@@ -106,7 +101,7 @@ Bên mua **hoàn toàn chịu trách nhiệm** trước pháp luật về cách 
 
 ---
 
-### 2. Cờ bạc và cá độ
+#### 2. Cờ bạc và cá độ
 
 :::danger[Không liên quan]
 KHÔNG chịu bất kỳ trách nhiệm nào với hoạt động cờ bạc, cá độ
@@ -119,13 +114,13 @@ KHÔNG chịu bất kỳ trách nhiệm nào với hoạt động cờ bạc, c�
 - Người bán có thể hợp tác với cơ quan chức năng nếu cần
 - Quyền thu hồi bot ngay lập tức không hoàn tiền
 
-:::warning[Cảnh báo]
+:::caution[Cảnh báo]
 Cờ bạc là hành vi **vi phạm pháp luật nghiêm trọng**. Chúng tôi **kiên quyết từ chối** mọi hình thức sử dụng bot cho mục đích này.
 :::
 
 ---
 
-### 3. Tranh chấp nội bộ server
+#### 3. Tranh chấp nội bộ server
 
 :::note[Ngoài phạm vi]
 KHÔNG can thiệp vào tranh chấp nội bộ của server
@@ -147,7 +142,7 @@ Thiết lập **quy định nội bộ** rõ ràng và **đào tạo staff** đ�
 
 ---
 
-### 4. Thiệt hại do quản lý kém
+#### 4. Thiệt hại do quản lý kém
 
 :::caution[Trách nhiệm của khách hàng]
 KHÔNG chịu trách nhiệm về thiệt hại do quản lý server kém
@@ -163,7 +158,7 @@ KHÔNG chịu trách nhiệm về thiệt hại do quản lý server kém
 
 ---
 
-### 5. Lỗi do người dùng
+#### 5. Lỗi do người dùng
 
 :::note[Phân định rõ ràng]
 KHÔNG chịu trách nhiệm về lỗi do người dùng gây ra
@@ -183,7 +178,7 @@ KHÔNG chịu trách nhiệm về lỗi do người dùng gây ra
 
 ## Phân định trách nhiệm
 
-### Bên bán chịu trách nhiệm
+#### Bên bán chịu trách nhiệm
 
 | Phạm vi | Mô tả |
 |-----------|-------|
@@ -193,7 +188,7 @@ KHÔNG chịu trách nhiệm về lỗi do người dùng gây ra
 | **Hướng dẫn** | Cung cấp tài liệu đầy đủ |
 | **Bảo mật** | Bảo vệ hệ thống khỏi tấn công |
 
-### Bên mua chịu trách nhiệm
+#### Bên mua chịu trách nhiệm
 
 | Phạm vi | Mô tả |
 |-----------|-------|

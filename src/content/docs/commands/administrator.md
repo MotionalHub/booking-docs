@@ -2,16 +2,13 @@
 title: Administrator Commands
 description: Tài liệu đầy đủ các lệnh dành cho Administrator - quản lý cash, thời gian player và cấu hình server
 ---
-
-# 👑 Administrator Commands
-
-<span className="badge badge-admin">Administrator</span> là role có quyền cao thứ hai trong hệ thống, chịu trách nhiệm quản lý tài chính, thời gian player và một số cấu hình server quan trọng.
+  > <span className="badge badge-admin">Administrator</span> là role có quyền cao thứ hai trong hệ thống, chịu trách nhiệm quản lý tài chính, thời gian player và một số cấu hình server quan trọng.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có role <code>administrator</code> của bot để sử dụng các lệnh trong mục này.
 </div>
 
-## 💰 Quản lý tài chính khách hàng
+## Quản lý tài chính khách hàng
 
 ### Lệnh cơ bản
 
@@ -47,7 +44,7 @@ at @customer 5
 st @customer 2
 ```
 
-## ⭐ Quản lý Player
+## Quản lý Player
 
 ### Quản lý giờ Star
 
@@ -126,7 +123,7 @@ tl
 topstar
 ```
 
-## 🎨 Cấu hình server nâng cao
+## Cấu hình server nâng cao
 
 ### Thay đổi prefix
 
@@ -208,7 +205,7 @@ ac @customer 1m       # Nạp 1,000,000 VNĐ
 sl @player 25k        # Phạt 25,000 VNĐ
 ```
 
-## 📊 Báo cáo và thống kê
+## Báo cáo và thống kê
 
 ### Xem thống kê tổng quan:
 
@@ -234,7 +231,7 @@ luong
 - **Thưởng/Phạt**: Số tiền được cộng/trừ thêm
 - **Tổng lương**: Lương cơ bản + thưởng - phạt
 
-## 🔧 Commands hệ thống
+## Commands hệ thống
 
 ### Kiểm tra cấu hình:
 

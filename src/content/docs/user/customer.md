@@ -2,15 +2,9 @@
 title: Hướng dẫn Khách hàng
 description: Tài liệu đầy đủ dành cho khách hàng sử dụng Discord Booking Bot - từ booking cơ bản đến mua sắm và tương tác
 ---
+> Chào mừng bạn đến với hệ thống Discord Booking Bot! Trang này sẽ hướng dẫn bạn cách sử dụng tất cả tính năng dành cho khách hàng.
 
-# 🎮 Hướng dẫn Khách hàng
-
-Chào mừng bạn đến với hệ thống Discord Booking Bot! Trang này sẽ hướng dẫn bạn cách sử dụng tất cả tính năng dành cho khách hàng.
-
-## 💰 Quản lý tài chính cá nhân
-
-### Kiểm tra số dư
-
+## Quản lý tài chính cá nhân
 <table className="command-table">
   <thead>
     <tr>
@@ -39,27 +33,15 @@ Chào mừng bạn đến với hệ thống Discord Booking Bot! Trang này s�
 # Xem số dư của bạn
 cash
 
-# Chuyển 50k cho bạn
-give @friend 50k
-
-# Chuyển số tiền chính xác
-give @friend 75000
+# Chuyển 50.000 cho @moonu
+give @moonu 50k
 ```
 
 <div className="callout callout-info">
   <strong>💡 Mẹo:</strong> Bạn có thể dùng định dạng <code>k</code> (nghìn) và <code>m</code> (triệu) để nhập nhanh. Ví dụ: <code>50k = 50,000 VNĐ</code>
 </div>
 
-### Nạp tiền vào tài khoản
-
-Để nạp tiền, bạn cần:
-
-1. **Chuyển khoản** theo thông tin server cung cấp
-2. **Chụp ảnh** bill chuyển khoản  
-3. **Tạo ticket** hoặc liên hệ staff có role <span className="badge badge-cash">Cash</span>
-4. **Đợi xác nhận** và staff sẽ nạp tiền vào tài khoản
-
-## 📊 Xem thống kê và ranking
+## Xem thống kê và top
 
 <table className="command-table">
   <thead>
@@ -88,10 +70,7 @@ give @friend 75000
   </tbody>
 </table>
 
-## 🛍️ Mua sắm tại Shop
-
-### Xem và mua sản phẩm
-
+## Mua sắm tại Shop
 <table className="command-table">
   <thead>
     <tr>
@@ -156,7 +135,7 @@ buy 1
 inventory
 
 # Tặng đồ ID 2 cho bạn
-gift @friend 2
+gift @moonu 2
 
 # Mở Lucky Box (nếu có)
 unbox
@@ -171,10 +150,7 @@ unbox
   </ul>
 </div>
 
-## 💕 Hệ thống Marriage (Kết hôn)
-
-### Các lệnh Marriage
-
+## Hệ thống Marriage
 <table className="command-table">
   <thead>
     <tr>
@@ -266,7 +242,7 @@ unbox
   </ul>
 </div>
 
-## 🎮 Lệnh tiện ích hữu dụng
+## Lệnh tiện ích hữu dụng
 
 ### Tính toán và tiện ích
 
@@ -345,42 +321,6 @@ avatar @crush
 speak Chào mừng mọi người đến server!
 ```
 
-## 🎫 Sử dụng Ticket System
-
-### Tạo ticket hỗ trợ:
-
-1. **Vào kênh ticket** (thường có tên #ticket hoặc #support)
-2. **Click nút tạo ticket** 
-3. **Mô tả vấn đề** cần hỗ trợ
-4. **Đợi staff** phản hồi
-
-### Các trường hợp nên tạo ticket:
-
-- ✅ Cần nạp tiền vào tài khoản
-- ✅ Gặp lỗi khi sử dụng bot  
-- ✅ Khiếu nại về dịch vụ
-- ✅ Đề xuất tính năng mới
-- ✅ Báo cáo vi phạm của thành viên khác
-
-## 🚨 Xử lý tình huống khẩn cấp
-
-### Khi gặp vấn đề:
-
-1. **Lỗi bot không phản hồi:**
-   - Kiểm tra prefix có đúng không
-   - Thử lại sau vài phút
-   - Báo admin nếu lỗi kéo dài
-
-2. **Mất tiền không rõ lý do:**
-   - Kiểm tra lịch sử giao dịch
-   - Tạo ticket báo cáo ngay
-   - Cung cấp screenshot nếu có
-
-3. **Không thể mua/sử dụng tính năng:**
-   - Kiểm tra số dư tài khoản
-   - Xem có đủ điều kiện không
-   - Liên hệ supporter nếu cần
-
 ---
 
-**🎉 Chúc bạn có trải nghiệm tuyệt vời!** Nếu cần hỗ trợ, đừng ngần ngại tạo ticket hoặc liên hệ staff. Chúng tôi luôn sẵn sàng giúp đỡ!
+**Chúc bạn có trải nghiệm tuyệt vời!** Nếu cần hỗ trợ, đừng ngần ngại tạo ticket hoặc liên hệ staff. Chúng tôi luôn sẵn sàng giúp đỡ!

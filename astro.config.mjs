@@ -85,7 +85,7 @@ export default defineConfig({
 				{
 					label: 'Hệ thống Shop',
 					items: [
-						{ label: 'Quản lý Shop', slug: 'shop/management' },
+						{ label: 'Quản lý Shop', slug: 'shop/shop' },
 						{ label: 'Marriage System', slug: 'shop/marriage' },
 						{ label: 'Lucky Box', slug: 'shop/lucky-box' },
 					],

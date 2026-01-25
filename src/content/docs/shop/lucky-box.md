@@ -1,18 +1,17 @@
 ---
-title: Lucky Box System
+title: Lucky Box
 description: Hệ thống hộp quà may mắn với tỷ lệ thưởng có thể tùy chỉnh và quản lý phần thưởng
 ---
 
-# 🎁 Lucky Box System
-
-Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà để nhận phần thưởng ngẫu nhiên với các tỷ lệ có thể tùy chỉnh.
+### Định nghĩa
+> Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà để nhận phần thưởng ngẫu nhiên với các tỷ lệ có thể tùy chỉnh.
 
 <div className="callout callout-info">
   <strong>🎲 Cơ chế:</strong> Lucky Box hoạt động theo hệ thống tỷ lệ (rate) với các tier khác nhau từ Common đến Legendary.
 </div>
 
 
-## ⚙️ Quản lý Lucky Box (Admin)
+## Quản lý Lucky Box
 
 ### Thiết lập Lucky Box cơ bản
 
@@ -72,7 +71,7 @@ Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà
 Điều chỉnh tỉ lệ rơi ra các sản phẩm trong cửa hàng
 ```
 
-## 🎮 Lệnh người dùng
+## Lệnh người dùng
 
 ### Sử dụng Lucky Box
 
@@ -98,29 +97,9 @@ Lucky Box là hệ thống hộp quà may mắn cho phép khách hàng mở quà
   </tbody>
 </table>
 
-### Quy trình khách hàng:
-
-```bash
-# Bước 1: Mua Lucky Box
-shop           # Xem shop
-buy 5          # Mua Lucky Box (ID 5)
-
-# Bước 2: Kiểm tra inventory  
-inventory      # Xem có bao nhiêu box
-
-# Bước 3: Mở box
-unbox
-# 🎁 Opening Lucky Box...
-# ✨ Congratulations! You got: 💎 VIP Item
-
-# Phần thưởng tự động vào inventory
-```
-
-## 📊 Thống kê và phân tích
-
 #### Cân bằng tỉ lệ:
 ```bash
-# Kiểm tra thông qua log-box channel
+- Kiểm tra thông qua log-box channel
 - Kiểm tra tỷ lệ thực tế vs cấu hình
 - Điều chỉnh rate nếu cần
 - Đảm bảo server không bị lỗ

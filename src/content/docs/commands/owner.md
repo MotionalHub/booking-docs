@@ -2,16 +2,13 @@
 title: Owner Commands
 description: Tài liệu đầy đủ các lệnh dành cho Owner - thiết lập hệ thống, cấu hình server và quản lý toàn diện
 ---
-
-# 👑 Owner Commands
-
 <span className="badge badge-owner">Owner</span> là role có quyền cao nhất trong hệ thống, chịu trách nhiệm thiết lập và cấu hình toàn bộ bot cho server.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> của bot để sử dụng các lệnh trong mục này.
 </div>
 
-## ⚙️ Setting Server - Cấu hình hệ thống
+## Setting Server - Cấu hình hệ thống
 
 ### Thiết lập kênh Log
 
@@ -93,14 +90,15 @@ description: Tài liệu đầy đủ các lệnh dành cho Owner - thiết lậ
 /settings log-all
 
 # Hoặc từng cái một
-/settings log-commands #💰-log-commands
-/settings log-cash #💰-log-cash
-/settings log-bills #📋-log-bills
-/settings log-shop #🛍️-log-shop
-/settings log-reset #🔄-log-reset
+/settings log-commands #log-commands
+/settings log-cash #log-cash
+/settings log-bills #log-bills
+/settings log-shop #log-shop
+/settings log-reset #log-reset
 
 # Cấu hình giá và lương
 /settings server
+
 # Bot sẽ hỏi từng thông số:
 # - Giá book ngày: 25k
 # - Lương player ngày: 22k
@@ -114,7 +112,7 @@ description: Tài liệu đầy đủ các lệnh dành cho Owner - thiết lậ
   <strong>📝 Lưu ý:</strong> <code>server</code> và <code>luong</code> chỉ thay đổi hiển thị; chi phí thực tế tính theo giá tại thời điểm sử dụng.
 </div>
 
-## 👋 Welcome System
+## Welcome
 
 ### Thiết lập hệ thống chào mừng
 
@@ -150,17 +148,17 @@ description: Tài liệu đầy đủ các lệnh dành cho Owner - thiết lậ
 
 ```bash
 # 1. Cấu hình kênh welcome
-/settings log-welcome #👋-welcome
+/settings log-welcome #main-cat
 
 # 2. Tạo embed welcome
-/embed create name:welcome-msg
+/embed create name:welcome
 title:Chào mừng {user_display}!
 description:Cảm ơn bạn đã tham gia {server_name}!\n\nHãy đọc rules và bắt đầu trải nghiệm!
 thumbnail:{user_avatar}
 color:0x00ff00
 ```
 
-## 🎫 Ticket System
+## Ticket
 
 ### Tạo hệ thống ticket
 
@@ -201,35 +199,33 @@ color:0x00ff00
 ```bash
 # Bước 1: Tạo embed cho ticket
 /embed create name:ticket-support
-title:🎫 Hỗ trợ khách hàng
+title:Hỗ trợ khách hàng
 description:Bấm nút bên dưới để tạo ticket và được hỗ trợ nhanh chóng!
 color:0x7c3aed
 
 # Bước 2: Tạo tin nhắn ticket
-/ticket create #🎫-ticket-area
+/ticket create #ticket
 
 # Bước 3: Thêm nút
 /ticket add-button
 # Các trường:
-# - label: Cần Hỗ Trợ
-# - emoji: 🎫
-# - embed: ticket-support
+# - label:Booking
+# - embed: ticbooking
 
 # Bước 4: Thêm nút khác (nếu cần)
 /ticket add-button
 # Các trường:
-# - label: 💰 Nạp Tiền  
-# - emoji: 💰
-# - embed: ticket-support
+# - label:Support
+# - embed: ticsupport
 ```
 
 ### Các tham số cho add-button:
 
 - **label:** Tên hiển thị trên nút
 - **emoji:** Biểu tượng emoji 
-- **embed:** Tên embed đã tạo trước đó
+- **embed:** Tên embed nếu custom nội dung trong ticket khi đã tạo
 
-## 📝 Embed Builder
+## Embed Builder
 
 ### Quản lý embed
 
@@ -299,7 +295,7 @@ color: 0xFF9900
 timestamp: true
 ```
 
-## 🛡️ Anti-Raid System [BETA]
+## Anti-Raid System [BETA]
 
 ### Cấu hình cơ bản
 
@@ -420,51 +416,9 @@ timestamp: true
 /antiraid advanced quarantine_role role:@Quarantine
 /antiraid advanced min_account_age days:7
 /antiraid whitelist_role role:@Supporter
-/antiraid advanced notify_channel channel:#🔒-security
+/antiraid advanced notify_channel channel:#log-antiraid
 /antiraid advanced ignore_bots enabled:true
 ```
-
-## 🔧 Đề xuất cho Owner
-
-### Quy trình setup server mới:
-
-1. **Thiết lập role**
-   ```
-   Bot Role (cao nhất)
-   @Owner
-   @Administrator  
-   @Supporter
-   @Cash
-   @Player
-   @everyone (khách)
-   ```
-
-2. **Cấu hình log channels**
-   ```bash
-   /settings log-all
-   ```
-
-3. **Setup giá và lương**
-   ```bash
-   /settings server
-   ```
-
-4. **Tạo welcome system**
-   ```bash
-   /settings log-welcome #welcome
-   /embed create name:welcome-msg
-   ```
-
-5. **Setup ticket support**
-   ```bash
-   /ticket create
-   /ticket add-button
-   ```
-
-6. **Cấu hình anti-raid**
-   ```bash
-   /antiraid setup
-   ```
 
 ### Security checklist:
 
@@ -477,15 +431,11 @@ timestamp: true
   <strong>⚠️ Quan trọng:</strong> Owner có toàn quyền trong hệ thống. Hãy cẩn thận khi thực hiện các thay đổi và luôn backup trước khi update lớn.
 </div>
 
-## 📞 Hỗ trợ Owner
+## Hỗ trợ Owner
 
 Nếu gặp khó khăn trong việc setup:
 
 1. **[Xem Quick Start](/quick-start/)** - Hướng dẫn setup 5 phút
 2. **[Basic Setup](/basic-setup/)** - Cấu hình chi tiết
 3. **[Troubleshooting](/troubleshooting/)** - Xử lý lỗi thường gặp
-4. **Liên hệ support team** - Để được hỗ trợ trực tiếp
-
----
-
-**🎉 Chúc mừng!** Với quyền Owner, bạn có thể tùy chỉnh bot theo nhu cầu server và tạo ra trải nghiệm tuyệt vời cho cộng đồng!
+4. **Liên hệ support** - Để được hỗ trợ trực tiếp

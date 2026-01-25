@@ -2,28 +2,24 @@
 title: Hỗ trợ & Setup Bot
 description: Chính sách hỗ trợ kỹ thuật và yêu cầu thiết lập bot
 ---
-## Quyền yêu cầu khi setup
-
 ### Quyền Administrator
 
 :::caution[Yêu cầu bắt buộc]
 Người mua cần cấp quyền **Administrator** cho bên bán để:
-:::
 
 - **Thêm bot vào server**
 - **Setup cấu hình ban đầu**
 - **Thiết lập các chức năng**
 - **Tạo role và channel cần thiết**
+:::
 
 ---
 
-## Khuyến nghị giữ quyền Administrator
+### Khuyến nghị giữ quyền Administrator
 
-:::tip[Khuyến nghị mạnh mẽ]
+:::tip[Khuyến nghị]
 **Nên giữ quyền Administrator** cho bên bán để đảm bảo hỗ trợ tốt nhất
 :::
-
-### Lý do nên giữ
 
 | Lợi ích | Mô tả |
 |---------|-------|
@@ -32,10 +28,9 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 | **Hỗ trợ hiệu quả** | Xử lý vấn đề ngay lập tức |
 | **Tránh conflict** | Không bị thiếu quyền khi thao tác |
 | **Tính năng đầy đủ** | Sử dụng 100% chức năng bot |
+---
 
-### So sánh
-
-| | Có Admin | Không Admin |
+| Thao tác | Có Admin | Không Admin |
 |-|----------|-------------|
 | Tốc độ fix lỗi | Ngay lập tức | Phải đợi cấp quyền |
 | Bảo trì | Tự động | Cần can thiệp thủ công |
@@ -44,9 +39,7 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 
 ---
 
-## Hỗ trợ kỹ thuật
-
-### Các loại hỗ trợ
+### Hỗ trợ kỹ thuật
 
 | Loại | Nội dung | Thời gian phản hồi |
 |------|----------|-------------------|
@@ -57,9 +50,7 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 
 ---
 
-## Điều kiện được hỗ trợ
-
-### Được hỗ trợ khi
+### Điều kiện được hỗ trợ
 
 - Bot còn hạn sử dụng
 - Không vi phạm điều khoản
@@ -76,9 +67,7 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 
 ---
 
-## Phạm vi hỗ trợ
-
-### Hỗ trợ
+### Phạm vi hỗ trợ
 
 - Sửa lỗi từ phía bot
 - Hướng dẫn sử dụng chức năng
@@ -96,9 +85,7 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 
 ---
 
-## Chuẩn bị trước khi liên hệ hỗ trợ
-
-### Thông tin cần có
+### Chuẩn bị trước khi liên hệ hỗ trợ
 
 ```markdown
 1. Mô tả vấn đề: [Chi tiết]
@@ -119,6 +106,6 @@ Người mua cần cấp quyền **Administrator** cho bên bán để:
 
 ---
 
-:::tip[Pro tip]
+:::tip[Tips]
 90% câu hỏi đã có sẵn trong tài liệu. Hãy tìm kiếm trước khi hỏi để nhận câu trả lời nhanh nhất!
 :::

@@ -2,10 +2,7 @@
 title: Anti-Raid System
 description: Hệ thống bảo vệ server khỏi raid và spam với các biện pháp phòng ngừa tự động
 ---
-
-# 🛡️ Anti-Raid System
-
-Anti-Raid System bảo vệ server khỏi các cuộc tấn công raid, spam và hành vi độc hại thông qua hệ thống giám sát và phản ứng tự động.
+> Anti-Raid bảo vệ server khỏi các cuộc tấn công raid, spam và hành vi độc hại thông qua hệ thống giám sát và phản ứng tự động.
 
 <div className="callout callout-warning">
   <strong>🔬 BETA:</strong> Tính năng đang trong giai đoạn thử nghiệm và có thể có thay đổi.
@@ -15,7 +12,7 @@ Anti-Raid System bảo vệ server khỏi các cuộc tấn công raid, spam và
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>owner</code> để cấu hình Anti-Raid System.
 </div>
 
-## ⚙️ Thiết lập Anti-Raid
+## Thiết lập Anti-Raid
 
 ### Lệnh cấu hình cơ bản
 

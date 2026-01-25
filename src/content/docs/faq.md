@@ -2,12 +2,9 @@
 title: FAQ - Câu hỏi thường gặp
 description: Tổng hợp các câu hỏi thường gặp về Discord Booking Bot và câu trả lời chi tiết
 ---
+> Tổng hợp tất tầng tật các câu hỏi được đặt nhiều nhất về Discord Booking Bot.
 
-# ❓ FAQ - Câu hỏi thường gặp
-
-Tổng hợp các câu hỏi được đặt nhiều nhất về Discord Booking Bot.
-
-## 🔰 Câu hỏi cơ bản
+## Câu hỏi cơ bản
 
 ### 1. Bot này hoạt động như thế nào?
 
@@ -39,7 +36,7 @@ Cách kiểm tra:
 
 **A:** Tùy thuộc vào chính sách của từng server. Một số server cho phép rút tiền, số khác thì không. Hãy đọc rules của server hoặc hỏi admin.
 
-## 💰 Về hệ thống tài chính
+## Về hệ thống tài chính
 
 ### 5. Tại sao số dư của tôi bị trừ?
 
@@ -70,7 +67,7 @@ Kiểm tra log giao dịch trong kênh cash-log của server.
   <strong>⚠️ Lưu ý:</strong> Luôn kiểm tra kỹ @ mention trước khi chuyển tiền!
 </div>
 
-## 🛍️ Về Shop và Items
+## Về Shop và Items
 
 ### 8. Lucky Box hoạt động như thế nào?
 
@@ -92,7 +89,7 @@ Tỷ lệ cụ thể do admin server cấu hình.
 
 **A:** Đa số items không có thời hạn, trừ một số items event đặc biệt. Thông tin chi tiết được ghi trong description của item.
 
-## 💕 Về Marriage System
+## Về Marriage
 
 ### 11. Làm sao để kết hôn?
 
@@ -110,7 +107,7 @@ Tỷ lệ cụ thể do admin server cấu hình.
 
 **A:** Có, nhẫn cưới sẽ biến mất khi ly hôn. Nếu muốn kết hôn lại, cần mua nhẫn mới.
 
-## 🎮 Về Player và Booking
+## Về Player và Booking
 
 ### 14. Giờ đêm và giờ ngày tính khác nhau không?
 
@@ -120,7 +117,7 @@ Tỷ lệ cụ thể do admin server cấu hình.
 
 Thời gian cụ thể do admin server cấu hình.
 
-## 🎫 Về Ticket và Support
+## Về Ticket và Support
 
 ### 17. Khi nào nên tạo ticket?
 
@@ -140,7 +137,7 @@ Thời gian cụ thể do admin server cấu hình.
 
 **A:** Chỉ staff mới có thể đóng/xóa ticket. User có thể yêu cầu đóng ticket nếu vấn đề đã được giải quyết.
 
-## 🛡️ Về bảo mật
+## Về bảo mật
 
 ### 19. Thông tin cá nhân có được bảo mật không?
 
@@ -162,7 +159,7 @@ Thời gian cụ thể do admin server cấu hình.
 
 Mọi hoạt động đều được ghi log. Hack bot là vi phạm nghiêm trọng và sẽ bị ban vĩnh viễn.
 
-## 🔧 Về kỹ thuật
+## Về kỹ thuật
 
 ### 21. Bot có hoạt động 24/7 không?
 
@@ -190,16 +187,11 @@ Thường tình trạng này tự khắc phục sau vài phút.
 - Discord web browser  
 - Discord desktop app
 
-## 💡 Tips và tricks
+## Tips và tricks
 
 ### 24. Có cách nào kiếm tiền nhanh không?
 
-**A:** Một số cách hợp pháp:
-- 🎯 Tham gia events server
-- 🎲 Chơi Lucky Box (có risk)
-- 💼 Trở thành Player (nếu đủ điều kiện)
-- 🎁 Nhận quà từ người khác
-- 🏆 Đạt top rankings để nhận thưởng
+**A:** Hong má
 
 ### 25. Lệnh nào hay dùng nhất?
 
@@ -228,4 +220,4 @@ Thường tình trạng này tự khắc phục sau vài phút.
   </ul>
 </div>
 
-**🚀 Happy Booking!** Chúc bạn có trải nghiệm tuyệt vời với Discord Booking Bot!
+**Happy!** Chúc bạn có trải nghiệm tuyệt vời với Discord Booking Bot!

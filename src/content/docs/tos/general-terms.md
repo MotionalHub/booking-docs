@@ -2,8 +2,6 @@
 title: Điều khoản chung
 description: Các quy định chung về cập nhật chính sách và điều khoản áp dụng
 ---
-### Quyền cập nhật
-
 :::note[Linh hoạt và kịp thời]
 Chính sách có thể được cập nhật hoặc điều chỉnh để phù hợp với hệ thống và pháp luật hiện hành.
 :::
@@ -64,7 +62,7 @@ Khách hàng có trách nhiệm **theo dõi** các kênh thông báo để cập
 
 ### Điều kiện từ chối
 
-:::warning[Quyền từ chối]
+:::caution[Quyền từ chối]
 Người bán có quyền từ chối cung cấp bot cho các server có dấu hiệu vi phạm hoặc mục đích không minh bạch.
 :::
 

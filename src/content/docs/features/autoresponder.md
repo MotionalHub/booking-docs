@@ -2,19 +2,13 @@
 title: Autoresponder System
 description: Hệ thống tự động trả lời tin nhắn theo từ khóa với khả năng tùy chỉnh linh hoạt
 ---
-
-# 🤖 Autoresponder System
-
-Autoresponder System cho phép bot tự động trả lời tin nhắn khi phát hiện từ khóa hoặc cụm từ cụ thể, giúp hỗ trợ khách hàng 24/7 và giảm tải cho staff.
+> Autoresponder System cho phép bot tự động trả lời tin nhắn khi phát hiện từ khóa hoặc cụm từ cụ thể, giúp hỗ trợ khách hàng 24/7 và giảm tải cho staff.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có quyền <code>supporter</code> để quản lý Autoresponder.
 </div>
 
-## 🛠️ Quản lý Autoresponder
-
-### Lệnh cơ bản
-
+## Quản lý Autoresponder
 <table className="command-table">
   <thead>
     <tr>

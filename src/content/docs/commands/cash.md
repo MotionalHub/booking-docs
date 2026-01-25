@@ -2,16 +2,13 @@
 title: Cash Management
 description: Hướng dẫn quản lý hệ thống cash cho Discord Booking Bot - nạp tiền, trừ tiền và giao dịch
 ---
-
-# 💰 Cash Management
-
-<span className="badge badge-cash">Cash</span> role được thiết kế chuyên biệt để quản lý hệ thống tiền ảo của server. Đây là role quan trọng cho việc nạp tiền, trừ tiền và xử lý các giao dịch tài chính.
+> <span className="badge badge-cash">Cash</span> role được thiết kế chuyên biệt để quản lý hệ thống tiền ảo của server. Đây là role quan trọng cho việc nạp tiền, trừ tiền và xử lý các giao dịch tài chính.
 
 <div className="callout callout-info">
   <strong>🔐 Yêu cầu:</strong> Cần có role <code>cash</code> của bot để sử dụng các lệnh trong mục này.
 </div>
 
-## 💳 Lệnh quản lý Cash
+## Lệnh quản lý Cash
 
 ### Lệnh cơ bản
 
@@ -53,7 +50,7 @@ ac @customer 1m
 ac @customer 150000
 ```
 
-## 💸 Hỗ trợ định dạng nhập nhanh
+## Hỗ trợ định dạng nhập nhanh
 
 Hệ thống hỗ trợ nhiều cách nhập số tiền để thuận tiện:
 
@@ -76,7 +73,7 @@ Hệ thống hỗ trợ nhiều cách nhập số tiền để thuận tiện:
   <strong>⚠️ Lưu ý:</strong> Tránh sử dụng dấu phẩy trong số tiền vì có thể gây lỗi. Ưu tiên dùng định dạng <code>k</code> và <code>m</code>.
 </div>
 
-## 📊 Tracking và Logging
+## Tracking và Logging
 
 ### Hệ thống log tự động
 
@@ -84,7 +81,7 @@ Mọi giao dịch cash đều được ghi log tự động tại kênh đã c�
 
 ```bash
 # Setup kênh log cash (Owner/Admin)
-/settings log-cash #💰-log-cash
+/settings log-cash #log-cash
 ```
 
 **Thông tin được ghi log:**
@@ -99,7 +96,7 @@ Mọi giao dịch cash đều được ghi log tự động tại kênh đã c�
 Staff đã thêm 300.000 VNĐ cho Khách
 ```
 
-## 📈 Thống kê và báo cáo
+## Thống kê và báo cáo
 
 ### Lệnh xem số dư:
 
@@ -114,7 +111,7 @@ topcash
 topno
 ```
 
-## ⚡ Tips và thủ thuật
+## Tips và thủ thuật
 
 ### Sử dụng hiệu quả:
 
@@ -136,7 +133,7 @@ topno
    sc @customer 50k
    ```
 
-## 📞 Hỗ trợ và chuẩn đoán
+## Hỗ trợ và chuẩn đoán
 
 ### Khi gặp vấn đề:
 

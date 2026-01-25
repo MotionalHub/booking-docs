@@ -2,12 +2,7 @@
 title: Xử lý vi phạm
 description: Hình thức xử lý khi phát hiện vi phạm điều khoản sử dụng
 ---
-
-# Hình thức xử lý vi phạm
-
-Khi phát hiện bên mua vi phạm các điều khoản sử dụng, người bán có quyền áp dụng các biện pháp xử lý phù hợp với mức độ vi phạm.
-
-## Các mức độ xử lý
+> Khi phát hiện bên mua vi phạm các điều khoản sử dụng, người bán có quyền áp dụng các biện pháp xử lý phù hợp với mức độ vi phạm.
 
 | Mức độ | Hình thức xử lý | Mô tả |
 |--------|----------------|-------|
@@ -65,7 +60,7 @@ Khi phát hiện bên mua vi phạm các điều khoản sử dụng, người b
 
 ## Mức 3: Ngưng cung cấp dịch vụ bot
 
-:::warning[Vi phạm nghiêm trọng]
+:::caution[Vi phạm nghiêm trọng]
 Áp dụng cho vi phạm nghiêm trọng hoặc lặp lại nhiều lần
 :::
 

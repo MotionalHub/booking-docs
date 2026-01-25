@@ -2,150 +2,149 @@
 title: Chính sách người bán
 description: Trách nhiệm và cam kết của bên cung cấp dịch vụ bot
 ---
-## 1. Trách nhiệm của người bán
-
-### Cung cấp bot đúng chức năng
-
+### 1. Trách nhiệm của người bán
 :::tip[Cam kết chất lượng]
 Đảm bảo bot hoạt động đúng như mô tả và quảng cáo
 :::
+---
 
-**Cam kết:**
+**✅ CÓ hỗ trợ:**
+- ✓ Tất cả chức năng trong gói đã mua
+- ✓ Cài đặt và hướng dẫn sử dụng
+- ✓ Fix bug và bảo trì
+- ✓ Cập nhật các tính năng mới
 
-| Tiêu chí | Mô tả |
-|----------|-------|
-| **Chức năng** | 100% chức năng như mô tả |
-| **Hiệu suất** | Uptime 99.5%+ |
-| **Bảo mật** | Dữ liệu được mã hóa và bảo vệ |
-| **Chính xác** | Tính toán chính xác không sai lệch |
-| **Giao diện** | Embed đẹp, dễ sử dụng |
-
-**Không cam kết:**
-
-- Tùy chỉnh ngoài phạm vi gói dịch vụ
-- Chức năng vi phạm Discord ToS
-- Tích hợp với service bên thứ 3 không hỗ trợ
-- Hiệu suất nếu server quá tải (>50k members)
+**❌ KHÔNG hỗ trợ:**
+- ✗ Tùy chỉnh ngoài phạm vi gói
+- ✗ Chức năng vi phạm Discord ToS
+- ✗ Tích hợp dịch vụ không tương thích
 
 ---
 
-### Hỗ trợ cài đặt và hướng dẫn
+#### Hỗ trợ cài đặt và hướng dẫn
 
 :::note[Hỗ trợ toàn diện]
 Cung cấp hỗ trợ đầy đủ theo thỏa thuận
 :::
+<!-- 
+##### Hỗ trợ cài đặt ban đầu
 
-#### Hỗ trợ cài đặt ban đầu
+**🚀 Roadmap setup (~ 30-60 phút):**
 
-**Bao gồm:**
+```bash
+Bước 1: Invite Bot (5 phút)
+  → Link invite
+  → Cấp quyền Administrator
+  → Verify bot online
+  ↓
+Bước 2: Setup Core (15 phút)
+  → Prefix + Timezone
+  → Roles & Channels
+  → Modules chính
+  ↓
+Bước 3: Training (20 phút)
+  → Demo commands
+  → Test tính năng
+  → Q&A session
+  ↓
+Bước 4: Tài liệu (giao ngay)
+  → Documentation site
+  → Video tutorials
+  → FAQ & Troubleshooting
+``` -->
 
-1. **Thêm bot vào server**
-   - Hướng dẫn invite bot
-   - Cấp quyền phù hợp
-   - Kiểm tra bot hoạt động
+<details>
+<summary>📋 <strong>Checklist setup chi tiết</strong></summary>
 
-2. **Setup cơ bản**
-   - Cấu hình prefix, timezone
-   - Tạo role và channel
-   - Thiết lập các module chính
+- [ ] Bot được invite với đủ quyền
+- [ ] Roles được tạo và gán đúng
+- [ ] Channels log được cấu hình
+- [ ] Test 5 commands cơ bản thành công
+- [ ] Admin hiểu cách sử dụng cơ bản
+- [ ] Đã nhận tài liệu và link docs
 
-3. **Đào tạo sử dụng**
-   - Hướng dẫn các lệnh cơ bản
-   - Demo các tính năng chính
-   - Giải đáp thắc mắc
+</details>
 
-4. **Cung cấp tài liệu**
-   - Docs đầy đủ
-   - Video hướng dẫn
-   - FAQ & Troubleshooting
+<!-- ##### Phạm vi hỗ trợ
 
-#### Phạm vi hỗ trợ
+| Miễn phí (Included) | 💎 Có phí (Premium) |
+|----------------------|---------------------|
+| 🔧 Sửa lỗi hệ thống | 🔄 Migration từ bot khác |
+| 📖 Hướng dẫn cơ bản | 🎨 Custom design embed |
+| ⚙️ Setup lần đầu | ⭐ Feature theo yêu cầu |
+| 📞 Support ticket 24/7 | 🚀 Priority support |
+| 📚 Truy cập docs đầy đủ | 👨‍💻 Training chuyên sâu |
+| 🔄 Update tự động | 📊 Report & Analytics |
 
-| Loại hỗ trợ | Miễn phí | Có tính phí |
-|-------------|----------|-------------|
-| Sửa lỗi hệ thống | ✅ | - |
-| Hướng dẫn cơ bản | ✅ | - |
-| Setup lần đầu | ✅ | - |
-| Migration dữ liệu | - | ✅ |
+> 💡 **Lưu ý:** Gói cơ bản đã bao gồm tất cả hỗ trợ thiết yếu. Premium chỉ cho nhu cầu đặc biệt. -->
 
 ---
 
-### Bảo trì và sửa lỗi
+#### Bảo trì và sửa lỗi
 
 :::tip[Cam kết bảo trì]
 Bảo trì định kỳ và sửa lỗi kỹ thuật phát sinh từ hệ thống bot
 :::
 
-#### Bảo trì định kỳ
+<!-- **Lịch bảo trì & thông báo:**
 
-**Lịch trình:**
+| Mức độ | Downtime | 📢 Báo trước | 📍 Thời điểm |
+|--------|----------|-------------|-------------|
+| 🟢 **Nhỏ** | < 5 phút | 2-4 giờ | Đêm khuya (2-4 AM) |
+| 🟡 **Trung bình** | 5-15 phút | 24 giờ | Cuối tuần |
+| 🔴 **Lớn** | 15-60 phút | 48 giờ | Theo lịch |
+| ⚡ **Khẩn cấp** | TBD | Ngay lập tức | Bất kỳ lúc nào | -->
 
-- **Hàng tuần**: Kiểm tra và tối ưu
-- **Hàng tháng**: Phân tích hiệu suất
-- **Hàng quý**: Audit bảo mật
-- **Liên tục**: Cập nhật tính năng mới
+---
 
-**Thông báo bảo trì:**
-
-| Loại | Thời gian downtime | Thông báo trước |
-|------|-------------------|----------------|
-| 🟢 Nhỏ | < 5 phút | 2-4 giờ |
-| 🟡 Trung bình | 5-15 phút | 24 giờ |
-| 🔴 Lớn | 15-60 phút | 48 giờ |
-| ⚡ Khẩn cấp | Không xác định | Ngay lập tức |
-
-#### Sửa lỗi
-
-**Cam kết:**
-
-| Mức độ lỗi | Thời gian phản hồi | Thời gian sửa |
-|-----------|-------------------|---------------|
-| 🔴 **Critical** | < 1 giờ | < 6 giờ |
-| 🟠 **High** | < 6 giờ | < 24 giờ |
-| 🟡 **Medium** | < 24 giờ | < 3 ngày |
-| 🟢 **Low** | < 48 giờ | < 1 tuần |
-
-**Phân loại lỗi:**
-
-- 🔴 **Critical**: Bot down hoàn toàn, mất dữ liệu
-- 🟠 **High**: Chức năng chính không hoạt động
-- 🟡 **Medium**: Lỗi ảnh hưởng một số tính năng
-- 🟢 **Low**: Lỗi nhỏ, không ảnh hưởng nhiều
-
-:::caution[Lưu ý]
+:::caution[⚠️ Ngoài phạm vi hỗ trợ]
 **KHÔNG** sửa lỗi do bên mua gây ra:
-- ❌ Sử dụng sai cách
-- ❌ Can thiệp trái phép
-- ❌ Vi phạm điều khoản
+
+<div className="excluded-support">
+
+| ❌ Không hỗ trợ | ✅ Thay thế |
+|----------------|------------|
+| Sử dụng sai cách | Xem docs, tạo ticket hỏi |
+| Can thiệp database | Restore backup (có phí) |
+| Chia sẻ token | Re-deploy (có phí) |
+| Vi phạm ToS | Không được hỗ trợ |
+
+</div>
 :::
 
 ---
 
-## 2. Giới hạn trách nhiệm
+### 2. Giới hạn trách nhiệm
 
-### Người bán KHÔNG chịu trách nhiệm
+#### Người bán KHÔNG chịu trách nhiệm
 
 :::danger[Miễn trừ trách nhiệm]
 Các trường hợp sau không thuộc trách nhiệm của người bán
 :::
 
-#### Bot bị sử dụng sai mục đích
+##### Bot bị sử dụng sai mục đích
 
-**Ví dụ:**
-
-- Cờ bạc, cá độ
-- Lừa đảo, trục lợi
-- Spam, quảng cáo trái phép
-- Nội dung không phù hợp
-- Vi phạm pháp luật
-
-:::caution[Quan trọng]
-Bên mua **tự chịu hoàn toàn trách nhiệm** về cách sử dụng bot.
+:::danger[CẢNH BÁO NGHIÊM TRỌNG]
+Người bán **KHÔNG** chịu trách nhiệm về các hành vi sau:
 :::
+
+<div className="violation-matrix">
+
+| Hành vi cấm | Trách nhiệm | Xử lý |
+|---------------|---------------|----------|
+| Cờ bạc, cá độ | **100%** bên mua | Thu hồi bot ngay |
+| Lừa đảo, gian lận | **100%** bên mua | Báo cơ quan chức năng |
+| Spam, quảng cáo | **100%** bên mua | Cảnh cáo → Thu hồi |
+| Nội dung không phù hợp | **100%** bên mua | Khóa dịch vụ |
+| Vi phạm pháp luật | **100%** bên mua | Hợp tác điều tra |
+
+</div>
+
+> ⚠️ **Bên mua tự chịu 100% trách nhiệm pháp lý** về mục đích sử dụng bot
 
 ---
 
-#### Vi phạm pháp luật
+##### Vi phạm pháp luật
 
 **Không chịu trách nhiệm về:**
 
@@ -157,13 +156,13 @@ Bên mua **tự chịu hoàn toàn trách nhiệm** về cách sử dụng bot.
 | Rửa tiền, gian lận | Bên mua |
 | Nội dung bất hợp pháp | Bên mua |
 
-:::warning[Hợp tác điều tra]
+:::caution[Hợp tác điều tra]
 Người bán có quyền và nghĩa vụ **hợp tác với cơ quan chức năng** nếu phát hiện hành vi vi phạm pháp luật.
 :::
 
 ---
 
-#### Thiệt hại phát sinh do
+##### Thiệt hại phát sinh do
 
 **1. Quản lý server kém**
 
@@ -195,7 +194,7 @@ Mọi can thiệp trái phép vào hệ thống sẽ:
 
 ---
 
-#### Mất dữ liệu do can thiệp
+##### Mất dữ liệu do can thiệp
 
 **Trường hợp có trách nhiệm:**
 
@@ -208,27 +207,13 @@ Mọi can thiệp trái phép vào hệ thống sẽ:
 
 ---
 
-## Cam kết với khách hàng
+### 🤝 Cam kết với khách hàng
 
 :::tip[Tôn chỉ hoạt động]
 Chúng tôi cam kết mang đến dịch vụ tốt nhất cho khách hàng
 :::
 
-### Giá trị cốt lõi
-
-1. **Chất lượng**: Sản phẩm đúng như cam kết
-2. **Minh bạch**: Thông tin rõ ràng, không che giấu
-3. **Trách nhiệm**: Chịu trách nhiệm với sản phẩm cung cấp
-4. **Hỗ trợ**: Luôn sẵn sàng giúp đỡ khách hàng
-5. **Cải tiến**: Liên tục nâng cấp và hoàn thiện
-
-### Đảm bảo quyền lợi
-
-- Dịch vụ đúng mô tả
-- Hỗ trợ kịp thời
-- Bảo mật thông tin
-- Minh bạch giá cả
-- Lắng nghe phản hồi
+---
 
 :::note[Liên hệ]
 Mọi thắc mắc về chính sách người bán, vui lòng liên hệ để được giải đáp chi tiết.
