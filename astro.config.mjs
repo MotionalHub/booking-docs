@@ -46,7 +46,7 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Bắt đầu',
+					label: 'Bắt đầu sử dụng',
 					items: [
 						{ label: 'Giới thiệu', slug: 'introduction' },
 						{ label: 'Cài đặt nhanh', slug: 'quick-start' },
@@ -54,36 +54,49 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Quản lý hệ thống',
+					label: 'Cấu hình bot',
 					items: [
 						{ label: 'Owner Commands', slug: 'commands/owner' },
 						{ label: 'Administrator', slug: 'commands/administrator' },
 						{ label: 'Cash Management', slug: 'commands/cash' },
-						{ label: 'Supporter', slug: 'commands/supporter' },
-						{ label: 'Moderation', slug: 'commands/moderation' },
+						{ label: 'Thanh toán', slug: 'payment' },
 					],
 				},
 				{
-					label: 'Tính năng nâng cao',
+					label: 'Lệnh cho Khách',
 					items: [
-						{ label: 'Welcome System', slug: 'features/welcome' },
-						{ label: 'Ticket System', slug: 'features/ticket' },
-						{ label: 'Embed Builder', slug: 'features/embed' },
-						{ label: 'Autoresponder', slug: 'features/autoresponder' },
-						{ label: 'Giveaway', slug: 'features/giveaway' },
-						{ label: 'Anti-Raid', slug: 'features/anti-raid' },
-					],
-				},
-				{
-					label: 'Người dùng',
-					items: [
-						{ label: 'Player Commands', slug: 'user/player' },
 						{ label: 'Khách hàng', slug: 'user/customer' },
 						{ label: 'Lệnh tiện ích', slug: 'user/utilities' },
 					],
 				},
 				{
-					label: 'Hệ thống Shop',
+					label: 'Lệnh cho Player',
+					items: [
+						{ label: 'Player Commands', slug: 'user/player' },
+						{ label: 'Lương / Giờ / Star', slug: 'salary-time-star' },
+					],
+				},
+				{
+					label: 'Lệnh cho Supporter',
+					items: [
+						{ label: 'Supporter', slug: 'commands/supporter' },
+						{ label: 'Booking / Bill / Donate', slug: 'booking-bill' },
+						{ label: 'Ticket System', slug: 'features/ticket' },
+						{ label: 'Embed Builder', slug: 'features/embed' },
+						{ label: 'Autoresponder', slug: 'features/autoresponder' },
+					],
+				},
+				{
+					label: 'Lệnh cho Admin',
+					items: [
+						{ label: 'Administrator', slug: 'commands/administrator' },
+						{ label: 'Cash Management', slug: 'commands/cash' },
+						{ label: 'Moderation', slug: 'commands/moderation' },
+						{ label: 'Anti-Raid', slug: 'features/anti-raid' },
+					],
+				},
+				{
+					label: 'Shop / Economy',
 					items: [
 						{ label: 'Quản lý Shop', slug: 'shop/shop' },
 						{ label: 'Marriage System', slug: 'shop/marriage' },
@@ -91,11 +104,13 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Tính năng khác',
+					label: 'Cấu hình phụ',
 					items: [
+						{ label: 'Welcome System', slug: 'features/welcome' },
 						{ label: 'Part-time System', slug: 'features/part-time' },
 						{ label: 'FAQ', slug: 'faq' },
 						{ label: 'Troubleshooting', slug: 'troubleshooting' },
+						{ label: 'Changelog', slug: 'changelog' },
 					],
 				},
 				{

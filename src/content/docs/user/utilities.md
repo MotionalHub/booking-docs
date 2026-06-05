@@ -1,78 +1,21 @@
 ---
 title: Lệnh Tiện Ích
-description: Tổng hợp các lệnh tiện ích hữu dụng cho mọi thành viên - tính toán, random, avatar và nhiều hơn nữa
+description: Tổng hợp các lệnh tiện ích đang có trong source Booking Bot
 ---
-> Các lệnh tiện ích giúp cuộc sống Discord trở nên thú vị và tiện lợi hơn. Tất cả thành viên đều có thể sử dụng!
+| Lệnh | Mục đích | Ghi chú |
+|---|---|---|
+| `help` | Xem danh sách command | Prefix |
+| `ping` | Kiểm tra bot | Slash |
+| `math` | Tính toán biểu thức | Prefix |
+| `random` | Sinh số ngẫu nhiên | Prefix |
+| `pick` | Chọn ngẫu nhiên từ danh sách | Prefix |
+| `avatar` | Xem avatar user | Slash |
+| `snipe` | Xem tin nhắn vừa bị xoá | Slash |
+| `speak` | Bot nói trong voice | Prefix |
+| `girl` | Lệnh hình ảnh/utility | Slash, TODO cần xác nhận |
+| `renew` | Liên quan renewal/subscription | Slash, TODO cần xác nhận |
 
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Ví dụ sử dụng</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>math</code></td>
-      <td>Tính toán biểu thức phức tạp</td>
-      <td><code>math 12 + 5 * (3 - 1)</code></td>
-    </tr>
-    <tr>
-      <td><code>random</code></td>
-      <td>Sinh số ngẫu nhiên từ 1 đến n</td>
-      <td><code>random 100</code></td>
-    </tr>
-    <tr>
-      <td><code>pick</code></td>
-      <td>Chọn ngẫu nhiên từ danh sách</td>
-      <td><code>pick Pizza, Phở, Bún bò</code></td>
-    </tr>
-  </tbody>
-</table>
+## Lưu ý
 
-<div className="callout callout-info">
-  <strong>💡 Lưu ý Pick:</strong> Các lựa chọn cách nhau bằng dấu phẩy, không có khoảng trắng thừa giữa các mục.
-</div>
-
-## Thông tin và Media
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Ví dụ sử dụng</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>avatar</code></td>
-      <td>Lấy avatar người dùng</td>
-      <td><code>avatar @user</code></td>
-    </tr>
-    <tr>
-      <td><code>snipe</code></td>
-      <td>Hiển thị tin nhắn vừa bị xóa gần nhất</td>
-      <td><code>snipe</code></td>
-    </tr>
-  </tbody>
-</table>
-
-### Voice và Audio
-
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Ví dụ sử dụng</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>speak</code></td>
-      <td>Bot đọc text trong voice channel</td>
-      <td><code>speak Xin chào mọi người!</code></td>
-    </tr>
-  </tbody>
-</table>
+- `speak` có giới hạn ký tự và delay theo config `speak`.
+- `help` có thể hiển thị command theo category và theo quyền.

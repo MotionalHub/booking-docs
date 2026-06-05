@@ -147,133 +147,36 @@ unbox
     <li>Phải có đủ tiền mới mua được đồ</li>
     <li>Chỉ tặng được đồ đang có trong kho</li>
     <li>Lucky Box cho phần thưởng ngẫu nhiên theo tỷ lệ</li>
-  </ul>
+    description: Tài liệu lệnh cho khách hàng theo source Booking Bot hiện tại
 </div>
 
+    # Hướng dẫn Khách hàng
 ## Hệ thống Marriage
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Cú pháp</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>marry</code></td>
-      <td>Cầu hôn với nhẫn cưới</td>
-      <td><code>marry &lt;@user&gt; &lt;ring_id&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>marry divorce</code></td>
-      <td>Chấm dứt hôn nhân</td>
-      <td><code>marry divorce</code></td>
-    </tr>
-    <tr>
-      <td><code>marry luv</code></td>
-      <td>Gửi lời yêu thương</td>
-      <td><code>marry luv</code></td>
-    </tr>
-    <tr>
-      <td><code>marry profile</code></td>
-      <td>Xem thông tin hôn nhân</td>
-      <td><code>marry profile</code></td>
-    </tr>
-  </tbody>
-</table>
+    ## Command chính
 
-### Tùy chỉnh Marriage profile
+    | Lệnh | Mục đích | Ghi chú |
+    |---|---|---|
+    | `cash` | Xem số dư cash | Có thể hiện thêm coin trên một số bot name |
+    | `give` | Chuyển cash cho người khác | Tùy bot name có thể bị chặn quyền |
+    | `shop` | Xem danh sách item | Prefix |
+    | `buy` | Mua item theo ID | Prefix |
+    | `inventory` / `inv` | Xem kho đồ | Prefix |
+    | `gift` | Tặng item cho người khác | Prefix |
+    | `unbox` | Mở Lucky Box | Prefix |
+    | `marry` / `mry` | Hệ thống marriage | Prefix |
 
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Cú pháp</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>marry vague</code></td>
-      <td>Đặt trạng thái "mập mờ"</td>
-      <td><code>marry vague</code></td>
-    </tr>
-    <tr>
-      <td><code>marry thumbnail</code></td>
-      <td>Đặt ảnh nhỏ cho profile</td>
-      <td><code>marry thumbnail &lt;url&gt;</code></td>
-    </tr>
-    <tr>
-      <td><code>marry image</code></td>
-      <td>Đặt ảnh lớn cho profile</td>
-      <td><code>marry image &lt;url&gt;</code></td>
-    </tr>
-  </tbody>
-</table>
+    ## Marriage
 
-### Quy trình kết hôn:
+    - Nhẫn cưới phải là item hợp lệ trong shop/inventory.
+    - `marry luv` gửi lời yêu thương.
+    - `marry divorce` mở flow xác nhận trước khi ly hôn.
+    - `marry profile` xem trạng thái hôn nhân.
+    - `marry thumbnail` và `marry image` dùng để chỉnh profile.
 
-1. **Mua nhẫn cưới** từ shop (type: ring)
-   ```bash
-   shop
-   buy <ring_id>
-   ```
+    ## Lưu ý
 
-2. **Cầu hôn**
-   ```bash
-   marry @crush <ring_id>
-   ```
-
-3. **Đợi người kia chấp nhận** (họ reply Yes/No)
-
-4. **Tận hưởng cuộc sống hôn nhân!**
-   ```bash
-   marry luv       # Gửi tình yêu
-   marry profile   # Xem profile cặp đôi
-   ```
-
-<div className="callout callout-info">
-  <strong>💡 Tips:</strong>
-  <ul>
-    <li>Tặng quà cho người yêu bằng lệnh <code>gift</code></li>
-    <li>Tùy chỉnh ảnh couple đẹp cho profile profile</li>
-    <li>Dùng <code>marry luv</code> thường xuyên để thể hiện tình cảm</li>
-  </ul>
-</div>
-
-## Lệnh tiện ích hữu dụng
-
-### Tính toán và tiện ích
-
-<table className="command-table">
-  <thead>
-    <tr>
-      <th>Lệnh</th>
-      <th>Mô tả</th>
-      <th>Ví dụ sử dụng</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>math</code></td>
-      <td>Tính toán biểu thức</td>
-      <td><code>math 12 + 5 * (3 - 1)</code></td>
-    </tr>
-    <tr>
-      <td><code>random</code></td>
-      <td>Sinh số ngẫu nhiên từ 1-n</td>
-      <td><code>random 100</code></td>
-    </tr>
-    <tr>
-      <td><code>pick</code></td>
-      <td>Chọn ngẫu nhiên từ danh sách</td>
-      <td><code>pick Pizza, Phở, Bún bò</code></td>
-    </tr>
-  </tbody>
-</table>
-
-### Thông tin và tương tác
+    - `topcash`, `topbook`, `topgift` không thuộc nhóm khách chuẩn; một số bot name có thể bật riêng.
+    - `force-divorce` là lệnh supporter, không phải lệnh khách.
 
 <table className="command-table">
   <thead>

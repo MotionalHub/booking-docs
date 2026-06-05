@@ -9,62 +9,38 @@ description: Hệ thống ticket hỗ trợ khách hàng chuyên nghiệp với 
 </div>
 
 ## Thiết lập Ticket
-<table className="command-table">
+description: Hệ thống ticket theo source Booking Bot hiện tại
   <thead>
-    <tr>
+
+# Ticket System
       <th>Lệnh</th>
       <th>Mô tả</th>
-      <th>Cú pháp</th>
+  <strong>🔐 Yêu cầu:</strong> Cần whitelist <code>owner</code> để cấu hình ticket panel.
     </tr>
   </thead>
-  <tbody>
-    <tr>
-      <td><code>/ticket create</code></td>
-      <td>Tạo hệ thống ticket cơ bản</td>
-      <td><code>/ticket create</code></td>
-    </tr>
-    <tr>
-      <td><code>/ticket add-button</code></td>
-      <td>Thêm button tạo ticket</td>
-      <td><code>/ticket add-button</code></td>
-    </tr>
-    <tr>
-      <td><code>/ticket settings</code></td>
-      <td>Cấu hình settings ticket</td>
-      <td><code>/ticket settings</code></td>
-    </tr>
-  </tbody>
-</table>
+## Command chính
 
-### Quy trình thiết lập Ticket:
+| Lệnh | Mục đích | Ghi chú |
+|---|---|---|
+| `/ticket create` | Tạo ticket panel | Có `ticket-name`, `embed`, `ticket-msg`, `limit-ticket`, `ticket-channel`, `category`, `logs` |
+| `/ticket show` | Hiển thị lại ticket panel | Có autocomplete `ticket-name` |
+| `/ticket edit` | Chỉnh sửa panel ticket |  |
+| `/ticket delete` | Xoá panel ticket |  |
+| `/ticket add-button` | Thêm button mở ticket | Có `label`, `emoji`, `embed` |
+| `/ticket edit-button` | Chỉnh sửa button ticket |  |
+| `/ticket clear-button` | Xoá toàn bộ button |  |
 
-```bash
-# Bước 1: Tạo category cho tickets
-Create Category: "Ticket"
+## Cách hoạt động
 
-# Bước 2: Tạo kênh ticket creation  
-Create Channel: #create-ticket (trong category Support)
+1. Supporter hoặc owner tạo panel bằng `/ticket create`.
+2. Người dùng bấm button để tạo private thread.
+3. Bot kiểm tra giới hạn ticket mỗi user và quyền của bot trong channel.
+4. Ticket đóng lại sẽ được archive và ghi log nếu có cấu hình logs.
 
-# Bước 3: Setup ticket system
-/ticket create
+## Lưu ý
 
-# Bước 4: Thêm button để tạo ticket
-/ticket add-button
-
-# Bước 5: Cấu hình permissions và roles
-/ticket settings
-```
-
-## Ví dụ thiết lập Ticket
-```bash
-# Welcome message khi tạo ticket
-Title: Ticket được tạo thành công!
-Color: 0x00ff00
-Description: 
-Xin chào {user}! 
-
-Ticket của bạn đã được tạo
-Staff sẽ hỗ trợ bạn sớm nhất có thể.
+- Bot cần quyền `SendMessages`, `ViewChannel`, `EmbedLinks`, `ReadMessageHistory`, `CreatePrivateThreads`.
+- Nếu user đã bị blacklist toàn hệ thống, bot sẽ chặn hành động ticket.
 
 Vui lòng mô tả chi tiết vấn đề để chúng tôi hỗ trợ hiệu quả!
 

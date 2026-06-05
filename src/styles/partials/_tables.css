@@ -4,7 +4,7 @@
 
 /* Base table wrapper with content-based background */
 .table-wrapper {
-  overflow-x: auto;
+  overflow: visible; /* No scrollbar by default */
   margin: var(--spacing-lg) 0;
   position: relative;
   /* Key change: make wrapper fit content width */
@@ -13,10 +13,59 @@
   border-radius: var(--border-radius);
   background: white;
   box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+}
+
+/* Hide all webkit scrollbars by default */
+.table-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Only show scrollbar when explicitly needed via JS class */
+.table-wrapper.needs-scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+.table-wrapper.needs-scroll::-webkit-scrollbar {
+  display: block;
+  height: 8px;
+}
+
+.table-wrapper.needs-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.table-wrapper.needs-scroll::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.table-wrapper.needs-scroll::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
 }
 
 [data-theme="dark"] .table-wrapper {
   background: #2d3748;
+}
+
+/* Dark theme scrollbar for tables that need scroll */
+[data-theme="dark"] .table-wrapper.needs-scroll {
+  scrollbar-color: #4a5568 #2d3748;
+}
+
+[data-theme="dark"] .table-wrapper.needs-scroll::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+[data-theme="dark"] .table-wrapper.needs-scroll::-webkit-scrollbar-thumb {
+  background: #4a5568;
+}
+
+[data-theme="dark"] .table-wrapper.needs-scroll::-webkit-scrollbar-thumb:hover {
+  background: #718096;
 }
 
 /* Permission table with optimized sizing */
@@ -45,6 +94,23 @@
   .permission-table {
     width: 100%;
     min-width: 600px; /* Minimum readable width */
+  }
+}
+
+/* Mobile: Always allow scrolling when needed */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto !important;
+    display: block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    margin: var(--spacing-lg) 0 !important;
+    /* Mobile scrollbar always visible when needed */
+    scrollbar-color: #c1c1c1 #f1f1f1;
+  }
+  
+  [data-theme="dark"] .table-wrapper {
+    scrollbar-color: #4a5568 #2d3748;
   }
 }
 
@@ -93,23 +159,6 @@
 
 [data-theme="dark"] .permission-table tbody tr:hover {
   background-color: #374151;
-}
-
-/* Table wrapper for responsive design */
-.table-wrapper {
-  overflow-x: auto;
-  margin: var(--spacing-lg) 0;
-  border-radius: var(--border-radius);
-  position: relative;
-  /* Content-based sizing approach */
-  display: inline-block;
-  min-width: 100%;
-  background: white;
-  box-shadow: var(--shadow-md);
-}
-
-[data-theme="dark"] .table-wrapper {
-  background: #2d3748;
 }
 
 /* Enhanced permission table with content-based background */
@@ -689,4 +738,43 @@
   will-change: auto;
   /* Prevent unnecessary repaints */
   transform: translateZ(0);
+}
+
+/* Smart overflow detection - only show scrollbar when content actually overflows */
+
+/* Better overflow handling with JavaScript detection support */
+.table-wrapper.needs-scroll {
+  overflow-x: auto !important;
+}
+
+.table-wrapper.needs-scroll::-webkit-scrollbar {
+  display: block !important;
+}
+
+/* No scrollbar when content fits */
+.table-wrapper.no-overflow {
+  overflow: visible !important;
+}
+
+.table-wrapper.no-overflow::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Completely disable hover overflow behavior to prevent unwanted scrollbars */
+.table-wrapper:hover {
+  overflow: visible !important;
+}
+
+.table-wrapper.needs-scroll:hover {
+  overflow-x: auto !important;
+}
+
+/* Additional safety: prevent any hover-induced scrollbar appearance */
+.table-wrapper:not(.needs-scroll):hover {
+  overflow: visible !important;
+  scrollbar-width: none !important;
+}
+
+.table-wrapper:not(.needs-scroll):hover::-webkit-scrollbar {
+  display: none !important;
 }

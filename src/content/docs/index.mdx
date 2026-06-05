@@ -3,16 +3,19 @@ title: Discord Booking Bot - Hệ thống quản lý booking chuyên nghiệp
 description: Tài liệu hướng dẫn sử dụng hệ thống bot booking Discord với đầy đủ tính năng quản lý khách hàng, player, thanh toán và nhiều hơn nữa.
 template: splash
 hero:
-  tagline: Hệ thống bot booking Discord hoàn chỉnh với quản lý tự động, thanh toán thông minh và trải nghiệm người dùng tuyệt vời!
+  tagline: "Tài liệu chuẩn cho Booking Bot: booking, bill, donate, lương, shop và quản trị server."
   image:
     file: ../../assets/bot.webp
   actions:
-    - text: Bắt đầu ngay
+    - text: Bắt đầu sử dụng
       link: /introduction/
       icon: right-arrow
       variant: primary
-    - text: Xem các lệnh
-      link: /commands/administrator/
+    - text: Booking / Bill / Donate
+      link: /booking-bill/
+      icon: external
+    - text: Xem Shop / Economy
+      link: /shop/shop/
       icon: external
     - text: Điều khoản sử dụng
       link: /tos/
@@ -22,117 +25,46 @@ hero:
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## ✨ Tính năng nổi bật
+## Tài liệu chính
 
 <CardGrid>
-  <Card title="Quản lý tự động" icon="setting">
-    Tự động tính lương player, xử lý bill booking và quản lý thanh toán một cách thông minh.
+  <Card title="Bắt đầu sử dụng" icon="setting">
+    Hướng dẫn cài đặt nhanh, cấu hình role và log cho server.
   </Card>
-  <Card title="Hệ thống Cash" icon="information">
-    Quản lý tiền ảo hoàn chỉnh với khả năng nạp, chuyển, và thanh toán linh hoạt.
+  <Card title="Booking / Bill / Donate" icon="information">
+    Tổng hợp quy trình tạo bill, hoàn bill, donate và reset dữ liệu.
   </Card>
-  <Card title="Cửa hàng tích hợp" icon="open-book">
-    Shop đầy đủ tính năng với quà tặng, lucky box và hệ thống marriage độc đáo.
+  <Card title="Lương / Giờ / Star" icon="open-book">
+    Hướng dẫn cách xem và điều chỉnh star, lương, giờ và thống kê player.
   </Card>
   <Card title="Ticket & Support" icon="rocket">
-    Hệ thống ticket chuyên nghiệp với embed tùy chỉnh và autoresponder thông minh.
+    Cấu hình ticket, embed, autoresponder và các công cụ hỗ trợ staff.
   </Card>
-  <Card title="Bảo mật cao cấp" icon="approve-check">
-    Anti-raid, kiểm soát quyền hạn chi tiết và log hoạt động toàn diện.
+  <Card title="Shop / Economy" icon="approve-check">
+    Mua bán item, lucky box, marriage và các lệnh tiền ảo.
   </Card>
-  <Card title="Thống kê chi tiết" icon="bars">
-    Báo cáo doanh thu, leaderboard và phân tích các hoạt động server.
+  <Card title="FAQ / Lỗi thường gặp" icon="bars">
+    Các lỗi phổ biến, giới hạn và cách xử lý nhanh.
   </Card>
 </CardGrid>
 
-## 🚀 Tại sao chọn <span className="gradient-text">Discord Booking Bot</span>?
+## Phạm vi tài liệu
 
-<div className="feature-grid">
-  <div className="feature-card">
-    <div className="icon-container">⚡</div>
-    <h3>Hiệu suất cao</h3>
-    <p>Xử lý hàng ngàn giao dịch đồng thời không lag, uptime 99.9%</p>
-    <div className="status-indicator status-online">
-      <span>System Online</span>
-    </div>
-  </div>
-  
-  <div className="feature-card">
-    <div className="icon-container icon-container-secondary">🎨</div>
-    <h3>Tùy chỉnh linh hoạt</h3>
-    <p>Embed, emoji, màu sắc, prefix - mọi thứ đều có thể tùy chỉnh theo ý muốn</p>
-  </div>
-  
-  <div className="feature-card">
-    <div className="icon-container icon-container-warning">🔐</div>
-    <h3>Bảo mật tuyệt đối</h3>
-    <p>Phân quyền chi tiết, chống raid và bảo vệ dữ liệu người dùng</p>
-  </div>
-  
-  <div className="feature-card">
-    <div className="icon-container">📱</div>
-    <h3>Giao diện thân thiện</h3>
-    <p>Commands đơn giản, embed đẹp mắt và trải nghiệm người dùng tối ưu</p>
-  </div>
-</div>
+Tài liệu này đang được đồng bộ theo source trong `booking-bot`. Các mục có khác biệt giữa docs cũ và source sẽ được ghi rõ bằng `TODO: cần xác nhận` thay vì tự bịa.
 
-## 📋 Hệ thống phân quyền
+## Bắt đầu nhanh
 
-<div className="callout callout-info">
-  <strong>💡 Thông tin:</strong> Bot sử dụng hệ thống phân quyền thông minh với các role chuyên biệt cho từng chức năng.
-</div>
+1. Đọc [Giới thiệu](/introduction/).
+2. Cấu hình bot trong [Cài đặt nhanh](/quick-start/) hoặc [Cấu hình cơ bản](/basic-setup/).
+3. Xem nhóm command phù hợp: [Booking / Bill / Donate](/booking-bill/), [Lương / Giờ / Star](/salary-time-star/), [Shop / Economy](/shop/shop/).
+4. Dùng [FAQ](/faq/) nếu cần tra cứu nhanh lỗi thường gặp.
 
-| Role | Mô tả | Quyền hạn chính |
-|------|-------|-----------------|
-| <span className="badge badge-owner">Owner</span> | Chủ sở hữu server | Toàn quyền cấu hình, setup hệ thống |
-| <span className="badge badge-admin">Administrator</span> | Quản trị viên | Quản lý cash, time, lương player |
-| <span className="badge badge-supporter">Supporter</span> | Nhân viên hỗ trợ | Tạo bill, quản lý booking, moderation |
-| <span className="badge badge-cash">Cash</span> | Quản lý tài chính | Nạp/trừ tiền, quản lý giao dịch |
-| <span className="badge badge-player">Player</span> | Người chơi | Xem lương, nhận bill, profile |
-| <span className="badge badge-customer">Customer</span> | Khách hàng | Booking, mua sắm, sử dụng dịch vụ |
+## Lưu ý
 
-## 🎯 Bắt đầu nhanh
+Nếu bạn đang đối chiếu docs với source, ưu tiên các trang sau:
+- [booking-bill.md](booking-bill.md)
+- [salary-time-star.md](salary-time-star.md)
+- [payment.md](payment.md)
+- [changelog.md](changelog.md)
 
-<div className="steps">
-  <div className="step">
-    <div className="step-number">1</div>
-    <div className="step-content">
-      <h3>Đọc giới thiệu</h3>
-      <p>Tìm hiểu tổng quan về hệ thống và các tính năng chính. <a href="/introduction/">Xem chi tiết →</a></p>
-    </div>
-  </div>
-  
-  <div className="step">
-    <div className="step-number">2</div>
-    <div className="step-content">
-      <h3>Cài đặt cơ bản</h3>
-      <p>Thiết lập bot cho server của bạn với hướng dẫn từng bước. <a href="/basic-setup/">Bắt đầu →</a></p>
-    </div>
-  </div>
-  
-  <div className="step">
-    <div className="step-number">3</div>
-    <div className="step-content">
-      <h3>Commands Owner</h3>
-      <p>Cấu hình các tính năng chính và phân quyền hệ thống. <a href="/commands/owner/">Khám phá →</a></p>
-    </div>
-  </div>
-  
-  <div className="step">
-    <div className="step-number">4</div>
-    <div className="step-content">
-      <h3>Hướng dẫn sử dụng</h3>
-      <p>Dành cho người dùng cuối và khách hàng sử dụng dịch vụ. <a href="/user/customer/">Tìm hiểu →</a></p>
-    </div>
-  </div>
-</div>
-
-<div className="callout callout-warning">
-  <strong>⚠️ Lưu ý:</strong> Một số tính năng như Part-time chỉ khả dụng ở một số server đặc biệt. Liên hệ admin để biết thêm chi tiết.
-</div>
-
----
-
-**📜 Điều khoản quan trọng:** Trước khi sử dụng bot, vui lòng đọc kỹ [Điều khoản sử dụng](/terms-of-service/) để hiểu rõ quyền và trách nhiệm của bạn.
-
-**🌟 Sẵn sàng trải nghiệm?** [Bắt đầu với hướng dẫn cài đặt](/introduction/) hoặc [xem danh sách commands đầy đủ](/commands/administrator/)!
+**📜 Điều khoản:** xem [Điều khoản sử dụng](/tos/).

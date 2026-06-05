@@ -1,262 +1,50 @@
 ---
 title: Troubleshooting - Xử lý sự cố
-description: Hướng dẫn xử lý các lỗi thường gặp và troubleshooting Discord Booking Bot
+description: Các lỗi thường gặp và cách kiểm tra theo source Booking Bot hiện tại
 ---
-> Trang này tổng hợp các lỗi thường gặp và cách khắc phục khi sử dụng Discord Booking Bot.
+# Troubleshooting
 
-### 1. Bot không phản hồi lệnh
+## Bot không trả lời command
 
-> **Dấu hiệu:** Gõ lệnh nhưng bot không có phản ứng gì
+- Kiểm tra bot có online không.
+- Kiểm tra user có đúng role whitelist không.
+- Kiểm tra command đó là prefix hay slash trong source.
+- Kiểm tra kênh hiện tại có bị giới hạn quyền gửi tin nhắn hay không.
 
-**Checklist chẩn đoán:**
+## Lỗi quyền hạn
 
-| ✓ | Kiểm tra | Cách test |
-|---|----------|----------|
-| ⬜ | Prefix đúng? | `@BotName prefix` |
-| ⬜ | Bot online? | `@BotName ping` |
-| ⬜ | Quyền trong channel? | Test ở kênh khác |
-| ⬜ | Cú pháp đúng? | Dùng lệnh đơn giản `cash` |
+- `owner`, `admin`, `supporter`, `player`, `cash`, `parttime` là các whitelist chính trong source.
+- Nếu command không hiện, có thể bot name đó không bật feature.
+- Nếu dùng command quản trị, role bot phải nằm cao hơn role cần chỉnh.
 
-<details>
-<summary>🔧 <strong>Hướng dẫn khắc phục từng bước</strong></summary>
+## Lỗi tiền / số lượng
 
-**Bước 1:** Kiểm tra prefix
-```bash
-@BotName prefix
-```
+- Dùng định dạng `10k`, `1m`, hoặc số nguyên.
+- Tránh dấu phẩy, khoảng trắng và ký tự thừa.
+- `/book` cần `số-giờ` lớn hơn hoặc bằng `1`.
+- `/donate` cần số tiền lớn hơn `0`.
 
-**Bước 2:** Test lệnh cơ bản
-```bash
-<prefix>cash
-```
+## Lỗi booking / donate
 
-**Bước 3:** Kiểm tra bot status
-```bash
-@BotName ping
-```
+- Không đủ tiền: khách không có đủ cash để tạo bill.
+- Không có role player: source sẽ chặn một số luồng bill.
+- `parttime` chỉ hoạt động trên bot có bật feature tương ứng.
 
-**Bước 4:** Thử kênh khác nếu vẫn lỗi
+## Lỗi shop / inventory
 
-</details>
+- `shop` chỉ hiển thị item có `price`.
+- `buy` giới hạn tối đa 100 item mỗi lần.
+- `gift` yêu cầu item có trong inventory của người gửi.
 
-> 💡 **Pro tip:** Mention bot + "prefix" luôn hoạt động dù prefix là gì
+## Lỗi ticket / embed / react
 
-### 2. Lỗi quyền hạn (Permission Error)
+- Ticket cần kênh text có quyền tạo private thread.
+- Embed cần `Embed Links` và `Send Messages`.
+- React profile cần `settings react_channel` trước khi dùng `react profile`.
 
-> **Dấu hiệu:** "Bạn không có quyền sử dụng lệnh này"
+## TODO
 
-**🔍 Nguyên nhân thường gặp:**
-
-| Vấn đề | Giải pháp |
-|--------|----------|
-| 🏷️ Thiếu role | Liên hệ admin gán role |
-| 📊 Role hierarchy sai | Admin kiểm tra vị trí role |
-| 🚫 Channel restricted | Dùng lệnh ở channel khác |
-
----
-
-**🛠️ Các bước khắc phục:**
-
-**1️⃣ Tự kiểm tra role**
-
-Click chuột phải username → View Profile → Xem Roles
-
-**2️⃣ Yêu cầu admin gán role**
-```bash
-role @user @RequiredRole
-```
-
-**3️⃣ Kiểm tra vị trí Role**
-
-```mermaid
-@Owner
-  ↓
-@Administrator  
-  ↓
-@Supporter
-  ↓
-@Cash
-  ↓
-@Player
-```
-
-> ⚠️ Bot role **phải** cao hơn tất cả role user để quản lý
-
-### 3. Lỗi số tiền/số liệu không hợp lệ
-
-> **Dấu hiệu:** "Số tiền không hợp lệ" hoặc "Invalid amount"
-
-**So sánh định dạng:**
-
-| ✅ Đúng | ❌ Sai | Lý do sai |
-|---------|--------|----------|
-| `10k` | `10,000` | Có dấu phẩy |
-| `100k` | `10k VND` | Có chữ thừa |
-| `1m` | `10 k` | Có khoảng trắng |
-| `2.5m` | `abc` | Không phải số |
-| `10000` | `10_000` | Có dấu gạch dưới |
-
-**💡 Quy tắc nhập số:**
-
-- ✅ Viết liền, không khoảng trắng
-- ✅ Dùng `k` (nghìn), `m` (triệu)
-- ✅ Cho phép số thập phân: `2.5m`
-- ❌ Không dùng dấu phẩy, chữ VND, đơn vị khác
-
-**Ví dụ thực tế:**
-
-```diff
-- ac @user 10,000     ❌
-+ ac @user 10k        ✅
-
-- ac @user 100k VND   ❌  
-+ ac @user 100k       ✅
-
-- ac @user 1 000 000  ❌
-+ ac @user 1m         ✅
-```
-
-### 4. Lỗi không tìm thấy user
-
-<div className="callout callout-danger">
-  <strong>❌ Nguyên nhân:</strong> "Không tìm thấy người dùng" hoặc "User not found"
-</div>
-
-**Nguyên nhân:**
-- @ mention sai
-- User không có trong server
-- User đã block bot
-
-**Cách khắc phục:**
-
-**Dùng @ mention đúng:**
-   ```bash
-   # Đúng
-   ac @username 10k
-   
-   # Sai
-   ac 123456789012345678 10k
-   ```
-
-### 5. Lỗi số dư không đủ
-
-<div className="callout callout-danger">
-  <strong>❌ Nguyên nhân:</strong> "Số dư không đủ" khi mua đồ/booking
-</div>
-
-**Cách khắc phục:**
-
-1. **Kiểm tra số dư:**
-   ```bash
-   cash
-   ```
-
-2. **Nạp thêm tiền:**
-   - Liên hệ staff/supporter
-   - Cung cấp hình ảnh chuyển khoản
-   - Đợi xác nhận
-
-3. **Kiểm tra giá sản phẩm:**
-   ```bash
-   shop  # Xem giá các item
-   ```
-
-## Lỗi hệ thống và setup
-
-### 6. Lỗi embed/message không hiển thị
-
-> **Dấu hiệu:** Embed không xuất hiện hoặc chỉ thấy text thường
-
-**🔐 Checklist quyền bot (cho Admin):**
-
-| Quyền cần thiết | Mục đích | Status |
-|----------------|----------|--------|
-| 📝 Send Messages | Gửi tin nhắn cơ bản | ⬜ |
-| 📊 Embed Links | Hiển thị embed đẹp | ⬜ |
-| 😀 Use External Emojis | Dùng emoji custom | ⬜ |
-| 👍 Add Reactions | Thêm reaction | ⬜ |
-| 📖 Read Message History | Đọc tin nhắn cũ | ⬜ |
-| 🔗 Attach Files | Đính kèm file | ⬜ |
-
----
-
-<details>
-<summary>🛠️ <strong>Hướng dẫn cấp quyền</strong></summary>
-
-**Bước 1:** Vào Server Settings → Roles → Bot Role
-
-**Bước 2:** Bật tất cả permissions ở trên
-
-**Bước 3:** Check Override permissions trong channel cụ thể
-
-**Bước 4:** Test lại:
-```bash
-<prefix>cash
-```
-
-</details>
-
-> 💡 Nếu kênh đó không hoạt động, kiểm tra các channel khác để xác định là lỗi bot hay bị giới hạn trong kênh
-
-### 7. Lỗi log không hoạt động
-
-**Nguyên nhân:** Giao dịch không được ghi vào kênh log
-
-**Cách khắc phục:**
-
-1. **Setup lại kênh log:**
-   ```bash
-   /settings log-cash #log-channel
-   /settings log-bills #log-channel
-   ```
-
-2. **Kiểm tra quyền bot trong kênh log:**
-   ```
-   Bot cần quyền:
-   ✅ View Channel
-   ✅ Send Messages  
-   ✅ Embed Links
-   ```
-
-### 8. Lỗi commands slash (/) không hoạt động
-
-**Cách khắc phục:**
-
-1. **Re-invite bot với quyền applications.commands**
-2. **Đợi Discord sync commands** (có thể mất vài phút)
-3. **Thử lệnh prefix thay vì slash**
-
-## Lỗi tính năng cụ thể
-
-### 9. Marriage không hoạt động
-
-**Lỗi:** Không thể kết hôn dù có nhẫn
-
-**Cách khắc phục:**
-
-1. **Kiểm tra type của nhẫn:**
-   ```bash
-   inventory  # Xem nhẫn có type: ring không
-   ```
-
-2. **Kiểm tra người được cầu hôn:**
-   - Phải ở trong server
-   - Không đang kết hôn với ai khác
-   - Không block bot
-
-### 10. Lucky Box không mở được
-
-**Nguyên nhân:**
-- Không có Lucky Box trong inventory
-- Box chưa được cấu hình rate
-- Lỗi hệ thống
-
-**Cách khắc phục:**
-
-1. **Kiểm tra inventory:**
-   ```bash
-   inventory
-   ```
+- TODO: cần xác nhận bot name nào được phép dùng `givecoin`, `transfer`, `topbook`, `topgift` và `store`.
 
 2. **Liên hệ admin cấu hình box rate:**
    ```bash
